@@ -1,6 +1,6 @@
-# TACHYONS
+# TACHYONS (verbose)
 
-Functional CSS for humans.
+Functional CSS for humans. Verbose edition.
 
 Quickly build and design new UI without writing CSS.
 
