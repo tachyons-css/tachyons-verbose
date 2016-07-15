@@ -1,0 +1,43 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   CLEARFIX
+
+*/
+
+/* Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix:before,
+.clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix {       *zoom: 1; }
+
+.clear-left { clear: left; }
+.clear-right { clear: right; }
+.clear-both { clear: both; }
+.clear-none { clear: none; }
+
+@media (--breakpoint-not-small) {
+  .clear-left-ns { clear: left; }
+  .clear-right-ns { clear: right; }
+  .clear-both-ns { clear: both; }
+  .clear-none-ns { clear: none; }
+}
+
+@media (--breakpoint-medium) {
+  .clear-left-m { clear: left; }
+  .clear-right-m { clear: right; }
+  .clear-both-m { clear: both; }
+  .clear-none-m { clear: none; }
+}
+
+@media (--breakpoint-large) {
+  .clear-left-l { clear: left; }
+  .clear-right-l { clear: right; }
+  .clear-both-l { clear: both; }
+  .clear-none-l { clear: none; }
+}

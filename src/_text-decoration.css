@@ -1,0 +1,32 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   TEXT DECORATION
+
+*/
+
+.strike, .strikethrough, .linethrough, .textdecoration-linethrough   { text-decoration: line-through; }
+.underline, .textdecoration-underline  { text-decoration: underline; }
+.nounderline, .textdecoration-none   { text-decoration: none; }
+
+
+@media (--breakpoint-not-small) {
+  .strike-ns, .strikethrough-ns, .linethrough-ns, .textdecoration-linethrough-ns   { text-decoration: line-through; }
+  .underline-ns, .textdecoration-underline-ns  { text-decoration: underline; }
+  .nounderline-ns, .textdecoration-none-ns   { text-decoration: none; }
+}
+
+@media (--breakpoint-medium) {
+  .strike-m, .strikethrough-m, .linethrough-m, .textdecoration-linethrough-m   { text-decoration: line-through; }
+  .underline-m, .textdecoration-underline-m  { text-decoration: underline; }
+  .nounderline-m, .textdecoration-none-m   { text-decoration: none; }
+}
+
+@media (--breakpoint-large) {
+  .strike-l, .strikethrough-l, .linethrough-l, .textdecoration-linethrough-l   { text-decoration: line-through; }
+  .underline-l, .textdecoration-underline-l  { text-decoration: underline; }
+  .nounderline-l, .textdecoration-none-l   { text-decoration: none; }
+}

@@ -1,0 +1,45 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   BORDER BASE
+
+*/
+
+ .border, .border-all { border-style: solid; border-width: 1px; }
+ .border-top { border-top-style: solid; border-top-width: 1px; }
+ .border-right { border-right-style: solid; border-right-width: 1px; }
+ .border-bottom { border-bottom-style: solid; border-bottom-width: 1px; }
+ .border-left { border-left-style: solid; border-left-width: 1px; }
+ .border-none { border-style: solid; border-width: 0; }
+
+
+@media (--breakpoint-not-small) {
+  .border-ns, .border-all-ns { border-style: solid; border-width: 1px; }
+  .border-top-ns { border-top-style: solid; border-top-width: 1px; }
+  .border-right-ns { border-right-style: solid; border-right-width: 1px; }
+  .border-bottom-ns { border-bottom-style: solid; border-bottom-width: 1px; }
+  .border-left-ns { border-left-style: solid; border-left-width: 1px; }
+  .border-none-ns { border-style: solid; border-width: 0; }
+}
+
+@media (--breakpoint-medium) {
+  .border-m, .border-all-m { border-style: solid; border-width: 1px; }
+  .border-top-m { border-top-style: solid; border-top-width: 1px; }
+  .border-right-m { border-right-style: solid; border-right-width: 1px; }
+  .border-bottom-m { border-bottom-style: solid; border-bottom-width: 1px; }
+  .border-left-m { border-left-style: solid; border-left-width: 1px; }
+  .border-none-m { border-style: solid; border-width: 0; }
+}
+
+@media (--breakpoint-large) {
+  .border-l, .border-all-l { border-style: solid; border-width: 1px; }
+  .border-top-l { border-top-style: solid; border-top-width: 1px; }
+  .border-right-l { border-right-style: solid; border-right-width: 1px; }
+  .border-bottom-l { border-bottom-style: solid; border-bottom-width: 1px; }
+  .border-left-l { border-left-style: solid; border-left-width: 1px; }
+  .border-none-l { border-style: solid; border-width: 0; }
+}
+

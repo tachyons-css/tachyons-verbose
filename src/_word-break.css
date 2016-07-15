@@ -1,0 +1,32 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+  WORD BREAK
+
+*/
+
+.wordbreak-normal { word-break: normal; }
+.wordbreak-wrap, .wordbreak-breakall { word-break: break-all; }
+.wordbreak-nowrap, .wordbreak-keepall { word-break: keep-all; }
+
+@media (--breakpoint-not-small) {
+  .wordbreak-normal-ns { word-break: normal; }
+  .wordbreak-wrap-ns, .wordbreak-breakall-ns { word-break: break-all; }
+  .wordbreak-nowrap-ns, .wordbreak-keepall-ns { word-break: keep-all; }
+}
+
+@media (--breakpoint-medium) {
+  .wordbreak-normal-m { word-break: normal; }
+  .wordbreak-wrap-m, .wordbreak-breakall-m { word-break: break-all; }
+  .wordbreak-nowrap-m, .wordbreak-keepall-m { word-break: keep-all; }
+}
+
+@media (--breakpoint-large) {
+  .wordbreak-normal-l { word-break: normal; }
+  .wordbreak-wrap-l, .wordbreak-breakall-l { word-break: break-all; }
+  .wordbreak-nowrap-l, .wordbreak-keepall-l { word-break: keep-all; }
+}
+

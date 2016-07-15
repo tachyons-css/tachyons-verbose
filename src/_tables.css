@@ -1,0 +1,33 @@
+/*
+
+  TABLES
+
+*/
+
+:root {
+  --light-silver: #aaa;
+  --moon-gray: #ccc;
+  --light-gray: #eee;
+  --near-white: #f4f4f4;
+}
+
+.collapse {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.striped-moongray:nth-child(odd) {
+  background-color: var(--light-silver);
+}
+
+.striped-moongray:nth-child(odd) {
+  background-color: var(--moon-gray);
+}
+
+.striped-lightgray:nth-child(odd) {
+  background-color: var(--light-gray);
+}
+
+.striped-nearwhite:nth-child(odd) {
+  background-color: var(--near-white);
+}

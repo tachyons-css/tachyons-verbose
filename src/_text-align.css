@@ -1,0 +1,32 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+  TEXT ALIGN
+
+*/
+
+.textalign-left  { text-align: left; }
+.textalign-right  { text-align: right; }
+.textalign-center  { text-align: center; }
+
+@media (--breakpoint-not-small) {
+  .textalign-left-ns  { text-align: left; }
+  .textalign-right-ns  { text-align: right; }
+  .textalign-center-ns  { text-align: center; }
+}
+
+@media (--breakpoint-medium) {
+  .textalign-left-m  { text-align: left; }
+  .textalign-right-m  { text-align: right; }
+  .textalign-center-m  { text-align: center; }
+}
+
+@media (--breakpoint-large) {
+  .textalign-left-l  { text-align: left; }
+  .textalign-right-l  { text-align: right; }
+  .textalign-center-l  { text-align: center; }
+}
+

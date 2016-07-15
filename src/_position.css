@@ -1,0 +1,35 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+    POSITIONING
+
+ */
+
+.position-static { position: static; }
+.position-relative  { position: relative; }
+.position-absolute  { position: absolute; }
+.position-fixed  { position: fixed; }
+
+@media (--breakpoint-not-small) {
+  .position-static-ns { position: static; }
+  .position-relative-ns  { position: relative; }
+  .position-absolute-ns  { position: absolute; }
+  .position-fixed-ns  { position: fixed; }
+}
+
+@media (--breakpoint-medium) {
+  .position-static-m { position: static; }
+  .position-relative-m  { position: relative; }
+  .position-absolute-m  { position: absolute; }
+  .position-fixed-m  { position: fixed; }
+}
+
+@media (--breakpoint-large) {
+  .position-static-l { position: static; }
+  .position-relative-l  { position: relative; }
+  .position-absolute-l  { position: absolute; }
+  .position-fixed-l  { position: fixed; }
+}

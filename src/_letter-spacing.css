@@ -1,0 +1,31 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   LETTER SPACING
+
+*/
+
+.tracked, .letterspacing-tracked           { letter-spacing:  .16em; }
+.trackedtight, .letterspacing-tight       { letter-spacing: -.0.05em; }
+.megatracked, .letterspacing-megatracked  { letter-spacing:  .32em; }
+
+@media (--breakpoint-not-small) {
+  .tracked-ns, .letterspacing-tracked-ns           { letter-spacing:  .16em; }
+  .trackedtight-ns, .letterspacing-tight-ns       { letter-spacing: -.0.05em; }
+  .megatracked-ns, .letterspacing-megatracked-ns  { letter-spacing:  .32em; }
+}
+
+@media (--breakpoint-medium) {
+  .tracked-m, .letterspacing-tracked-m             { letter-spacing:  .16em; }
+  .trackedtight-m, .letterspacing-tight-m         { letter-spacing: -.0.05em; }
+  .megatracked-m, .letterspacing-megatracked-m    { letter-spacing:  .32em; }
+}
+
+@media (--breakpoint-large) {
+  .tracked-l, .letterspacing-tracked-l             { letter-spacing:  .16em; }
+  .trackedtight-l, .letterspacing-tight-l         { letter-spacing: -.0.05em; }
+  .megatracked-l, .letterspacing-megatracked-l    { letter-spacing:  .32em; }
+}

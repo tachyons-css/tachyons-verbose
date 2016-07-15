@@ -1,0 +1,38 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   BACKGROUND SIZE
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+
+  .backgroundsize-cover  { background-size: cover; }
+  .backgroundsize-contain  { background-size: contain; }
+
+@media (--breakpoint-not-small) {
+  .backgroundsize-cover-ns { background-size: cover; }
+  .backgroundsize-contain-ns { background-size: contain; }
+}
+
+@media (--breakpoint-medium) {
+  .backgroundsize-cover-m { background-size: cover; }
+  .backgroundsize-contain-m { background-size: contain; }
+}
+
+@media (--breakpoint-large) {
+  .backgroundsize-cover-l { background-size: cover; }
+  .backgroundsize-contain-l { background-size: contain; }
+}
+

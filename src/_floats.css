@@ -1,0 +1,47 @@
+
+/* Media Query Variables */
+
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   FLOATS
+
+   1. Floated elements are automatically rendered as block level elements.
+      Setting floats to display inline will fix the double margin bug in
+      ie6. You know... just in case.
+
+   2. Don't forget to clearfix your floats with .clearfix
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+
+
+.float-left { float: left;  _display: inline; }
+.float-right { float: right; _display: inline; }
+.float-none { float: none; }
+
+@media (--breakpoint-not-small) {
+  .float-left-ns { float: left; _display: inline; }
+  .float-right-ns { float: right; _display: inline; }
+  .float-none-ns { float: none; }
+}
+
+@media (--breakpoint-medium) {
+  .float-left-m { float: left; _display: inline; }
+  .float-right-m { float: right; _display: inline; }
+  .float-none-m { float: none; }
+}
+
+@media (--breakpoint-large) {
+  .float-left-l { float: left; _display: inline; }
+  .float-right-l { float: right; _display: inline; }
+  .float-none-l { float: none; }
+}

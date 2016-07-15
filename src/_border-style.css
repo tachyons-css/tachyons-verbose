@@ -1,0 +1,40 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   BORDER STYLES
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+ */
+
+.borderstyle-dotted { border-style: dotted; }
+.borderstyle-dashed { border-style: dashed; }
+.borderstyle-solid {  border-style: solid; }
+.borderstyle-none {   border-style: none; }
+
+@media (--breakpoint-not-small) {
+   .borderstyle-dotted-ns { border-style: dotted; }
+   .borderstyle-dashed-ns { border-style: dashed; }
+   .borderstyle-solid-ns {  border-style: solid; }
+   .borderstyle-none-ns {   border-style: none; }
+}
+
+@media (--breakpoint-medium) {
+   .borderstyle-dotted-m { border-style: dotted; }
+   .borderstyle-dashed-m { border-style: dashed; }
+   .borderstyle-solid-m {  border-style: solid; }
+   .borderstyle-none-m {   border-style: none; }
+}
+
+@media (--breakpoint-large) {
+  .borderstyle-dotted-l { border-style: dotted; }
+  .borderstyle-dashed-l { border-style: dashed; }
+  .borderstyle-solid-l {  border-style: solid; }
+  .borderstyle-none-l {   border-style: none; }
+}

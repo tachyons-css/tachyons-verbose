@@ -1,0 +1,35 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   VERTICAL ALIGN
+
+*/
+
+.verticalalign-baseline     { vertical-align: baseline; }
+.verticalalign-middle      { vertical-align: middle; }
+.verticalalign-top      { vertical-align: top; }
+.verticalalign-bottom      { vertical-align: bottom; }
+
+@media (--breakpoint-not-small) {
+  .verticalalign-baseline-ns     { vertical-align: baseline; }
+  .verticalalign-middle-ns      { vertical-align: middle; }
+  .verticalalign-top-ns      { vertical-align: top; }
+  .verticalalign-bottom-ns      { vertical-align: bottom; }
+}
+
+@media (--breakpoint-medium) {
+  .verticalalign-baseline-m     { vertical-align: baseline; }
+  .verticalalign-middle-m      { vertical-align: middle; }
+  .verticalalign-top-m      { vertical-align: top; }
+  .verticalalign-bottom-m      { vertical-align: bottom; }
+}
+
+@media (--breakpoint-large) {
+  .verticalalign-baseline-l     { vertical-align: baseline; }
+  .verticalalign-middle-l      { vertical-align: middle; }
+  .verticalalign-top-l      { vertical-align: top; }
+  .verticalalign-bottom-l      { vertical-align: bottom; }
+}

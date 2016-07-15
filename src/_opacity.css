@@ -1,0 +1,20 @@
+/*
+
+  Opacity
+
+*/
+
+.opacity-100p { opacity: 1;    }
+.opacity-90p  { opacity: .9;   }
+.opacity-80p  { opacity: .8;   }
+.opacity-70p  { opacity: .7;   }
+.opacity-60p  { opacity: .6;   }
+.opacity-50p  { opacity: .5;   }
+.opacity-40p  { opacity: .4;   }
+.opacity-30p  { opacity: .3;   }
+.opacity-20p  { opacity: .2;   }
+.opacity-10p  { opacity: .1;   }
+.opacity-5p  { opacity: .05;  }
+.opacity-2p5p { opacity: .025; }
+.opacity-0, 
+.opacity-0p { opacity: 0; }

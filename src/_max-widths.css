@@ -1,0 +1,94 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   MAX WIDTHS
+
+*/
+
+/* Size variables */
+:root {
+  --xxxsmall: 0.0625rem;
+  --xxsmall: 0.125rem;
+  --xsmall: 0.25rem;
+  --small: 0.5rem;
+  --medium: 1rem;
+  --large: 2rem;
+  --xlarge: 4rem;
+  --xxlarge: 8rem;
+  --xxxlarge: 16rem;
+  --xxxxlarge: 32rem;
+  --xxxxxlarge: 48rem;
+  --xxxxxxlarge: 64rem;
+  --xxxxxxxlarge: 96rem;
+}
+
+/* Max Width Percentages */
+
+.maxwidth-100p  { max-width: 100%; }
+
+/* Max Width Scale */
+
+.maxwidth-medium  {  max-width: var(--medium); }
+.maxwidth-large  {  max-width: var(--large); }
+.maxwidth-xlarge  {  max-width: var(--xlarge); }
+.maxwidth-xxlarge  {  max-width: var(--xxlarge); }
+.maxwidth-xxxlarge  {  max-width: var(--xxxlarge); }
+.maxwidth-xxxxlarge  {  max-width: var(--xxxxlarge); }
+.maxwidth-xxxxxlarge  {  max-width: var(--xxxxxlarge); }
+.maxwidth-xxxxxxlarge  {  max-width: var(--xxxxxxlarge); }
+.maxwidth-xxxxxxxlarge  {  max-width: var(--xxxxxxxlarge); }
+
+/* Max Width String Properties */
+
+.maxwidth-none { max-width: none; }
+
+@media (--breakpoint-not-small) {
+  .maxwidth-100p-ns  { max-width: 100%; }
+
+  .maxwidth-medium-ns  {  max-width: var(--medium); }
+  .maxwidth-large-ns  {  max-width: var(--large); }
+  .maxwidth-xlarge-ns  {  max-width: var(--xlarge); }
+  .maxwidth-xxlarge-ns  {  max-width: var(--xxlarge); }
+  .maxwidth-xxxlarge-ns  {  max-width: var(--xxxlarge); }
+  .maxwidth-xxxxlarge-ns  {  max-width: var(--xxxxlarge); }
+  .maxwidth-xxxxxlarge-ns  {  max-width: var(--xxxxxlarge); }
+  .maxwidth-xxxxxxlarge-ns  {  max-width: var(--xxxxxxlarge); }
+  .maxwidth-xxxxxxxlarge-ns  {  max-width: var(--xxxxxxxlarge); }
+
+  .maxwidth-none-ns { max-width: none; }
+}
+
+@media (--breakpoint-medium) {
+  .maxwidth-100p-m  { max-width: 100%; }
+
+  .maxwidth-medium-m  {  max-width: var(--medium); }
+  .maxwidth-large-m  {  max-width: var(--large); }
+  .maxwidth-xlarge-m  {  max-width: var(--xlarge); }
+  .maxwidth-xxlarge-m  {  max-width: var(--xxlarge); }
+  .maxwidth-xxxlarge-m  {  max-width: var(--xxxlarge); }
+  .maxwidth-xxxxlarge-m  {  max-width: var(--xxxxlarge); }
+  .maxwidth-xxxxxlarge-m  {  max-width: var(--xxxxxlarge); }
+  .maxwidth-xxxxxxlarge-m  {  max-width: var(--xxxxxxlarge); }
+  .maxwidth-xxxxxxxlarge-m  {  max-width: var(--xxxxxxxlarge); }
+
+  .maxwidth-none-m { max-width: none; }
+}
+
+@media (--breakpoint-large) {
+  .maxwidth-100p-l  { max-width: 100%; }
+
+  .maxwidth-medium-l  {  max-width: var(--medium); }
+  .maxwidth-large-l  {  max-width: var(--large); }
+  .maxwidth-xlarge-l  {  max-width: var(--xlarge); }
+  .maxwidth-xxlarge-l  {  max-width: var(--xxlarge); }
+  .maxwidth-xxxlarge-l  {  max-width: var(--xxxlarge); }
+  .maxwidth-xxxxlarge-l  {  max-width: var(--xxxxlarge); }
+  .maxwidth-xxxxxlarge-l  {  max-width: var(--xxxxxlarge); }
+  .maxwidth-xxxxxxlarge-l  {  max-width: var(--xxxxxxlarge); }
+  .maxwidth-xxxxxxxlarge-l  {  max-width: var(--xxxxxxxlarge); }
+
+  .maxwidth-none-l { max-width: none; }
+}
