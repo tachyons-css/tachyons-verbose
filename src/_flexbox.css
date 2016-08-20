@@ -1,12 +1,23 @@
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
 FLEXBOX
 
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
  */
 
-.flex, .display-flex { display: flex }
+.flex, .display-flex { display: flex; }
+.inlineflex, .display-inlineflex { display: inline-flex; }
 
-/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
+/* 1. Fix for Chrome 44 bug.
+https://code.google.com/p/chromium/issues/detail?id=506893 */
 .flex-auto {
   flex: 1 1 auto;
   min-width: 0; /* 1 */
@@ -17,6 +28,8 @@ FLEXBOX
 
 .flex-column,
 .flexdirection-column   { flex-direction: column; }
+.flex-row,
+.flexdirection-row      { flex-direction: row; }
 .flex-wrap,
 .flexwrap-wrap          { flex-wrap: wrap; }
 
@@ -70,7 +83,9 @@ FLEXBOX
 
 @media (--breakpoint-not-small) {
   .flex-ns,
-  .display-flex-ns { display: flex }
+  .display-flex-ns { display: flex; }
+  .inlineflex-ns,
+  .display-inlineflex-ns { display: inline-flex; }
   .flex-auto {
     flex: 1 1 auto;
     min-width: 0; /* 1 */
@@ -79,6 +94,8 @@ FLEXBOX
   .flex-none-ns              { flex: none; }
   .flex-column-ns,
   .flexdirection-column-ns   { flex-direction: column; }
+  .flex-row-ns,
+  .flexdirection-row-ns      { flex-direction: row; }
   .flex-wrap-ns,
   .flexwrap-wrap-ns          { flex-wrap: wrap; }
   .alignitems-flexstart-ns,
@@ -131,7 +148,9 @@ FLEXBOX
 }
 @media (--breakpoint-medium) {
   .flex-m,
-  .display-flex-m { display: flex }
+  .display-flex-m { display: flex; }
+  .inlineflex-m,
+  .display-inlineflex-m { display: inline-flex; }
   .flex-auto {
     flex: 1 1 auto;
     min-width: 0; /* 1 */
@@ -140,6 +159,8 @@ FLEXBOX
   .flex-none-m              { flex: none; }
   .flex-column-m,
   .flexdirection-column-m   { flex-direction: column; }
+  .flex-row-m,
+  .flexdirection-row-m      { flex-direction: row; }
   .flex-wrap-m,
   .flexwrap-wrap-m          { flex-wrap: wrap; }
   .alignitems-flexstart-m,
@@ -192,7 +213,9 @@ FLEXBOX
 }
 @media (--breakpoint-large) {
   .flex-l,
-  .display-flex-l { display: flex }
+  .display-flex-l { display: flex; }
+  .inlineflex-l,
+  .display-inlineflex-l { display: inline-flex; }
   .flex-auto {
     flex: 1 1 auto;
     min-width: 0; /* 1 */
@@ -201,6 +224,8 @@ FLEXBOX
   .flex-none-l              { flex: none; }
   .flex-column-l,
   .flexdirection-column-l   { flex-direction: column; }
+  .flex-row-l,
+  .flexdirection-row-l      { flex-direction: row; }
   .flex-wrap-l,
   .flexwrap-wrap-l          { flex-wrap: wrap; }
   .alignitems-flexstart-l,

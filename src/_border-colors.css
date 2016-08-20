@@ -89,6 +89,8 @@
 .bordercolor-gray,
 .bordercolor-grey {         border-color: var(--gray); }
 .bordercolor-silver {       border-color: var(--silver); }
+.bordercolor-moongray,
+.bordercolor-moongrey {       border-color: var(--moon-gray); }
 .bordercolor-lightsilver { border-color: var(--light-silver); }
 .bordercolor-lightgray,
 .bordercolor-lightgrey {   border-color: var(--light-gray); }

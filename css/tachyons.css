@@ -1,4 +1,25 @@
-/* TACHYONS v4.0.4| github.com/tachyons-css/tachyons */
+/* TACHYONS v4.0.8 | github.com/tachyons-css/tachyons */
+/*
+ *    ████████╗ █████╗  ██████╗██╗  ██╗██╗   ██╗ ██████╗ ███╗   ██╗███████╗
+ *    ╚══██╔══╝██╔══██╗██╔════╝██║  ██║╚██╗ ██╔╝██╔═══██╗████╗  ██║██╔════╝
+ *       ██║   ███████║██║     ███████║ ╚████╔╝ ██║   ██║██╔██╗ ██║███████╗
+ *       ██║   ██╔══██║██║     ██╔══██║  ╚██╔╝  ██║   ██║██║╚██╗██║╚════██║
+ *       ██║   ██║  ██║╚██████╗██║  ██║   ██║   ╚██████╔╝██║ ╚████║███████║
+ *       ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+ *
+ *    TABLE OF CONTENTS
+ *
+ *    1. External Library Includes
+ *       - Normalize.css | http://normalize.css.github.io
+ *    2. Tachyons Modules
+ *    3. Variables
+ *       - Media Queries
+ *       - Colors
+ *    4. Debugging
+ *       - Debug all
+ *       - Debug children
+ *
+ */
 /* External Library Includes */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -199,16 +220,6 @@ textarea { overflow: auto; }
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
-/* Variables */
-/*
-
-   Tachyons
-   COLOR VARIABLES
-
-   Grayscale
-   - Solids
-   - Transparencies
-*/
 /* Modules */
 /*
   Box Sizing
@@ -267,6 +278,8 @@ input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
 .bordercolor-gray { border-color: #777; }
 .bordercolor-grey { border-color: #777; }
 .bordercolor-silver { border-color: #999; }
+.bordercolor-moongray { border-color: #ccc; }
+.bordercolor-moongrey { border-color: #ccc; }
 .bordercolor-lightsilver { border-color: #aaa; }
 .bordercolor-lightgray { border-color: #eee; }
 .bordercolor-lightgrey { border-color: #eee; }
@@ -485,12 +498,20 @@ input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
 
 FLEXBOX
 
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
  */
 .flex, .display-flex { display: flex; }
-/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
+.inlineflex, .display-inlineflex { display: inline-flex; }
+/* 1. Fix for Chrome 44 bug.
+https://code.google.com/p/chromium/issues/detail?id=506893 */
 .flex-auto { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
 .flex-none { flex: none; }
 .flex-column, .flexdirection-column { flex-direction: column; }
+.flex-row, .flexdirection-row { flex-direction: row; }
 .flex-wrap, .flexwrap-wrap { flex-wrap: wrap; }
 .alignitems-flexstart, .alignitems-start { align-items: flex-start; }
 .alignitems-flexend, .alignitems-end { align-items: flex-end; }
@@ -555,6 +576,7 @@ FLEXBOX
 /* Monospaced Typefaces (for code) */
 /* From http://cssfontstack.com */
 code, .code { font-family: Consolas, monaco, monospace; }
+.courier { font-family: 'Courier Next', courier, monospace; }
 /* Sans-Serif Typefaces */
 .helvetica { font-family: 'helvetica neue', helvetica, sans-serif; }
 .avenir { font-family: 'avenir next', avenir, sans-serif; }
@@ -564,7 +586,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bodoni { font-family: "Bodoni MT", serif; }
 .calisto { font-family: "Calisto MT", serif; }
 .garamond { font-family: garamond, serif; }
-.baskerville { font-family: garamond, serif; }
+.baskerville { font-family: baskerville, serif; }
 /*
 
    FONT STYLE
@@ -623,9 +645,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
    LETTER SPACING
 
 */
-.tracked, .letterspacing-tracked { letter-spacing: .16em; }
+.tracked, .letterspacing-tracked { letter-spacing: .1em; }
 .trackedtight, .letterspacing-tight { letter-spacing: -.0.05em; }
-.megatracked, .letterspacing-megatracked { letter-spacing: .32em; }
+.megatracked, .letterspacing-megatracked { letter-spacing: .25em; }
 /*
 
    LINE HEIGHT / LEADING
@@ -1281,11 +1303,14 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
 .grow { transition: transform .2s; }
-.grow:hover { transform: scale( 1.05 ); }
+.grow:hover, .grow:focus { transform: scale( 1.05 ); }
 .growlarge, .grow-large { transition: transform .2s; }
-.growlarge:hover, .grow-large:hover { transform: scale( 1.2 ); }
+.growlarge:hover, .grow-large:hover, .growlarge:focus, .grow-large:focus { transform: scale( 1.2 ); }
 /* Add pointer on hover */
 .pointer:hover { cursor: pointer; }
+/* Add shadow on hover */
+.hovershadow:hover, .shadowhover:hover, .shadow-hover:hover, .hovershadow:focus,
+.shadowhover:focus, .shadow-hover:focus { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
 /*
 
   STYLES
@@ -1293,9 +1318,17 @@ code, .code { font-family: Consolas, monaco, monospace; }
   Add custom styles here.
 
 */
-/* Import media queries at end as this will allow you to customize them
- * and override what is currently declared in each module.
- */
+/* Variables */
+/* Importing here will allow you to override any variables in the modules */
+/*
+
+   Tachyons
+   COLOR VARIABLES
+
+   Grayscale
+   - Solids
+   - Transparencies
+*/
 /*
 
   CUSTOM MEDIA QUERIES
@@ -1332,7 +1365,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
   }
 
 */
-/* DEBUGGING */
+/* Debugging */
 /*
 
   DEBUG CHILDREN
@@ -1342,7 +1375,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 */
 .debug * { outline: 1px solid gold; }
-/* Uncomment out this line and rebuild if you want to debug your layout.*/
+/* Uncomment out the  line below and rebuild the css if you want to use pesticide.io to debug layout .*/
 /* @import './_debug'; */
 @media screen and (min-width: 30em) {
  .backgroundsize-cover-ns { background-size: cover; }
@@ -1421,9 +1454,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .display-tablecolumngroup-ns { display: table-column-group; }
  .displaytable-fixed-ns, .tablelayout-fixed-ns { table-layout: fixed; width: 100%; }
  .flex-ns, .display-flex-ns { display: flex; }
+ .inlineflex-ns, .display-inlineflex-ns { display: inline-flex; }
  .flex-auto { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
  .flex-none-ns { flex: none; }
  .flex-column-ns, .flexdirection-column-ns { flex-direction: column; }
+ .flex-row-ns, .flexdirection-row-ns { flex-direction: row; }
  .flex-wrap-ns, .flexwrap-wrap-ns { flex-wrap: wrap; }
  .alignitems-flexstart-ns, .alignitems-start-ns { align-items: flex-start; }
  .alignitems-flexend-ns, .alignitems-end-ns { align-items: flex-end; }
@@ -1487,9 +1522,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .height-100p-ns { height: 100%; }
  .height-auto-ns { height: auto; }
  .height-inherit-ns { height: inherit; }
- .tracked-ns, .letterspacing-tracked-ns { letter-spacing: .16em; }
+ .tracked-ns, .letterspacing-tracked-ns { letter-spacing: .1em; }
  .trackedtight-ns, .letterspacing-tight-ns { letter-spacing: -.0.05em; }
- .megatracked-ns, .letterspacing-megatracked-ns { letter-spacing: .32em; }
+ .megatracked-ns, .letterspacing-megatracked-ns { letter-spacing: .25em; }
  .lineheight-solid, .lineheight-1-ns { line-height: 1; }
  .lineheight-title-ns, .lineheight-1p3-ns { line-height: 1.3; }
  .lineheight-copy-ns, .lineheight-1p6-ns { line-height: 1.6; }
@@ -1796,9 +1831,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .display-tablecolumngroup-m { display: table-column-group; }
  .displaytable-fixed-m, .tablelayout-fixed-m { table-layout: fixed; width: 100%; }
  .flex-m, .display-flex-m { display: flex; }
+ .inlineflex-m, .display-inlineflex-m { display: inline-flex; }
  .flex-auto { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
  .flex-none-m { flex: none; }
  .flex-column-m, .flexdirection-column-m { flex-direction: column; }
+ .flex-row-m, .flexdirection-row-m { flex-direction: row; }
  .flex-wrap-m, .flexwrap-wrap-m { flex-wrap: wrap; }
  .alignitems-flexstart-m, .alignitems-start-m { align-items: flex-start; }
  .alignitems-flexend-m, .alignitems-end-m { align-items: flex-end; }
@@ -1862,9 +1899,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .height-100p-m { height: 100%; }
  .height-auto-m { height: auto; }
  .height-inherit-m { height: inherit; }
- .tracked-m, .letterspacing-tracked-m { letter-spacing: .16em; }
+ .tracked-m, .letterspacing-tracked-m { letter-spacing: .1em; }
  .trackedtight-m, .letterspacing-tight-m { letter-spacing: -.0.05em; }
- .megatracked-m, .letterspacing-megatracked-m { letter-spacing: .32em; }
+ .megatracked-m, .letterspacing-megatracked-m { letter-spacing: .25em; }
  .lineheight-solid, .lineheight-1-m { line-height: 1; }
  .lineheight-title-m, .lineheight-1p3-m { line-height: 1.3; }
  .lineheight-copy-m, .lineheight-1p6-m { line-height: 1.6; }
@@ -2170,9 +2207,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .display-tablecolumngroup-l { display: table-column-group; }
  .displaytable-fixed-l, .tablelayout-fixed-l { table-layout: fixed; width: 100%; }
  .flex-l, .display-flex-l { display: flex; }
+ .inlineflex-l, .display-inlineflex-l { display: inline-flex; }
  .flex-auto { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
  .flex-none-l { flex: none; }
  .flex-column-l, .flexdirection-column-l { flex-direction: column; }
+ .flex-row-l, .flexdirection-row-l { flex-direction: row; }
  .flex-wrap-l, .flexwrap-wrap-l { flex-wrap: wrap; }
  .alignitems-flexstart-l, .alignitems-start-l { align-items: flex-start; }
  .alignitems-flexend-l, .alignitems-end-l { align-items: flex-end; }
@@ -2236,9 +2275,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .height-100p-l { height: 100%; }
  .height-auto-l { height: auto; }
  .height-inherit-l { height: inherit; }
- .tracked-l, .letterspacing-tracked-l { letter-spacing: .16em; }
+ .tracked-l, .letterspacing-tracked-l { letter-spacing: .1em; }
  .trackedtight-l, .letterspacing-tight-l { letter-spacing: -.0.05em; }
- .megatracked-l, .letterspacing-megatracked-l { letter-spacing: .32em; }
+ .megatracked-l, .letterspacing-megatracked-l { letter-spacing: .25em; }
  .lineheight-solid, .lineheight-1-l { line-height: 1; }
  .lineheight-title-l, .lineheight-1p3-l { line-height: 1.3; }
  .lineheight-copy-l, .lineheight-1p6-l { line-height: 1.6; }
