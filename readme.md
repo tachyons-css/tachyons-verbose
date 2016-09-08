@@ -1,8 +1,10 @@
 # TACHYONS (verbose)
 
-Functional CSS for humans. Verbose edition.
+Functional css for humans. Verbose edition.
 
-Quickly build and design new UI without writing CSS.
+Quickly build and design new UI without writing css.
+
+Version 4.3.0.
 
 ## Principles
 
@@ -12,7 +14,7 @@ Quickly build and design new UI without writing CSS.
 * Designing in the browser should be easy
 * It should be easy to change any interface or part of an interface without breaking any existing interfaces
 * Doing one thing extremely well promotes reusability and reduces repetition
-* CSS is global. HTML is not. Send the smallest amount of code to the user as possible.
+* css is global. HTML is not. Send the smallest amount of code to the user as possible.
 
 ## Features
 
@@ -126,6 +128,9 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * http://johnotander.com
 * http://randoma11y.com
 * http://designbytyping.com
+* http://colepeters.com
+* https://atmin.github.io/funponent/
+* http://blog.colepeters.com
 
 And of course...
 * http://tachyons.io

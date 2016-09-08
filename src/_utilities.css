@@ -22,9 +22,38 @@
   position: relative;
 }
 
-.aspect-ratio-16x9, .aspsectratio-16x9 { padding-bottom: 56.25%; }
-.aspect-ratio-4x3, .aspectratio-4x3 {  padding-bottom: 75%; }
-.aspect-ratio-8x5, .aspectratio-8x5 {  padding-bottom: 62.5%; }
+.aspect-ratio-16x9, 
+.aspsectratio-16x9 { padding-bottom: 56.25%; }
+
+.aspect-ratio-9x16,
+.aspectratio-9x16 { padding-bottom: 177.77%; }
+
+.aspect-ratio-4x3, 
+.aspectratio-4x3 {  padding-bottom: 75%; }
+
+.aspect-ratio-3x4,
+.aspectratio-3x4 {  padding-bottom: 133.33%; }
+
+.aspect-ratio-6x4,
+.aspectratio-6x4 {  padding-bottom: 66.6%; }
+
+.aspect-ratio-4x6,
+.aspectratio-4x6 {  padding-bottom: 150%; }
+
+.aspect-ratio-8x5, 
+.aspectratio-8x5 {  padding-bottom: 62.5%; }
+
+.aspect-ratio-5x8,
+.aspectratio-5x8 {  padding-bottom: 160%; }
+
+.aspect-ratio-7x5,
+.aspectratio-7x5 {  padding-bottom: 71.42%; }
+
+.aspect-ratio-5x7,
+.aspectratio-5x7 {  padding-bottom: 140%; }
+
+.aspect-ratio-1x1,
+.aspectratio-1x1 { padding-bottom: 100%; }
 
 .aspect-ratio-object, .aspectratio-object {
     position: absolute;

@@ -1,7 +1,3 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-
 /*
 
    BORDER RADIUS
@@ -30,6 +26,7 @@
   .borderradius-4 {        border-radius: 1rem; }
   .borderradius-5 {        border-radius: 2rem; }
   .borderradius-100p {     border-radius: 100%; }
+  .borderradius-pill {     border-radius: 9999px; }
   .borderradius-bottom {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -56,6 +53,7 @@
   .borderradius-4-ns {     border-radius: 1rem; }
   .borderradius-5-ns {     border-radius: 2rem; }
   .borderradius-100p-ns {  border-radius: 100%; }
+  .borderradius-pill-ns {     border-radius: 9999px; }
   .borderradius-bottom-ns {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -83,6 +81,7 @@
   .borderradius-4-m {     border-radius: 1rem; }
   .borderradius-5-m {     border-radius: 2rem; }
   .borderradius-100p-m {  border-radius: 100%; }
+  .borderradius-pill-m {     border-radius: 9999px; }
   .borderradius-bottom-m {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -110,6 +109,7 @@
   .borderradius-4-l {     border-radius: 1rem; }
   .borderradius-5-l {     border-radius: 2rem; }
   .borderradius-100p-l {  border-radius: 100%; }
+  .borderradius-pill-l {     border-radius: 9999px; }
   .borderradius-bottom-l {
       border-top-left-radius: 0;
       border-top-right-radius: 0;

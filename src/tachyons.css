@@ -1,4 +1,4 @@
-/* TACHYONS v4.0.8 | github.com/tachyons-css/tachyons */
+/* TACHYONS v4.3.0 | github.com/tachyons-css/tachyons */
 
 
 /*
@@ -30,7 +30,9 @@
 
 /* Modules */
 @import './_box-sizing';
+@import './_images';
 @import './_background-size';
+@import './_outlines';
 @import './_borders';
 @import './_border-colors';
 @import './_border-radius';
@@ -69,8 +71,8 @@
 @import './_visibility';
 @import './_white-space';
 @import './_vertical-align';
-@import './_z-index';
 @import './_hovers';
+@import './_z-index';
 @import './_styles';
 
 /* Variables */
@@ -79,6 +81,5 @@
 @import './_media-queries';
 
 /* Debugging */
-@import './_debug_children';
-/* Uncomment out the  line below and rebuild the css if you want to use pesticide.io to debug layout .*/
-/* @import './_debug'; */
+@import './_debug-children';
+@import './_debug-grid';

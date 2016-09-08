@@ -1,7 +1,3 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-
 /*
 
    HEIGHTS
@@ -33,12 +29,19 @@
 .height-xxlarge     {  height: var(--xxlarge); }
 .height-xxxlarge    {  height: var(--xxxlarge); }
 
-/* Height Percentages */
+/* Height Percentages - Based off of height of parent */
 
 .height-25p  {  height:  25%; }
 .height-50p  {  height:  50%; }
 .height-75p  {  height:  75%; }
 .height-100p { height: 100%; }
+
+/* Screen Height Percentage */
+
+.height-25vh {  height:  25vh; }
+.height-50vh {  height:  50vh; }
+.height-75vh {  height:  75vh; }
+.height-100vh { height: 100vh; }
 
 /* String Properties */
 
@@ -59,6 +62,10 @@
   .height-50p-ns { height: 50%; }
   .height-75p-ns { height: 75%; }
   .height-100p-ns { height: 100%; }
+  .height-25vh-ns {  height:  25vh; }
+  .height-50vh-ns {  height:  50vh; }
+  .height-75vh-ns {  height:  75vh; }
+  .height-100vh-ns { height: 100vh; }
   .height-auto-ns { height: auto; }
   .height-inherit-ns { height: inherit; }
 }
@@ -77,6 +84,10 @@
   .height-50p-m { height: 50%; }
   .height-75p-m { height: 75%; }
   .height-100p-m { height: 100%; }
+  .height-25vh-m {  height:  25vh; }
+  .height-50vh-m {  height:  50vh; }
+  .height-75vh-m {  height:  75vh; }
+  .height-100vh-m { height: 100vh; }
   .height-auto-m { height: auto; }
   .height-inherit-m { height: inherit; }
 }
@@ -95,6 +106,10 @@
   .height-50p-l { height: 50%; }
   .height-75p-l { height: 75%; }
   .height-100p-l { height: 100%; }
+  .height-25vh-l {  height:  25vh; }
+  .height-50vh-l {  height:  50vh; }
+  .height-75vh-l {  height:  75vh; }
+  .height-100vh-l { height: 100vh; }
   .height-auto-l { height: auto; }
   .height-inherit-l { height: inherit; }
 }
