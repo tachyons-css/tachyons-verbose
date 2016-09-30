@@ -1,6 +1,7 @@
 /*
 
    BORDER COLORS
+   Docs: http://tachyons.io/docs/themes/borders/
 
    Border colors can be used to extend the base
    border classes border, border-top, border-bottom, border-right,
@@ -57,16 +58,20 @@
 
 .bordercolor-darkred { border-color: var(--dark-red); }
 .bordercolor-red { border-color: var(--red); }
+.bordercolor-lightred { border-color: var(--light-red); }
 .bordercolor-orange { border-color: var(--orange); }
 .bordercolor-gold { border-color:  var(--gold); }
 .bordercolor-yellow { border-color:  var(--yellow); }
+.bordercolor-lightyellow { border-color: var(--light-yellow); }
 .bordercolor-purple { border-color:  var(--purple); }
 .bordercolor-lightpurple { border-color:  var(--light-purple); }
-.bordercolor-hotpink { border-color:  var(--hot-pink); }
 .bordercolor-darkpink { border-color:  var(--dark-pink); }
+.bordercolor-hotpink { border-color:  var(--hot-pink); }
 .bordercolor-pink { border-color:  var(--pink); }
+.bordercolor-lightpink { border-color:  var(--light-pink); }
 .bordercolor-darkgreen { border-color:  var(--dark-green); }
 .bordercolor-green { border-color:  var(--green); }
+.bordercolor-lightgreen { border-color: var(--light-green); }
 .bordercolor-navy { border-color:  var(--navy); }
 .bordercolor-darkblue { border-color:  var(--dark-blue); }
 .bordercolor-blue { border-color:  var(--blue); }
@@ -75,8 +80,6 @@
 .bordercolor-washedblue { border-color:  var(--washed-blue); }
 .bordercolor-washedgreen { border-color:  var(--washed-green); }
 .bordercolor-washedyellow { border-color:  var(--washed-yellow); }
-.bordercolor-lightpink { border-color:  var(--light-pink); }
-.bordercolor-lightyellow { border-color:  var(--light-yellow) }
-.bordercolor-lightred { border-color:  var(--light-red); }
+.bordercolor-washedred { border-color: var(--washed-red); }
 
 .bordercolor-transparent { border-color: var(--transparent); }

@@ -4,7 +4,7 @@ Functional css for humans. Verbose edition.
 
 Quickly build and design new UI without writing css.
 
-Version 4.3.0.
+Version 4.5.3.
 
 ## Principles
 
@@ -92,11 +92,18 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 ## Websites that use Tachyons
 (if you have a project that uses Tachyons feel free to make a PR to add it to this list)
 
+* https://coralproject.net
 * https://goldenstaterecord.com
+* https://segment.com
+* https://voteplz.com
 * http://bluebottlecoffee.com
+* http://topher.design
+* http://iheanyi.com/
+* http://johnotander.com
+* https://vimgifs.com
 * http://aboutlife.com
 * http://joinoneroom.com
-* https://vimgifs.com
+* http://cyclelove.cc
 * http://jon.gold/txt
 * http://rene.jon.gold
 * https://tinychime.github.io/jekyons/
@@ -104,9 +111,9 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * http://prnt.cc
 * http://spenhar.com
 * http://randoma11y.com
-* http://cyclelove.cc
 * http://www.csspurge.com
 * http://clrs.cc
+* https://cljsjs.github.io
 * http://mrmrs.io/gradients
 * https://www.getnoodl.es
 * https://natwelch.com
@@ -125,12 +132,15 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * https://accessmyinfo.hk/#/
 * https://accessmyinfo.org/#/
 * http://rene.jon.gold
-* http://johnotander.com
 * http://randoma11y.com
 * http://designbytyping.com
 * http://colepeters.com
 * https://atmin.github.io/funponent/
 * http://blog.colepeters.com
+* http://filipaonunes.com
+* https://vakra.band
+* http://tylernford.com
+* https://adventuretron.org
 
 And of course...
 * http://tachyons.io

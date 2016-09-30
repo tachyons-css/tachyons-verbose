@@ -1,4 +1,4 @@
-/* TACHYONS v4.3.0 | github.com/tachyons-css/tachyons */
+/* TACHYONS v4.5.3 | http://tachyons.io */
 /*
  *    ████████╗ █████╗  ██████╗██╗  ██╗██╗   ██╗ ██████╗ ███╗   ██╗███████╗
  *    ╚══██╔══╝██╔══██╗██╔════╝██║  ██║╚██╗ ██╔╝██╔═══██╗████╗  ██║██╔════╝
@@ -21,7 +21,7 @@
  *
  */
 /* External Library Includes */
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/* normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
@@ -100,7 +100,7 @@ h1 { font-size: 2em; margin: .67em 0; }
 /**
  * Add the correct background and color in IE 9-.
  */
-mark { background-color: #ff0; color: #000; }
+mark { background-color: #ffd700; color: #000; }
 /**
  * Add the correct font size in all browsers.
  */
@@ -222,7 +222,9 @@ textarea { overflow: auto; }
 ::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
 /* Modules */
 /*
-  Box Sizing
+
+  BOX SIZING
+
 */
 html, body, div, article, section, main, footer, header, form, fieldset, pre,
 code, p, ul, ol, li, dl, dt, dd, textarea, input[type="email"],
@@ -231,6 +233,7 @@ input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
 /*
 
    IMAGES
+   Docs: http://tachyons.io/docs/elements/images/
 
 */
 /* Responsive images! */
@@ -238,6 +241,7 @@ img { max-width: 100%; }
 /*
 
    BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
 
    Media Query Extensions:
      -ns = not-small
@@ -249,8 +253,30 @@ img { max-width: 100%; }
   Often used in combination with background image set as an inline style
   on an html element.
 */
-.backgroundsize-cover { background-size: cover; }
-.backgroundsize-contain { background-size: contain; }
+.backgroundsize-cover { background-size: cover !important; }
+.backgroundsize-contain { background-size: contain !important; }
+/*
+
+    BACKGROUND POSITION
+
+    Modifiers:
+    -center = center center
+    -top = top center
+    -right = center right
+    -bottom = bottom center
+    -left = center left
+
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+ */
+.backgroundposition-center { background-repeat: no-repeat; background-position: center center; }
+.backgroundposition-top { background-repeat: no-repeat; background-position: top center; }
+.backgroundposition-right { background-repeat: no-repeat; background-position: center right; }
+.backgroundposition-bottom { background-repeat: no-repeat; background-position: bottom center; }
+.backgroundposition-left { background-repeat: no-repeat; background-position: center left; }
 /*
 
   OUTLINES
@@ -262,6 +288,7 @@ img { max-width: 100%; }
 /*
 
    BORDER BASE
+   Docs: http://tachyons.io/docs/themes/borders/
 
 */
 .border, .border-all { border-style: solid; border-width: 1px; }
@@ -273,6 +300,7 @@ img { max-width: 100%; }
 /*
 
    BORDER COLORS
+   Docs: http://tachyons.io/docs/themes/borders/
 
    Border colors can be used to extend the base
    border classes border, border-top, border-bottom, border-right,
@@ -323,18 +351,22 @@ img { max-width: 100%; }
 .bordercolor-black05 { border-color: rgba( 0, 0, 0, .05 ); }
 .bordercolor-black025 { border-color: rgba( 0, 0, 0, .025 ); }
 .bordercolor-black0125 { border-color: rgba( 0, 0, 0, .0125 ); }
-.bordercolor-darkred { border-color: #f00008; }
-.bordercolor-red { border-color: #ff3223; }
-.bordercolor-orange { border-color: #f3a801; }
-.bordercolor-gold { border-color: #f2c800; }
-.bordercolor-yellow { border-color: #ffde37; }
-.bordercolor-purple { border-color: #7d5da9; }
-.bordercolor-lightpurple { border-color: #8d4f92; }
-.bordercolor-hotpink { border-color: #d62288; }
-.bordercolor-darkpink { border-color: #c64774; }
-.bordercolor-pink { border-color: #f49cc8; }
-.bordercolor-darkgreen { border-color: #006c71; }
-.bordercolor-green { border-color: #41d69f; }
+.bordercolor-darkred { border-color: #e7040f; }
+.bordercolor-red { border-color: #ff4136; }
+.bordercolor-lightred { border-color: #ff725c; }
+.bordercolor-orange { border-color: #ff6300; }
+.bordercolor-gold { border-color: #ffb700; }
+.bordercolor-yellow { border-color: #ffd700; }
+.bordercolor-lightyellow { border-color: #fbf1a9; }
+.bordercolor-purple { border-color: #5e2ca5; }
+.bordercolor-lightpurple { border-color: #a463f2; }
+.bordercolor-darkpink { border-color: #d5008f; }
+.bordercolor-hotpink { border-color: #ff41b4; }
+.bordercolor-pink { border-color: #ff80cc; }
+.bordercolor-lightpink { border-color: #ffa3d7; }
+.bordercolor-darkgreen { border-color: #137752; }
+.bordercolor-green { border-color: #19a974; }
+.bordercolor-lightgreen { border-color: #9eebcf; }
 .bordercolor-navy { border-color: #001b44; }
 .bordercolor-darkblue { border-color: #00449e; }
 .bordercolor-blue { border-color: #357edd; }
@@ -342,14 +374,13 @@ img { max-width: 100%; }
 .bordercolor-lightestblue { border-color: #cdecff; }
 .bordercolor-washedblue { border-color: #f6fffe; }
 .bordercolor-washedgreen { border-color: #e8fdf5; }
-.bordercolor-washedyellow { border-color: #fff8d5; }
-.bordercolor-lightpink { border-color: #efa4b8; }
-.bordercolor-lightyellow { border-color: #f3dd70; }
-.bordercolor-lightred { border-color: #ffd3c0; }
+.bordercolor-washedyellow { border-color: #fffceb; }
+.bordercolor-washedred { border-color: #ffdfdf; }
 .bordercolor-transparent { border-color: transparent; }
 /*
 
    BORDER RADIUS
+   Docs: http://tachyons.io/docs/themes/border-radius/
 
    Modifiers:
      0    = 0/none
@@ -381,6 +412,7 @@ img { max-width: 100%; }
 /*
 
    BORDER STYLES
+   Docs: http://tachyons.io/docs/themes/borders/
 
    Media Query Extensions:
      -ns = not-small
@@ -395,6 +427,7 @@ img { max-width: 100%; }
 /*
 
    BORDER WIDTHS
+   Docs: http://tachyons.io/docs/themes/borders/
 
    Modifiers:
      0 = 0 width border
@@ -423,6 +456,7 @@ img { max-width: 100%; }
 /*
 
   BOX-SHADOW
+  Docs: http://tachyons.io/docs/themes/box-shadow/
 
   Media Query Extensions:
    -ns = not-small
@@ -444,6 +478,7 @@ img { max-width: 100%; }
 /*
 
    COORDINATES
+   Docs: http://tachyons.io/docs/layout/position/
 
    Use in combination with the position module.
 
@@ -472,6 +507,7 @@ img { max-width: 100%; }
 /*
 
    CLEARFIX
+   http://tachyons.io/docs/layout/clearfix/
 
 */
 /* Nicolas Gallaghers Clearfix solution
@@ -486,6 +522,7 @@ img { max-width: 100%; }
 /*
 
    DISPLAY
+   Docs: http://tachyons.io/docs/layout/display
 
    Media Query Extensions:
      -ns = not-small
@@ -562,6 +599,7 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
 /*
 
    FLOATS
+   http://tachyons.io/docs/layout/floats/
 
    1. Floated elements are automatically rendered as block level elements.
       Setting floats to display inline will fix the double margin bug in
@@ -581,6 +619,7 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
 /*
 
    FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
 
 */
 .sans-serif, .sansserif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
@@ -605,6 +644,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    FONT STYLE
+   Docs: http://tachyons.io/docs/typography/font-style/
 
 */
 .fontstyle-italic, .i { font-style: italic; }
@@ -612,6 +652,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    FONT WEIGHT
+   Docs: http://tachyons.io/docs/typography/font-weight/
 
 */
 .normal, .fontweight-normal { font-weight: normal; }
@@ -631,10 +672,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 */
 .input-reset, .inputreset { -webkit-appearance: none; -moz-appearance: none; }
+.button-reset::-moz-focus-inner, .input-reset::-moz-focus-inner { border: 0; padding: 0; }
 /*
 
    HEIGHTS
-
+   Docs: http://tachyons.io/docs/layout/heights/
 */
 /* Size variables */
 /* Height Scale */
@@ -652,17 +694,20 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .height-50p { height: 50%; }
 .height-75p { height: 75%; }
 .height-100p { height: 100%; }
+.minheight-100p { min-height: 100%; }
 /* Screen Height Percentage */
 .height-25vh { height: 25vh; }
 .height-50vh { height: 50vh; }
 .height-75vh { height: 75vh; }
 .height-100vh { height: 100vh; }
+.minheight-100vh { min-height: 100vh; }
 /* String Properties */
 .height-auto { height: auto; }
 .height-inherit { height: inherit; }
 /*
 
    LETTER SPACING
+   Docs: http://tachyons.io/docs/typography/tracking/
 
 */
 .tracked, .letterspacing-tracked { letter-spacing: .1em; }
@@ -671,6 +716,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
 
 */
 .lineheight-solid, .lineheight-1 { line-height: 1; }
@@ -679,22 +725,25 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    LINKS
+   Docs: http://tachyons.io/docs/elements/links/
 
 */
 .link { text-decoration: none; -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
 .link:link, .link:visited { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
 .link:hover { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
 .link:active { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.link:focus { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
+.link:focus { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; outline: 1px dotted currentColor; }
 /*
 
    LISTS
+   http://tachyons.io/docs/elements/lists/
 
 */
 .list { list-style-type: none; }
 /*
 
    MAX WIDTHS
+   Docs: http://tachyons.io/docs/layout/max-widths/
 
 */
 /* Size variables */
@@ -715,6 +764,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    WIDTHS
+   Docs: http://tachyons.io/docs/layout/widths/
+
+   Modifiers
+     -third = 100% / 3 (Not supported in opera mini or IE8)
+     -auto  = string value auto
 
    Media Query Extensions:
      -ns = not-small
@@ -733,6 +787,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .width-xlarge { width: 4rem; }
 .width-xxlarge { width: 8rem; }
 .width-xxxlarge { width: 16rem; }
+.width-third { width: calc( 100% / 3 ); }
+.width-twothirds { width: calc( 100% / 1.5 ); }
+.width-auto { width: auto; }
 .width-10p { width: 10%; }
 .width-20p { width: 20%; }
 .width-25p { width: 25%; }
@@ -747,7 +804,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .width-80p { width: 80%; }
 .width-90p { width: 90%; }
 .width-100p { width: 100%; }
-.width-auto { width: auto; }
 /*
 
     OVERFLOW
@@ -768,6 +824,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
     POSITIONING
+    Docs: http://tachyons.io/docs/layout/position/
 
  */
 .position-static { position: static; }
@@ -776,7 +833,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .position-fixed { position: fixed; }
 /*
 
-  Opacity
+  OPACITY
+  Docs: http://tachyons.io/docs/themes/opacity/
 
 */
 .opacity-100p { opacity: 1; }
@@ -795,6 +853,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    SKINS
+   Docs: http://tachyons.io/docs/themes/skins/
+
+   Classes for setting foreground and background colors on elements.
+   If you haven't declared a border color, but set border on an element, it will 
+   be set to the current text color. 
 
 */
 /* Text colors */
@@ -833,18 +896,22 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .moongrey { color: #ccc; }
 .nearwhite { color: #f4f4f4; }
 .white { color: #fff; }
-.darkred { color: #f00008; }
-.red { color: #ff3223; }
-.orange { color: #f3a801; }
-.gold { color: #f2c800; }
-.yellow { color: #ffde37; }
-.purple { color: #7d5da9; }
-.lightpurple { color: #8d4f92; }
-.hotpink { color: #d62288; }
-.darkpink { color: #c64774; }
-.pink { color: #f49cc8; }
-.darkgreen { color: #006c71; }
-.green { color: #41d69f; }
+.darkred { color: #e7040f; }
+.red { color: #ff4136; }
+.lightred { color: #ff725c; }
+.orange { color: #ff6300; }
+.gold { color: #ffb700; }
+.yellow { color: #ffd700; }
+.lightyellow { color: #fbf1a9; }
+.purple { color: #5e2ca5; }
+.lightpurple { color: #a463f2; }
+.darkpink { color: #d5008f; }
+.hotpink { color: #ff41b4; }
+.pink { color: #ff80cc; }
+.lightpink { color: #ffa3d7; }
+.darkgreen { color: #137752; }
+.green { color: #19a974; }
+.lightgreen { color: #9eebcf; }
 .navy { color: #001b44; }
 .darkblue { color: #00449e; }
 .blue { color: #357edd; }
@@ -852,10 +919,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .lightestblue { color: #cdecff; }
 .washedblue { color: #f6fffe; }
 .washedgreen { color: #e8fdf5; }
-.washedyellow { color: #fff8d5; }
-.lightpink { color: #efa4b8; }
-.lightyellow { color: #f3dd70; }
-.lightred { color: #ffd3c0; }
+.washedyellow { color: #fffceb; }
+.washedred { color: #ffdfdf; }
 .backgroundcolor-black90 { background-color: rgba( 0, 0, 0, .9 ); }
 .backgroundcolor-black80 { background-color: rgba( 0, 0, 0, .8 ); }
 .backgroundcolor-black70 { background-color: rgba( 0, 0, 0, .7 ); }
@@ -891,18 +956,22 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .backgroundcolor-nearwhite { background-color: #f4f4f4; }
 .backgroundcolor-white { background-color: #fff; }
 .backgroundcolor-transparent { background-color: transparent; }
-.backgroundcolor-darkred { background-color: #f00008; }
-.backgroundcolor-red { background-color: #ff3223; }
-.backgroundcolor-orange { background-color: #f3a801; }
-.backgroundcolor-gold { background-color: #f2c800; }
-.backgroundcolor-yellow { background-color: #ffde37; }
-.backgroundcolor-purple { background-color: #7d5da9; }
-.backgroundcolor-lightpurple { background-color: #8d4f92; }
-.backgroundcolor-hotpink { background-color: #d62288; }
-.backgroundcolor-darkpink { background-color: #c64774; }
-.backgroundcolor-pink { background-color: #f49cc8; }
-.backgroundcolor-darkgreen { background-color: #006c71; }
-.backgroundcolor-green { background-color: #41d69f; }
+.backgroundcolor-darkred { background-color: #e7040f; }
+.backgroundcolor-red { background-color: #ff4136; }
+.backgroundcolor-lightred { background-color: #ff725c; }
+.backgroundcolor-orange { background-color: #ff6300; }
+.backgroundcolor-gold { background-color: #ffb700; }
+.backgroundcolor-yellow { background-color: #ffd700; }
+.backgroundcolor-lightyellow { background-color: #fbf1a9; }
+.backgroundcolor-purple { background-color: #5e2ca5; }
+.backgroundcolor-lightpurple { background-color: #a463f2; }
+.backgroundcolor-darkpink { background-color: #d5008f; }
+.backgroundcolor-hotpink { background-color: #ff41b4; }
+.backgroundcolor-pink { background-color: #ff80cc; }
+.backgroundcolor-lightpink { background-color: #ffa3d7; }
+.backgroundcolor-darkgreen { background-color: #137752; }
+.backgroundcolor-green { background-color: #19a974; }
+.backgroundcolor-lightgreen { background-color: #9eebcf; }
 .backgroundcolor-navy { background-color: #001b44; }
 .backgroundcolor-darkblue { background-color: #00449e; }
 .backgroundcolor-blue { background-color: #357edd; }
@@ -910,112 +979,220 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .backgroundcolor-lightestblue { background-color: #cdecff; }
 .backgroundcolor-washedblue { background-color: #f6fffe; }
 .backgroundcolor-washedgreen { background-color: #e8fdf5; }
-.backgroundcolor-washedyellow { background-color: #fff8d5; }
-.backgroundcolor-lightpink { background-color: #efa4b8; }
-.backgroundcolor-lightyellow { background-color: #f3dd70; }
-.backgroundcolor-lightred { background-color: #ffd3c0; }
-/* Skins for specific pseudoclasses */
+.backgroundcolor-washedyellow { background-color: #fffceb; }
+.backgroundcolor-washedred { background-color: #ffdfdf; }
+/* 
+  
+   SKINS:PSEUDO
+   Customize the color of an element when
+   it is focused or hovered over.
+ 
+ */
 .hover-black:hover { color: #000; }
+.focus-black:focus { color: #000; }
 .hover-nearblack:hover { color: #111; }
+.focus-nearblack:focus { color: #111; }
 .hover-darkgray:hover { color: #333; }
 .hover-darkgrey:hover { color: #333; }
+.focus-darkgray:focus { color: #333; }
+.focus-darkgrey:focus { color: #333; }
 .hover-midgray:hover { color: #555; }
 .hover-midgrey:hover { color: #555; }
+.focus-midgray:focus { color: #555; }
+.focus-midgrey:focus { color: #555; }
 .hover-gray:hover { color: #777; }
 .hover-grey:hover { color: #777; }
+.focus-gray:focus { color: #777; }
+.focus-grey:focus { color: #777; }
 .hover-silver:hover { color: #999; }
+.focus-silver:focus { color: #999; }
 .hover-lightsilver:hover { color: #aaa; }
+.focus-lightsilver:focus { color: #aaa; }
 .hover-moongray:hover { color: #ccc; }
 .hover-moongrey:hover { color: #ccc; }
+.focus-moongray:focus { color: #ccc; }
+.focus-moongrey:focus { color: #ccc; }
 .hover-lightgray:hover { color: #eee; }
 .hover-lightgrey:hover { color: #eee; }
+.focus-lightgray:focus { color: #eee; }
+.focus-lightgrey:focus { color: #eee; }
 .hover-nearwhite:hover { color: #f4f4f4; }
+.focus-nearwhite:focus { color: #f4f4f4; }
 .hover-white:hover { color: #fff; }
+.focus-white:focus { color: #fff; }
 .backgroundcolor-hover-black:hover { background-color: #000; }
 .hover-backgroundcolor-black:hover { background-color: #000; }
+.backgroundcolor-focus-black:focus { background-color: #000; }
+.focus-backgroundcolor-black:focus { background-color: #000; }
 .backgroundcolor-hover-nearblack:hover { background-color: #111; }
 .hover-backgroundcolor-nearblack:hover { background-color: #111; }
+.backgroundcolor-focus-nearblack:focus { background-color: #111; }
+.focus-backgroundcolor-nearblack:focus { background-color: #111; }
 .backgroundcolor-hover-darkgray:hover { background-color: #333; }
 .backgroundcolor-hover-darkgrey:hover { background-color: #333; }
 .hover-backgroundcolor-darkgray:hover { background-color: #333; }
 .hover-backgroundcolor-darkgrey:hover { background-color: #333; }
+.backgroundcolor-focus-darkgray:focus { background-color: #333; }
+.backgroundcolor-focus-darkgrey:focus { background-color: #333; }
+.focus-backgroundcolor-darkgray:focus { background-color: #333; }
+.focus-backgroundcolor-darkgrey:focus { background-color: #333; }
 .backgroundcolor-hover-midgray:hover { background-color: #555; }
 .backgroundcolor-hover-midgrey:hover { background-color: #555; }
 .hover-backgroundcolor-midgray:hover { background-color: #555; }
 .hover-backgroundcolor-midgrey:hover { background-color: #555; }
+.backgroundcolor-focus-midgray:focus { background-color: #555; }
+.backgroundcolor-focus-midgrey:focus { background-color: #555; }
+.focus-backgroundcolor-midgray:focus { background-color: #555; }
+.focus-backgroundcolor-midgrey:focus { background-color: #555; }
 .backgroundcolor-hover-gray:hover { background-color: #777; }
 .backgroundcolor-hover-grey:hover { background-color: #777; }
 .hover-backgroundcolor-gray:hover { background-color: #777; }
 .hover-backgroundcolor-grey:hover { background-color: #777; }
+.backgroundcolor-focus-gray:focus { background-color: #777; }
+.backgroundcolor-focus-grey:focus { background-color: #777; }
+.focus-backgroundcolor-gray:focus { background-color: #777; }
+.focus-backgroundcolor-grey:focus { background-color: #777; }
 .backgroundcolor-hover-silver:hover { background-color: #999; }
 .hover-backgroundcolor-silver:hover { background-color: #999; }
+.backgroundcolor-focus-silver:focus { background-color: #999; }
+.focus-backgroundcolor-silver:focus { background-color: #999; }
 .backgroundcolor-hover-lightsilver:hover { background-color: #aaa; }
 .hover-backgroundcolor-lightsilver:hover { background-color: #aaa; }
+.backgroundcolor-focus-lightsilver:focus { background-color: #aaa; }
+.focus-backgroundcolor-lightsilver:focus { background-color: #aaa; }
 .backgroundcolor-hover-moongray:hover { background-color: #ccc; }
 .backgroundcolor-hover-moongrey:hover { background-color: #ccc; }
 .hover-backgroundcolor-moongray:hover { background-color: #ccc; }
 .hover-backgroundcolor-moongrey:hover { background-color: #ccc; }
+.backgroundcolor-focus-moongray:focus { background-color: #ccc; }
+.backgroundcolor-focus-moongrey:focus { background-color: #ccc; }
+.focus-backgroundcolor-moongray:focus { background-color: #ccc; }
+.focus-backgroundcolor-moongrey:focus { background-color: #ccc; }
 .backgroundcolor-hover-lightgray:hover { background-color: #eee; }
 .backgroundcolor-hover-lightgrey:hover { background-color: #eee; }
 .hover-backgroundcolor-lightgray:hover { background-color: #eee; }
 .hover-backgroundcolor-lightgrey:hover { background-color: #eee; }
+.backgroundcolor-focus-lightgray:focus { background-color: #eee; }
+.backgroundcolor-focus-lightgrey:focus { background-color: #eee; }
+.focus-backgroundcolor-lightgray:focus { background-color: #eee; }
+.focus-backgroundcolor-lightgrey:focus { background-color: #eee; }
 .backgroundcolor-hover-nearwhite:hover { background-color: #f4f4f4; }
 .hover-backgroundcolor-nearwhite:hover { background-color: #f4f4f4; }
+.backgroundcolor-focus-nearwhite:focus { background-color: #f4f4f4; }
+.focus-backgroundcolor-nearwhite:focus { background-color: #f4f4f4; }
 .backgroundcolor-hover-white:hover { background-color: #fff; }
 .hover-backgroundcolor-white:hover { background-color: #fff; }
+.backgroundcolor-focus-white:focus { background-color: #fff; }
+.focus-backgroundcolor-white:focus { background-color: #fff; }
 .backgroundcolor-hover-transparent:hover { background-color: transparent; }
 .hover-backgroundcolor-transparent:hover { background-color: transparent; }
-.backgroundcolor-hover-darkred:hover { background-color: #f00008; }
-.hover-backgroundcolor-darkred:hover { background-color: #f00008; }
-.backgroundcolor-hover-red:hover { background-color: #ff3223; }
-.hover-backgroundcolor-red:hover { background-color: #ff3223; }
-.backgroundcolor-hover-orange:hover { background-color: #f3a801; }
-.hover-backgroundcolor-orange:hover { background-color: #f3a801; }
-.backgroundcolor-hover-gold:hover { background-color: #f2c800; }
-.hover-backgroundcolor-gold:hover { background-color: #f2c800; }
-.backgroundcolor-hover-yellow:hover { background-color: #ffde37; }
-.hover-backgroundcolor-yellow:hover { background-color: #ffde37; }
-.backgroundcolor-hover-purple:hover { background-color: #7d5da9; }
-.hover-backgroundcolor-purple:hover { background-color: #7d5da9; }
-.backgroundcolor-hover-lightpurple:hover { background-color: #8d4f92; }
-.hover-backgroundcolor-lightpurple:hover { background-color: #8d4f92; }
-.backgroundcolor-hover-hotpink:hover { background-color: #d62288; }
-.hover-backgroundcolor-hotpink:hover { background-color: #d62288; }
-.backgroundcolor-hover-darkpink:hover
-.hover-backgroundcolor-darkpink:hover { background-color: #c64774; }
-.backgroundcolor-hover-pink:hover { background-color: #f49cc8; }
-.hover-backgroundcolor-pink:hover { background-color: #f49cc8; }
-.backgroundcolor-hover-darkgreen:hover { background-color: #006c71; }
-.hover-backgroundcolor-darkgreen:hover { background-color: #006c71; }
-.backgroundcolor-hover-green:hover { background-color: #41d69f; }
-.hover-backgroundcolor-green:hover { background-color: #41d69f; }
+.backgroundcolor-focus-transparent:focus { background-color: transparent; }
+.focus-backgroundcolor-transparent:focus { background-color: transparent; }
+.backgroundcolor-hover-darkred:hover { background-color: #e7040f; }
+.hover-backgroundcolor-darkred:hover { background-color: #e7040f; }
+.backgroundcolor-focus-darkred:focus { background-color: #e7040f; }
+.focus-backgroundcolor-darkred:focus { background-color: #e7040f; }
+.backgroundcolor-hover-red:hover { background-color: #ff4136; }
+.hover-backgroundcolor-red:hover { background-color: #ff4136; }
+.backgroundcolor-focus-red:focus { background-color: #ff4136; }
+.focus-backgroundcolor-red:focus { background-color: #ff4136; }
+.backgroundcolor-hover-lightred:hover { background-color: #ff725c; }
+.hover-backgroundcolor-lightred:hover { background-color: #ff725c; }
+.backgroundcolor-focus-lightred:focus { background-color: #ff725c; }
+.focus-backgroundcolor-lightred:focus { background-color: #ff725c; }
+.backgroundcolor-hover-orange:hover { background-color: #ff6300; }
+.hover-backgroundcolor-orange:hover { background-color: #ff6300; }
+.backgroundcolor-focus-orange:focus { background-color: #ff6300; }
+.focus-backgroundcolor-orange:focus { background-color: #ff6300; }
+.backgroundcolor-hover-gold:hover { background-color: #ffb700; }
+.hover-backgroundcolor-gold:hover { background-color: #ffb700; }
+.backgroundcolor-focus-gold:focus { background-color: #ffb700; }
+.focus-backgroundcolor-gold:focus { background-color: #ffb700; }
+.backgroundcolor-hover-yellow:hover { background-color: #ffd700; }
+.hover-backgroundcolor-yellow:hover { background-color: #ffd700; }
+.backgroundcolor-focus-yellow:focus { background-color: #ffd700; }
+.focus-backgroundcolor-yellow:focus { background-color: #ffd700; }
+.backgroundcolor-hover-lightyellow:hover { background-color: #fbf1a9; }
+.hover-backgroundcolor-lightyellow:hover { background-color: #fbf1a9; }
+.backgroundcolor-focus-lightyellow:focus { background-color: #fbf1a9; }
+.focus-backgroundcolor-lightyellow:focus { background-color: #fbf1a9; }
+.backgroundcolor-hover-purple:hover { background-color: #5e2ca5; }
+.hover-backgroundcolor-purple:hover { background-color: #5e2ca5; }
+.backgroundcolor-focus-purple:focus { background-color: #5e2ca5; }
+.focus-backgroundcolor-purple:focus { background-color: #5e2ca5; }
+.backgroundcolor-hover-lightpurple:hover { background-color: #a463f2; }
+.hover-backgroundcolor-lightpurple:hover { background-color: #a463f2; }
+.backgroundcolor-focus-lightpurple:focus { background-color: #a463f2; }
+.focus-backgroundcolor-lightpurple:focus { background-color: #a463f2; }
+.backgroundcolor-hover-darkpink:hover { background-color: #d5008f; }
+.hover-backgroundcolor-darkpink:hover { background-color: #d5008f; }
+.backgroundcolor-focus-darkpink:focus { background-color: #d5008f; }
+.focus-backgroundcolor-darkpink:focus { background-color: #d5008f; }
+.backgroundcolor-hover-hotpink:hover { background-color: #ff41b4; }
+.hover-backgroundcolor-hotpink:hover { background-color: #ff41b4; }
+.backgroundcolor-focus-hotpink:focus { background-color: #ff41b4; }
+.focus-backgroundcolor-hotpink:focus { background-color: #ff41b4; }
+.backgroundcolor-hover-pink:hover { background-color: #ff80cc; }
+.hover-backgroundcolor-pink:hover { background-color: #ff80cc; }
+.backgroundcolor-focus-pink:focus { background-color: #ff80cc; }
+.focus-backgroundcolor-pink:focus { background-color: #ff80cc; }
+.backgroundcolor-hover-lightpink:hover { background-color: #ffa3d7; }
+.hover-backgroundcolor-lightpink:hover { background-color: #ffa3d7; }
+.backgroundcolor-focus-lightpink:focus { background-color: #ffa3d7; }
+.focus-backgroundcolor-lightpink:focus { background-color: #ffa3d7; }
+.backgroundcolor-hover-darkgreen:hover { background-color: #137752; }
+.hover-backgroundcolor-darkgreen:hover { background-color: #137752; }
+.backgroundcolor-focus-darkgreen:focus { background-color: #137752; }
+.focus-backgroundcolor-darkgreen:focus { background-color: #137752; }
+.backgroundcolor-hover-green:hover { background-color: #19a974; }
+.hover-backgroundcolor-green:hover { background-color: #19a974; }
+.backgroundcolor-focus-green:focus { background-color: #19a974; }
+.focus-backgroundcolor-green:focus { background-color: #19a974; }
+.backgroundcolor-hover-lightgreen:hover { background-color: #9eebcf; }
+.hover-backgroundcolor-lightgreen:hover { background-color: #9eebcf; }
+.backgroundcolor-focus-lightgreen:focus { background-color: #9eebcf; }
+.focus-backgroundcolor-lightgreen:focus { background-color: #9eebcf; }
 .backgroundcolor-hover-navy:hover { background-color: #001b44; }
 .hover-backgroundcolor-navy:hover { background-color: #001b44; }
+.backgroundcolor-focus-navy:focus { background-color: #001b44; }
+.focus-backgroundcolor-navy:focus { background-color: #001b44; }
 .backgroundcolor-hover-darkblue:hover { background-color: #00449e; }
 .hover-backgroundcolor-darkblue:hover { background-color: #00449e; }
+.backgroundcolor-focus-darkblue:focus { background-color: #00449e; }
+.focus-backgroundcolor-darkblue:focus { background-color: #00449e; }
 .backgroundcolor-hover-blue:hover { background-color: #357edd; }
 .hover-backgroundcolor-blue:hover { background-color: #357edd; }
+.backgroundcolor-focus-blue:focus { background-color: #357edd; }
+.focus-backgroundcolor-blue:focus { background-color: #357edd; }
 .backgroundcolor-hover-lightblue:hover { background-color: #96ccff; }
 .hover-backgroundcolor-lightblue:hover { background-color: #96ccff; }
+.backgroundcolor-focus-lightblue:focus { background-color: #96ccff; }
+.focus-backgroundcolor-lightblue:focus { background-color: #96ccff; }
 .backgroundcolor-hover-lightestblue:hover { background-color: #cdecff; }
-.backgroundcolor-hover-lightestblue:hover { background-color: #cdecff; }
+.hover-backgroundcolor-lightestblue:hover { background-color: #cdecff; }
+.backgroundcolor-focus-lightestblue:focus { background-color: #cdecff; }
+.focus-backgroundcolor-lightestblue:focus { background-color: #cdecff; }
+.backgroundcolor-hover-washedblue:hover { background-color: #f6fffe; }
 .hover-backgroundcolor-washedblue:hover { background-color: #f6fffe; }
-.hover-backgroundcolor-washedblue:hover { background-color: #f6fffe; }
+.backgroundcolor-focus-washedblue:focus { background-color: #f6fffe; }
+.focus-backgroundcolor-washedblue:focus { background-color: #f6fffe; }
 .backgroundcolor-hover-washedgreen:hover { background-color: #e8fdf5; }
 .hover-backgroundcolor-washedgreen:hover { background-color: #e8fdf5; }
-.backgroundcolor-hover-washedyellow:hover { background-color: #fff8d5; }
-.hover-backgroundcolor-washedyellow:hover { background-color: #fff8d5; }
-.backgroundcolor-hover-lightpink:hover { background-color: #efa4b8; }
-.hover-backgroundcolor-lightpink:hover { background-color: #efa4b8; }
-.backgroundcolor-hover-lightyellow:hover { background-color: #f3dd70; }
-.hover-backgroundcolor-lightyellow:hover { background-color: #f3dd70; }
-.backgroundcolor-hover-lightred:hover { background-color: #ffd3c0; }
-.hover-backgroundcolor-lightred:hover { background-color: #ffd3c0; }
+.backgroundcolor-focus-washedgreen:focus { background-color: #e8fdf5; }
+.focus-backgroundcolor-washedgreen:focus { background-color: #e8fdf5; }
+.backgroundcolor-hover-washedyellow:hover { background-color: #fffceb; }
+.hover-backgroundcolor-washedyellow:hover { background-color: #fffceb; }
+.backgroundcolor-focus-washedyellow:focus { background-color: #fffceb; }
+.focus-backgroundcolor-washedyellow:focus { background-color: #fffceb; }
+.backgroundcolor-hover-washedred:hover { background-color: #ffdfdf; }
+.hover-backgroundcolor-washedred:hover { background-color: #ffdfdf; }
+.backgroundcolor-focus-washedred:focus { background-color: #ffdfdf; }
+.focus-backgroundcolor-washedred:focus { background-color: #ffdfdf; }
 /* Variables */
-/* Spacing Scale - based on a ratio of 1:2 */
 /* Media Queries */
 /*
    SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
 
    An eight step powers of two scale ranging from 0 to 16rem.
    Namespaces are composable and thus highly grockable - check the legend below
@@ -1164,6 +1341,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
   TABLES
+  Docs: http://tachyons.io/docs/elements/tables/
 
 */
 .collapse { border-collapse: collapse; border-spacing: 0; }
@@ -1171,9 +1349,12 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .striped-moongray:nth-child(odd) { background-color: #ccc; }
 .striped-lightgray:nth-child(odd) { background-color: #eee; }
 .striped-nearwhite:nth-child(odd) { background-color: #f4f4f4; }
+.stripe-light:nth-child(odd) { background-color: rgba( 255, 255, 255, .1 ); }
+.stripe-dark:nth-child(odd) { background-color: rgba( 0, 0, 0, .1 ); }
 /*
 
    TEXT DECORATION
+   Docs: http://tachyons.io/docs/typography/text-decoration/
 
 */
 .strike, .strikethrough, .linethrough, .textdecoration-linethrough { text-decoration: line-through; }
@@ -1182,6 +1363,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
   TEXT ALIGN
+  Docs: http://tachyons.io/docs/typography/text-align/
 
 */
 .textalign-left { text-align: left; }
@@ -1190,6 +1372,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    TEXT TRANSFORM
+   Docs: http://tachyons.io/docs/typography/text-transform/
 
 */
 .texttransform-capitalize { text-transform: capitalize; }
@@ -1199,6 +1382,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    TYPE SCALE
+   Docs: http://tachyons.io/docs/typography/scale/
 
 */
 /* For Hero Titles */
@@ -1215,6 +1399,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    TYPOGRAPHY
+   http://tachyons.io/docs/typography/measure/
 
 */
 /* Measure is limited to ~66 characters */
@@ -1290,7 +1475,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
   HOVER EFFECTS
-
+  Docs: http://tachyons.io/docs/themes/hovers/
 
 */
 /*
@@ -1329,9 +1514,17 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .grow-large:active, .growlarge:active { -webkit-transform: scale( .95 ); transform: scale( .95 ); }
 /* Add pointer on hover */
 .pointer:hover { cursor: pointer; }
-/* Add shadow on hover */
-.hovershadow:hover, .shadowhover:hover, .shadow-hover:hover, .hovershadow:focus,
-.shadowhover:focus, .shadow-hover:focus { box-shadow: 0 0px 8px 2px rgba( 0, 0, 0, .2 ); }
+/* 
+   Add shadow on hover.
+   Performant box-shadow animation pattern from 
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/ 
+*/
+.hovershadow::after, .shadowhover::after, .shadow-hover::after { box-shadow: 0 0px 8px 2px rgba( 0, 0, 0, .2 ); opacity: 0; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
+.hovershadow:hover::after, .shadowhover:hover::after, .shadow-hover:hover::after,
+.hovershadow:focus::after, .shadowhover:focus::after, .shadow-hover:focus::after { opacity: 1; }
+/* Combine with classes in skins and skins-pseudo for 
+ * thousands of different transition possibilities. */
+.background-animate, .background-animate:hover, .background-animate:focus { -webkit-transition: background-color .15s ease-in-out; transition: background-color .15s ease-in-out; }
 /*
   Tachyons
   z-index
@@ -1409,28 +1602,37 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
   DEBUG CHILDREN
+  Docs: http://tachyons.io/docs/debug/
 
   Just add the debug class to any element to see outlines on its
   children.
 
 */
 .debug * { outline: 1px solid gold; }
+.debug-white * { outline: 1px solid white; }
+.debug-black * { outline: 1px solid black; }
 /*
 
    DEBUG GRID
+   http://tachyons.io/docs/debug-grid/
 
    Can be useful for debugging layout issues
    or helping to make sure things line up perfectly.
    Just tack one of these classes onto a parent element.
 
 */
-.debug-grid, .debuggrid { background: transparent url( http://tachyons.io/img/8-grid-blue-alpha.png ) repeat top left; }
-.debug-grid-16, .debuggrid-16 { background: transparent url( http://tachyons.io/img/16-grid-blue-alpha.png ) repeat top left; }
-.debug-grid-8-solid, .debuggrid-8solid { background: white url( http://tachyons.io/img/8-grid.jpg ) repeat top left; }
-.debug-grid-16-solid, .debuggrid-16solid { background: white url( http://tachyons.io/img/16-grid.png ) repeat top left; }
+.debug-grid, .debuggrid { background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTRDOTY4N0U2N0VFMTFFNjg2MzZDQjkwNkQ4MjgwMEIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTRDOTY4N0Q2N0VFMTFFNjg2MzZDQjkwNkQ4MjgwMEIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NjcyQkQ3NjY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NjcyQkQ3NzY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsBS+GMAAAAjSURBVHjaYvz//z8DLsD4gcGXiYEAGBIKGBne//fFpwAgwAB98AaF2pjlUQAAAABJRU5ErkJggg== ) repeat top left; }
+.debug-grid-16, .debuggrid-16 { background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODYyRjhERDU2N0YyMTFFNjg2MzZDQjkwNkQ4MjgwMEIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODYyRjhERDQ2N0YyMTFFNjg2MzZDQjkwNkQ4MjgwMEIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NjcyQkQ3QTY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NjcyQkQ3QjY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvCS01IAAABMSURBVHjaYmR4/5+BFPBfAMFm/MBgx8RAGWCn1AAmSg34Q6kBDKMGMDCwICeMIemF/5QawEipAWwUhwEjMDvbAWlWkvVBwu8vQIABAEwBCph8U6c0AAAAAElFTkSuQmCC ) repeat top left; }
+.debug-grid-8-solid, .debuggrid-8solid { background: white url( data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAAAAD/4QMxaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzExMSA3OS4xNTgzMjUsIDIwMTUvMDkvMTAtMDE6MTA6MjAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkIxMjI0OTczNjdCMzExRTZCMkJDRTI0MDgxMDAyMTcxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkIxMjI0OTc0NjdCMzExRTZCMkJDRTI0MDgxMDAyMTcxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjEyMjQ5NzE2N0IzMTFFNkIyQkNFMjQwODEwMDIxNzEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjEyMjQ5NzI2N0IzMTFFNkIyQkNFMjQwODEwMDIxNzEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAAbGhopHSlBJiZBQi8vL0JHPz4+P0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHAR0pKTQmND8oKD9HPzU/R0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0f/wAARCAAIAAgDASIAAhEBAxEB/8QAWQABAQAAAAAAAAAAAAAAAAAAAAYBAQEAAAAAAAAAAAAAAAAAAAIEEAEBAAMBAAAAAAAAAAAAAAABADECA0ERAAEDBQAAAAAAAAAAAAAAAAARITFBUWESIv/aAAwDAQACEQMRAD8AoOnTV1QTD7JJshP3vSM3P//Z ) repeat top left; }
+.debug-grid-16-solid, .debuggrid-16solid { background: white url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzY3MkJEN0U2N0M1MTFFNkIyQkNFMjQwODEwMDIxNzEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzY3MkJEN0Y2N0M1MTFFNkIyQkNFMjQwODEwMDIxNzEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NjcyQkQ3QzY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NjcyQkQ3RDY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pve6J3kAAAAzSURBVHjaYvz//z8D0UDsMwMjSRoYP5Gq4SPNbRjVMEQ1fCRDg+in/6+J1AJUxsgAEGAA31BAJMS0GYEAAAAASUVORK5CYII= ) repeat top left; }
 @media screen and (min-width: 30em) {
- .backgroundsize-cover-ns { background-size: cover; }
- .backgroundsize-contain-ns { background-size: contain; }
+ .backgroundsize-cover-ns { background-size: cover !important; }
+ .backgroundsize-contain-ns { background-size: contain !important; }
+ .backgroundposition-center-ns { background-repeat: no-repeat; background-position: center center; }
+ .backgroundposition-top-ns { background-repeat: no-repeat; background-position: top center; }
+ .backgroundposition-right-ns { background-repeat: no-repeat; background-position: center right; }
+ .backgroundposition-bottom-ns { background-repeat: no-repeat; background-position: bottom center; }
+ .backgroundposition-left-ns { background-repeat: no-repeat; background-position: center left; }
  .outline-ns { outline: 1px solid; }
  .outline-transparent-ns { outline: 1px solid transparent; }
  .outline-0-ns { outline: 0; }
@@ -1575,10 +1777,12 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .height-50p-ns { height: 50%; }
  .height-75p-ns { height: 75%; }
  .height-100p-ns { height: 100%; }
+ .minheight-100p-ns { min-height: 100%; }
  .height-25vh-ns { height: 25vh; }
  .height-50vh-ns { height: 50vh; }
  .height-75vh-ns { height: 75vh; }
  .height-100vh-ns { height: 100vh; }
+ .minheight-100vh-ns { min-height: 100vh; }
  .height-auto-ns { height: auto; }
  .height-inherit-ns { height: inherit; }
  .tracked-ns, .letterspacing-tracked-ns { letter-spacing: .1em; }
@@ -1621,6 +1825,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .width-80p-ns { width: 80%; }
  .width-90p-ns { width: 90%; }
  .width-100p-ns { width: 100%; }
+ .width-third-ns { width: calc( 100% / 3 ); }
+ .width-twothirds-ns { width: calc( 100% / 1.5 ); }
  .width-auto-ns { width: auto; }
  .overflow-visible-ns { overflow: visible; }
  .overflow-hidden-ns { overflow: hidden; }
@@ -1813,8 +2019,13 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .verticalalign-bottom-ns { vertical-align: bottom; }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
- .backgroundsize-cover-m { background-size: cover; }
- .backgroundsize-contain-m { background-size: contain; }
+ .backgroundsize-cover-m { background-size: cover !important; }
+ .backgroundsize-contain-m { background-size: contain !important; }
+ .backgroundposition-center-m { background-repeat: no-repeat; background-position: center center; }
+ .backgroundposition-top-m { background-repeat: no-repeat; background-position: top center; }
+ .backgroundposition-right-m { background-repeat: no-repeat; background-position: center right; }
+ .backgroundposition-bottom-m { background-repeat: no-repeat; background-position: bottom center; }
+ .backgroundposition-left-m { background-repeat: no-repeat; background-position: center left; }
  .outline-m { outline: 1px solid; }
  .outline-transparent-m { outline: 1px solid transparent; }
  .outline-0-m { outline: 0; }
@@ -1963,10 +2174,12 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .height-50p-m { height: 50%; }
  .height-75p-m { height: 75%; }
  .height-100p-m { height: 100%; }
+ .minheight-100p-m { min-height: 100%; }
  .height-25vh-m { height: 25vh; }
  .height-50vh-m { height: 50vh; }
  .height-75vh-m { height: 75vh; }
  .height-100vh-m { height: 100vh; }
+ .minheight-100vh-m { min-height: 100vh; }
  .height-auto-m { height: auto; }
  .height-inherit-m { height: inherit; }
  .tracked-m, .letterspacing-tracked-m { letter-spacing: .1em; }
@@ -2009,6 +2222,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .width-80p-m { width: 80%; }
  .width-90p-m { width: 90%; }
  .width-100p-m { width: 100%; }
+ .width-third-m { width: calc( 100% / 3 ); }
+ .width-twothirds-m { width: calc( 100% / 1.5 ); }
  .width-auto-m { width: auto; }
  .overflow-visible-m { overflow: visible; }
  .overflow-hidden-m { overflow: hidden; }
@@ -2201,8 +2416,13 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .verticalalign-bottom-m { vertical-align: bottom; }
 }
 @media screen and (min-width: 60em) {
- .backgroundsize-cover-l { background-size: cover; }
- .backgroundsize-contain-l { background-size: contain; }
+ .backgroundsize-cover-l { background-size: cover !important; }
+ .backgroundsize-contain-l { background-size: contain !important; }
+ .backgroundposition-center-l { background-repeat: no-repeat; background-position: center center; }
+ .backgroundposition-top-l { background-repeat: no-repeat; background-position: top center; }
+ .backgroundposition-right-l { background-repeat: no-repeat; background-position: center right; }
+ .backgroundposition-bottom-l { background-repeat: no-repeat; background-position: bottom center; }
+ .backgroundposition-left-l { background-repeat: no-repeat; background-position: center left; }
  .border-l, .border-all-l { border-style: solid; border-width: 1px; }
  .border-top-l { border-top-style: solid; border-top-width: 1px; }
  .border-right-l { border-right-style: solid; border-right-width: 1px; }
@@ -2344,10 +2564,12 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .height-50p-l { height: 50%; }
  .height-75p-l { height: 75%; }
  .height-100p-l { height: 100%; }
+ .minheight-100p-l { min-height: 100%; }
  .height-25vh-l { height: 25vh; }
  .height-50vh-l { height: 50vh; }
  .height-75vh-l { height: 75vh; }
  .height-100vh-l { height: 100vh; }
+ .minheight-100vh-l { min-height: 100vh; }
  .height-auto-l { height: auto; }
  .height-inherit-l { height: inherit; }
  .tracked-l, .letterspacing-tracked-l { letter-spacing: .1em; }
@@ -2390,6 +2612,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .width-80p-l { width: 80%; }
  .width-90p-l { width: 90%; }
  .width-100p-l { width: 100%; }
+ .width-third-l { width: calc( 100% / 3 ); }
+ .width-twothirds-l { width: calc( 100% / 1.5 ); }
  .width-auto-l { width: auto; }
  .overflow-visible-l { overflow: visible; }
  .overflow-hidden-l { overflow: hidden; }

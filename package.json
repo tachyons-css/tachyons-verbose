@@ -1,6 +1,6 @@
 {
   "name": "tachyons",
-  "version": "4.3.0-verbose",
+  "version": "4.5.3-verbose",
   "description": "Functional CSS for humans. Verbose edition.",
   "author": "mrmrs",
   "style": "css/tachyons.css",
@@ -13,6 +13,7 @@
   "keywords": [
     "css",
     "oocss",
+    "postcss",
     "functional css",
     "design",
     "responsive",
@@ -23,7 +24,7 @@
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
     "normalize.css": "^4.2.0",
-    "tachyons-cli": "^1.0.3",
+    "tachyons-cli": "^1.0.8",
     "tachyons-modules": "^1.1.8",
     "watch": "^0.19.2"
   },

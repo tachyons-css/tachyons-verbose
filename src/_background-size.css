@@ -1,6 +1,7 @@
 /*
 
    BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
 
    Media Query Extensions:
      -ns = not-small
@@ -14,21 +15,21 @@
   on an html element.
 */
 
-  .backgroundsize-cover  { background-size: cover; }
-  .backgroundsize-contain  { background-size: contain; }
+  .backgroundsize-cover  { background-size: cover!important; }
+  .backgroundsize-contain  { background-size: contain!important; }
 
 @media (--breakpoint-not-small) {
-  .backgroundsize-cover-ns { background-size: cover; }
-  .backgroundsize-contain-ns { background-size: contain; }
+  .backgroundsize-cover-ns { background-size: cover!important; }
+  .backgroundsize-contain-ns { background-size: contain!important; }
 }
 
 @media (--breakpoint-medium) {
-  .backgroundsize-cover-m { background-size: cover; }
-  .backgroundsize-contain-m { background-size: contain; }
+  .backgroundsize-cover-m { background-size: cover!important; }
+  .backgroundsize-contain-m { background-size: contain!important; }
 }
 
 @media (--breakpoint-large) {
-  .backgroundsize-cover-l { background-size: cover; }
-  .backgroundsize-contain-l { background-size: contain; }
+  .backgroundsize-cover-l { background-size: cover!important; }
+  .backgroundsize-contain-l { background-size: contain!important; }
 }
 

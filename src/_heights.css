@@ -1,7 +1,7 @@
 /*
 
    HEIGHTS
-
+   Docs: http://tachyons.io/docs/layout/heights/
 */
 
 /* Size variables */
@@ -36,12 +36,16 @@
 .height-75p  {  height:  75%; }
 .height-100p { height: 100%; }
 
+.minheight-100p { min-height: 100%; }
+
 /* Screen Height Percentage */
 
 .height-25vh {  height:  25vh; }
 .height-50vh {  height:  50vh; }
 .height-75vh {  height:  75vh; }
 .height-100vh { height: 100vh; }
+
+.minheight-100vh { min-height: 100vh; }
 
 /* String Properties */
 
@@ -62,10 +66,12 @@
   .height-50p-ns { height: 50%; }
   .height-75p-ns { height: 75%; }
   .height-100p-ns { height: 100%; }
+  .minheight-100p-ns { min-height: 100%; }
   .height-25vh-ns {  height:  25vh; }
   .height-50vh-ns {  height:  50vh; }
   .height-75vh-ns {  height:  75vh; }
   .height-100vh-ns { height: 100vh; }
+  .minheight-100vh-ns { min-height: 100vh; }
   .height-auto-ns { height: auto; }
   .height-inherit-ns { height: inherit; }
 }
@@ -84,10 +90,12 @@
   .height-50p-m { height: 50%; }
   .height-75p-m { height: 75%; }
   .height-100p-m { height: 100%; }
+  .minheight-100p-m { min-height: 100%; }
   .height-25vh-m {  height:  25vh; }
   .height-50vh-m {  height:  50vh; }
   .height-75vh-m {  height:  75vh; }
   .height-100vh-m { height: 100vh; }
+  .minheight-100vh-m { min-height: 100vh; }
   .height-auto-m { height: auto; }
   .height-inherit-m { height: inherit; }
 }
@@ -106,10 +114,12 @@
   .height-50p-l { height: 50%; }
   .height-75p-l { height: 75%; }
   .height-100p-l { height: 100%; }
+  .minheight-100p-l { min-height: 100%; }
   .height-25vh-l {  height:  25vh; }
   .height-50vh-l {  height:  50vh; }
   .height-75vh-l {  height:  75vh; }
   .height-100vh-l { height: 100vh; }
+  .minheight-100vh-l { min-height: 100vh; }
   .height-auto-l { height: auto; }
   .height-inherit-l { height: inherit; }
 }

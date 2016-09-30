@@ -1,6 +1,11 @@
 /*
 
    WIDTHS
+   Docs: http://tachyons.io/docs/layout/widths/
+
+   Modifiers
+     -third = 100% / 3 (Not supported in opera mini or IE8)
+     -auto  = string value auto
 
    Media Query Extensions:
      -ns = not-small
@@ -34,6 +39,10 @@
 .width-xxlarge {  width: var(--xxlarge); }
 .width-xxxlarge {  width: var(--xxxlarge); }
 
+.width-third { width: calc(100% / 3); }
+.width-twothirds { width: calc(100% / 1.5); }
+.width-auto { width: auto; }
+
 .width-10p { width:  10%; }
 .width-20p { width:  20%; }
 .width-25p { width:  25%; }
@@ -48,8 +57,6 @@
 .width-80p { width:  80%; }
 .width-90p { width:  90%; }
 .width-100p { width: 100%; }
-
-.width-auto { width: auto; }
 
 @media (--breakpoint-not-small) {
   .width-xxxsmall-ns { width: var(--xxxsmall); }
@@ -75,6 +82,8 @@
   .width-80p-ns { width:  80%; }
   .width-90p-ns { width:  90%; }
   .width-100p-ns { width: 100%; }
+  .width-third-ns { width: calc(100% / 3); }
+  .width-twothirds-ns { width: calc(100% / 1.5); }
   .width-auto-ns { width: auto; }
 }
 
@@ -102,6 +111,8 @@
   .width-80p-m { width:  80%; }
   .width-90p-m { width:  90%; }
   .width-100p-m { width: 100%; }
+  .width-third-m { width: calc(100% / 3); }
+  .width-twothirds-m { width: calc(100% / 1.5); }
   .width-auto-m {    width: auto; }
 }
 
@@ -129,5 +140,7 @@
   .width-80p-l {    width:  80%; }
   .width-90p-l {    width:  90%; }
   .width-100p-l {   width: 100%; }
+  .width-third-l { width: calc(100% / 3); }
+  .width-twothirds-l { width: calc(100% / 1.5); }
   .width-auto-l {    width: auto; }
 }

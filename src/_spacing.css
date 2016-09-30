@@ -1,7 +1,7 @@
 /* Variables */
 
-/* Spacing Scale - based on a ratio of 1:2 */
 :root {
+  --none: 0;
   --xxxsmall: 0.0625rem;
   --xxsmall: 0.125rem;
   --xsmall: 0.25rem;
@@ -21,6 +21,7 @@
 
 /*
    SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
 
    An eight step powers of two scale ranging from 0 to 16rem.
    Namespaces are composable and thus highly grockable - check the legend below
