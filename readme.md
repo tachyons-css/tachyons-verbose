@@ -10,18 +10,25 @@ Version 4.5.3.
 
 * Everything should be 100% responsive
 * Everything should be readable on any device
-* Everything should be as performant as possible
+* Everything should be as fast as possible
 * Designing in the browser should be easy
 * It should be easy to change any interface or part of an interface without breaking any existing interfaces
 * Doing one thing extremely well promotes reusability and reduces repetition
-* css is global. HTML is not. Send the smallest amount of code to the user as possible.
+* Documentation helps promote reusability and shared knowledge
+* Css is global. Html is not. Send the smallest amount of code to the user as possible.
 
 ## Features
 
-* Mobile-first css
+* Mobile-first css architecture
+* 490 accessible color combinations
+* 8px baseline grid
+* Multiple debugging utilities to reduce layout struggles
 * Single-purpose class structure
 * Optimized for maximum gzip compression
+* Lightweight
 * Usable across projects
+* Growing open source component library
+* Works well with plain html, react, ember, angular, rails, and more
 * Infinitely nestable responsive grid system
 * Built with Postcss
 
@@ -41,7 +48,7 @@ On top of being verbose this edition of Tachyons also adds support for: 1) Briti
 
 ## Getting started
 
-Docs (for the non-verbose original edition) can be found at http://tachyons.io/docs The modules are generally pretty small and thus easy to read and grock if you're familiar with css at all.
+Docs (for the non-verbose original edition) can be found at http://tachyons.io/docs The modules are generally pretty small and thus quick and easy to read.
 
 ### Local setup
 
@@ -52,22 +59,11 @@ cd tachyons-verbose
 npm install
 ```
 
-#### Build
-
-##### First time
-
-Tachyons is available as a series of small self contained css modules. They aren't dependent on each other but are designed to play well together. But tachyons is also just css. And you should feel free to edit css that is in your project. The first time you build tachyons all of the css gets installed via npm, but the modules then get copied over to your local src directory and then the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli) uses a series of postcss plugins to compile the source down to vanilla css.
-
-##### Updating
-
-If you want to update a tachyons partial, install the desired module version via npm and run the build command again. Note this will copy over all source files, so if you've modified src/ your changes might will be overwritten but you can use version control (like git!) to undo these changes.
-```npm run build```
-
-Warning: updating from npm modules will override any verbose naming conventions because the original modules all use the default, abbreviated naming scheme.
-
 #### Dev
 
-If you want to just use src as a jumping off point and edit all the code yourself, you can compile all of your wonderful changes by running
+If you want to just use everything in tachyons/src as a jumping off point and
+edit all the code yourself, you can compile all of your wonderful changes by
+running
 
 ```npm start```
 
@@ -95,15 +91,17 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * https://coralproject.net
 * https://goldenstaterecord.com
 * https://segment.com
+* https://community.algolia.com/wordpress/
+* http://samueldregan.com
 * https://voteplz.com
 * http://bluebottlecoffee.com
+* http://cyclelove.cc
 * http://topher.design
 * http://iheanyi.com/
 * http://johnotander.com
 * https://vimgifs.com
 * http://aboutlife.com
 * http://joinoneroom.com
-* http://cyclelove.cc
 * http://jon.gold/txt
 * http://rene.jon.gold
 * https://tinychime.github.io/jekyons/
@@ -141,6 +139,8 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * https://vakra.band
 * http://tylernford.com
 * https://adventuretron.org
+* https://uptimeumbrella.com 
+* http://www.talbs.me
 
 And of course...
 * http://tachyons.io
