@@ -4,7 +4,7 @@ Functional css for humans. Verbose edition.
 
 Quickly build and design new UI without writing css.
 
-Version 4.5.3.
+Version 4.5.6.
 
 ## Principles
 
@@ -85,14 +85,18 @@ any changes you make to the css in this repo would get overridden.
 
 Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/blob/master/code-of-conduct.md) for contributors.
 
-## Websites that use Tachyons
+## Websites that Use Tachyons
 (if you have a project that uses Tachyons feel free to make a PR to add it to this list)
 
+* https://nicenice.co
 * https://coralproject.net
 * https://goldenstaterecord.com
 * https://segment.com
+* http://hicuties.com
 * https://community.algolia.com/wordpress/
+* http://studiocraft.cc
 * http://samueldregan.com
+* https://filmstrip.cf
 * https://voteplz.com
 * http://bluebottlecoffee.com
 * http://cyclelove.cc
@@ -100,31 +104,20 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * http://iheanyi.com/
 * http://johnotander.com
 * https://vimgifs.com
-* http://aboutlife.com
-* http://joinoneroom.com
 * http://jon.gold/txt
 * http://rene.jon.gold
 * https://tinychime.github.io/jekyons/
-* http://mrmrs.io/up
 * http://prnt.cc
 * http://spenhar.com
 * http://randoma11y.com
 * http://www.csspurge.com
 * http://clrs.cc
 * https://cljsjs.github.io
-* http://mrmrs.io/gradients
 * https://www.getnoodl.es
 * https://natwelch.com
-* http://mrmrs.io/profile/
-* http://mn-ml.cc
 * http://pesticide.io
-* http://mrmrs.io/btns/
 * http://zachhurd.com
-* http://mrmrs.cc
 * http://gfffs.com
-* http://mrmrs.io/beats/
-* http://mrmrs.io/writing
-* http://fade.pics
 * https://wordpress.org/themes/vanilla-milkshake/
 * http://comics.hongkonggong.com/
 * https://accessmyinfo.hk/#/
@@ -135,12 +128,30 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * http://colepeters.com
 * https://atmin.github.io/funponent/
 * http://blog.colepeters.com
+* http://aboutlife.com
+* http://joinoneroom.com
 * http://filipaonunes.com
 * https://vakra.band
 * http://tylernford.com
 * https://adventuretron.org
-* https://uptimeumbrella.com 
+* https://uptimeumbrella.com
 * http://www.talbs.me
+* https://urlbox.io
+* http://seanoshea.me
+* https://www.hiaida.com
+* http://maxogden.github.io/screencat/
+* http://numenta.com
+* https://windtoday.co
+* http://claudio.netlify.com
+* http://devday-ar.com
+* http://mrmrs.io/up
+* http://mrmrs.io/profile/
+* http://mrmrs.io/gradients
+* http://mrmrs.io/btns/
+* http://mrmrs.io/beats/
+* http://mrmrs.io/writing
+* http://mrmrs.cc
+* http://mn-ml.cc
 
 And of course...
 * http://tachyons.io
