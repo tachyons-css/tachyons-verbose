@@ -1,0 +1,43 @@
+/*
+
+   ROTATIONS
+
+*/
+
+.transform-rotate45 { transform: rotate(45deg); }
+.transform-rotate90 { transform: rotate(90deg); }
+.transform-rotate135 { transform: rotate(135deg); }
+.transform-rotate180 { transform: rotate(180deg); }
+.transform-rotate225 { transform: rotate(225deg); }
+.transform-rotate270 { transform: rotate(270deg); }
+.transform-rotate315 { transform: rotate(315deg); }
+
+@media (--breakpoint-not-small){
+  .transform-rotate45-ns { transform: rotate(45deg); }
+  .transform-rotate90-ns { transform: rotate(90deg); }
+  .transform-rotate135-ns { transform: rotate(135deg); }
+  .transform-rotate180-ns { transform: rotate(180deg); }
+  .transform-rotate225-ns { transform: rotate(225deg); }
+  .transform-rotate270-ns { transform: rotate(270deg); }
+  .transform-rotate315-ns { transform: rotate(315deg); }
+}
+
+@media (--breakpoint-medium){
+  .transform-rotate45-m { transform: rotate(45deg); }
+  .transform-rotate90-m { transform: rotate(90deg); }
+  .transform-rotate135-m { transform: rotate(135deg); }
+  .transform-rotate180-m { transform: rotate(180deg); }
+  .transform-rotate225-m { transform: rotate(225deg); }
+  .transform-rotate270-m { transform: rotate(270deg); }
+  .transform-rotate315-m { transform: rotate(315deg); }
+}
+
+@media (--breakpoint-large){
+  .transform-rotate45-l { transform: rotate(45deg); }
+  .transform-rotate90-l { transform: rotate(90deg); }
+  .transform-rotate135-l { transform: rotate(135deg); }
+  .transform-rotate180-l { transform: rotate(180deg); }
+  .transform-rotate225-l { transform: rotate(225deg); }
+  .transform-rotate270-l { transform: rotate(270deg); }
+  .transform-rotate315-l { transform: rotate(315deg); }
+}
