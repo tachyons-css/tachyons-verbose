@@ -15,27 +15,27 @@
   Dim element on hover by adding the dim class.
 
 */
-.dim {
+.hover-dim {
   opacity: 1;
   transition: opacity .15s ease-in;
 }
-.dim:hover,
-.dim:focus {
+.hover-dim:hover,
+.hover-dim:focus {
   opacity: .5;
   transition: opacity .15s ease-in;
 }
-.dim:active {
+.hover-dim:active {
   opacity: .8; transition: opacity .15s ease-out;
 }
 
 /*
   Animate opacity to 100% on hover by adding the glow class.
 */
-.glow {
+.hover-glow {
   transition: opacity .15s ease-in;
 }
-.glow:hover,
-.glow:focus {
+.hover-glow:hover,
+.hover-glow:focus {
   opacity: 1;
   transition: opacity .15s ease-in;
 }
@@ -47,7 +47,7 @@
   Put the hidechild class on a parent element and any nested element with the
   child class will be hidden and displayed on hover or focus.
 
-  <div class="hidechild">
+  <div class="hover-hidechild">
     <div class="child"> Hidden until hover or focus </div>
     <div class="child"> Hidden until hover or focus </div>
     <div class="child"> Hidden until hover or focus </div>
@@ -55,62 +55,60 @@
   </div>
 */
 
-.hidechild .child {
+.hover-hidechild .child {
   opacity: 0;
   transition: opacity .15s ease-in;
 }
-.hidechild:hover  .child,
-.hidechild:focus  .child,
-.hidechild:active .child {
+.hover-hidechild:hover  .child,
+.hover-hidechild:focus  .child,
+.hover-hidechild:active .child {
   opacity: 1;
   transition: opacity .15s ease-in;
 }
 
 .hover-underline:hover,
-.hover-underline:focus,
-.underlinehover:hover,
-.underlinehover:focus {
+.hover-underline:focus {
   text-decoration: underline;
 }
 
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
 
-.grow {
+.hover-grow {
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
 }
 
-.grow:hover,
-.grow:focus {
+.hover-grow:hover,
+.hover-grow:focus {
   transform: scale(1.05);
 }
 
-.grow:active {
+.hover-grow:active {
   transform: scale(.90);
 }
 
-.growlarge, .grow-large {
+.hover-growlarge {
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform .25s ease-in-out;
 }
 
-.growlarge:hover, .grow-large:hover,
-.growlarge:focus, .grow-large:focus {
+.hover-growlarge:hover,
+.hover-growlarge:focus {
   transform: scale(1.2);
 }
 
-.grow-large:active, .growlarge:active {
+.hover-growlarge:active {
   transform: scale(.95);
 }
 
 /* Add pointer on hover */
 
-.pointer:hover {
+.hover-pointer:hover {
   cursor: pointer;
 }
 
@@ -120,13 +118,13 @@
    http://tobiasahlin.com/blog/how-to-animate-box-shadow/
 */
 
-.shadow-hover, .hover-shadow, .hovershadow, .shadowhover {
+.hover-shadow {
   cursor: pointer;
   position: relative;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.shadow-hover::after, .hover-shadow:after, .hovershadow::after, .shadowhover::after {
+.hover-shadow:after {
   content: '';
   box-shadow: 0px 0px 16px 2px rgba( 0, 0, 0, .2 );
   opacity: 0;
@@ -139,16 +137,16 @@
   transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.shadow-hover:hover::after, .hover-shadow:hover::after, .hovershadow:hover::after, .shadowhover:hover::after,
-.shadow-hover:focus::after, .hover-shadow:focus::after, .hovershadow:focus::after, .shadowhover:focus::after {
+.hover-shadow:hover::after,
+.hover-shadow:focus::after {
   opacity: 1;
 }
 
 /* Combine with classes in skins and skins-pseudo for
  * many different transition possibilities. */
 
-.background-animate,
-.background-animate:hover,
-.background-animate:focus {
+.hover-backgroundanimate,
+.hover-backgroundanimate:hover,
+.hover-backgroundanimate:focus {
   transition: background-color .15s ease-in-out;
 }
