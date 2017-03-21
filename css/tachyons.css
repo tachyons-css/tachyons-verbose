@@ -261,8 +261,8 @@ input[type="tel"], input[type="text"], input[type="url"], .border-box { box-sizi
  *
  * Example:
  *
- * <div class="aspectratio aspectratio--16x9">
- *  <iframe class="aspectratio--object"></iframe>
+ * <div class="aspectratio aspectratio-16x9">
+ *  <iframe class="aspectratio-object"></iframe>
  * </div>
  *
  * */
