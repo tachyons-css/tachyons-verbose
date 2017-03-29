@@ -255,19 +255,19 @@ input[type="tel"], input[type="text"], input[type="url"], .border-box { box-sizi
    ASPECT RATIOS
 */
 /* This is for fluid media that is embedded from third party sites like youtube, vimeo etc.
- * Wrap the outer element in aspect-ratio and then extend it with the desired ratio i.e
+ * Wrap the outer element in aspectratio and then extend it with the desired ratio i.e
  * Make sure there are no height and width attributes on the embedded media.
  * Adapted from: https://github.com/suitcss/components-flex-embed
  *
  * Example:
  *
- * <div class="aspect-ratio aspect-ratio--16x9">
- *  <iframe class="aspect-ratio--object"></iframe>
+ * <div class="aspectratio aspectratio-16x9">
+ *  <iframe class="aspectratio-object"></iframe>
  * </div>
  *
  * */
 .aspectratio { height: 0; position: relative; }
-.aspsectratio-16x9 { padding-bottom: 56.25%; }
+.aspectratio-16x9 { padding-bottom: 56.25%; }
 .aspectratio-9x16 { padding-bottom: 177.77%; }
 .aspectratio-4x3 { padding-bottom: 75%; }
 .aspectratio-3x4 { padding-bottom: 133.33%; }
