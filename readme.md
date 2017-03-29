@@ -4,7 +4,7 @@ Functional css for humans. Verbose edition.
 
 Quickly build and design new UI without writing css.
 
-Version 4.6.0.
+Version 4.6.2.
 
 ## Principles
 
@@ -163,6 +163,7 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * http://mrmrs.io/writing
 * http://mrmrs.cc
 * http://mn-ml.cc
+* https://fontawesome.com
 
 And of course...
 * http://tachyons.io

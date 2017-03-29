@@ -5,6 +5,7 @@
 
    Modifiers
      -third = 100% / 3 (Not supported in opera mini or IE8)
+     -twothirds = 100% / 1.5 (Not supported in opera mini or IE8)
      -auto  = string value auto
 
    Media Query Extensions:
