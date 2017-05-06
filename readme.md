@@ -4,7 +4,7 @@ Functional css for humans. Verbose edition.
 
 Quickly build and design new UI without writing css.
 
-Version 4.6.2.
+Version 4.7.1.
 
 ## Principles
 
@@ -45,7 +45,7 @@ Examples:
 * `{ max-width: 100% }` on large screens is `maxwidth-100p-l`
 * `{ padding-bottom: 2rem }` for mobile and up is `paddingbottom-medium`
 
-On top of being verbose this edition of Tachyons also adds support for: 1) British spelling for grey/gray, 2) more options for widths and heights, 3) a .f7 type scale, and 4) class name support for .screen-reader-text and .says (used by some systems).
+On top of being verbose this edition of Tachyons also adds support for: 1) British spelling for grey/gray, 2) more options for widths and heights, and 3) class name support for .screen-reader-text and .says (used by some systems).
 
 ## Getting started
 
@@ -155,6 +155,7 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * https://windtoday.co
 * http://claudio.netlify.com
 * http://devday-ar.com
+* http://mrmrs.io/mnml
 * http://mrmrs.io/up
 * http://mrmrs.io/profile/
 * http://mrmrs.io/gradients
@@ -162,7 +163,6 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 * http://mrmrs.io/beats/
 * http://mrmrs.io/writing
 * http://mrmrs.cc
-* http://mn-ml.cc
 * https://fontawesome.com
 
 And of course...

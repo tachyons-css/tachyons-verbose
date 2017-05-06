@@ -38,6 +38,8 @@
 .hover-nearwhite:focus { color: var(--near-white); }
 .hover-white:hover,
 .hover-white:focus { color: var(--white); }
+.hover-inherit:hover,
+.hover-inherit:focus { color: inherit; }
 
 .hover-black90:hover,
 .hover-black90:focus { color: var(--black-90); }
@@ -198,3 +200,5 @@
 .hover-backgroundcolor-washedyellow:focus { background-color: var(--washed-yellow); }
 .hover-backgroundcolor-washedred:hover,
 .hover-backgroundcolor-washedred:focus { background-color: var(--washed-red); }
+.hover-backgroundcolor-inherit:hover,
+.hover-backgroundcolor-inherit:focus { background-color: inherit; }

@@ -69,7 +69,7 @@
 .washedgreen { color: var(--washed-green); }
 .washedyellow { color: var(--washed-yellow); }
 .washedred { color: var(--washed-red); }
-
+.color-inherit { color: inherit; }
 
 .backgroundcolor-black90 {    background-color: var(--black-90); }
 .backgroundcolor-black80 {    background-color: var(--black-80); }
@@ -136,4 +136,4 @@
 .backgroundcolor-washedgreen { background-color: var(--washed-green); }
 .backgroundcolor-washedyellow { background-color: var(--washed-yellow); }
 .backgroundcolor-washedred { background-color: var(--washed-red); }
-
+.backgroundcolor-inherit { background-color: inherit; }

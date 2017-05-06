@@ -1,6 +1,6 @@
 {
   "name": "tachyons",
-  "version": "4.6.2",
+  "version": "4.7.1",
   "description": "Functional CSS for humans. Verbose edition.",
   "author": "mrmrs",
   "style": "css/tachyons.css",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
-    "normalize.css": "^5.0.0",
+    "normalize.css": "^6.0.0",
     "tachyons-cli": "^1.0.10",
     "tachyons-modules": "^1.1.9",
     "watch": "^1.0.1"
@@ -48,6 +48,6 @@
     "build": "npm run build:css && npm run build:minify",
     "build:css": "tachyons src/tachyons.css > css/tachyons.css",
     "build:minify": "tachyons src/tachyons.css -m > css/tachyons.min.css",
-    "build:watch": "watch 'npm run build' ./src/"
+    "build:watch": "watch \"npm run build\" ./src/"
   }
 }

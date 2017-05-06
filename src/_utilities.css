@@ -12,3 +12,25 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+
+@media (--breakpoint-not-small){
+  .center-ns, .marginhorizontal-auto-ns {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (--breakpoint-medium){
+  .center-m, .marginhorizontal-auto-m {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (--breakpoint-large){
+  .center-l, .marginhorizontal-auto-l {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

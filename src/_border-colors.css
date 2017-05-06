@@ -83,3 +83,4 @@
 .bordercolor-washedred { border-color: var(--washed-red); }
 
 .bordercolor-transparent { border-color: var(--transparent); }
+.bordercolor-inherit { border-color: inherit; }
