@@ -12,11 +12,22 @@
   margin-right: auto;
   margin-left: auto;
 }
-
+.marginright-auto {
+  margin-right: auto;
+}
+.marginleft-auto {
+  margin-left: auto;
+}
 
 @media (--breakpoint-not-small){
   .center-ns, .marginhorizontal-auto-ns {
     margin-right: auto;
+    margin-left: auto;
+  }
+  .marginright-auto-ns {
+    margin-right: auto;
+  }
+  .marginleft-auto-ns {
     margin-left: auto;
   }
 }
@@ -26,11 +37,23 @@
     margin-right: auto;
     margin-left: auto;
   }
+  .marginright-auto-m {
+    margin-right: auto;
+  }
+  .marginleft-auto-m {
+    margin-left: auto;
+  }
 }
 
 @media (--breakpoint-large){
   .center-l, .marginhorizontal-auto-l {
     margin-right: auto;
+    margin-left: auto;
+  }
+  .marginright-auto-l {
+    margin-right: auto;
+  }
+  .marginleft-auto-l {
     margin-left: auto;
   }
 }

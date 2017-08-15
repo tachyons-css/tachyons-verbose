@@ -25,9 +25,10 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
 .flexdirection-column   { flex-direction: column; }
 .flexdirection-row      { flex-direction: row; }
 .flexwrap-wrap          { flex-wrap: wrap; }
+.flexwrap-nowrap        { flex-wrap: nowrap; }
+.flexwrap-wrapreverse    { flex-wrap: wrap-reverse; }
 .flexdirection-columnreverse  { flex-direction: column-reverse; }
 .flexdirection-rowreverse     { flex-direction: row-reverse; }
-.flexwrap-wrapreverse    { flex-wrap: wrap-reverse; }
 
 .alignitems-flexstart   { align-items: flex-start; }
 .alignitems-flexend     { align-items: flex-end; }
@@ -77,9 +78,10 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
   .flexdirection-column-ns   { flex-direction: column; }
   .flexdirection-row-ns      { flex-direction: row; }
   .flexwrap-wrap-ns          { flex-wrap: wrap; }
+  .flexwrap-nowrap-ns        { flex-wrap: nowrap; }
+  .flexwrap-wrapreverse-ns    { flex-wrap: wrap-reverse; }
   .flexdirection-columnreverse-ns  { flex-direction: column-reverse; }
   .flexdirection-rowreverse-ns     { flex-direction: row-reverse; }
-  .flexwrap-wrapreverse-ns    { flex-wrap: wrap-reverse; }
   .alignitems-flexstart-ns   { align-items: flex-start; }
   .alignitems-flexend-ns     { align-items: flex-end; }
   .alignitems-center-ns      { align-items: center; }
@@ -128,9 +130,10 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
   .flexdirection-column-m   { flex-direction: column; }
   .flexdirection-row-m      { flex-direction: row; }
   .flexwrap-wrap-m          { flex-wrap: wrap; }
+  .flexwrap-nowrap-m        { flex-wrap: nowrap; }
+  .flexwrap-wrapreverse-m   { flex-wrap: wrap-reverse; }
   .flexdirection-columnreverse-m  { flex-direction: column-reverse; }
   .flexdirection-rowreverse-m     { flex-direction: row-reverse; }
-  .flexwrap-wrapreverse-m    { flex-wrap: wrap-reverse; }
 
   .alignitems-flexstart-m   { align-items: flex-start; }
   .alignitems-flexend-m     { align-items: flex-end; }
@@ -180,9 +183,10 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
   .flexdirection-column-l   { flex-direction: column; }
   .flexdirection-row-l      { flex-direction: row; }
   .flexwrap-wrap-l          { flex-wrap: wrap; }
+  .flexwrap-nowrap-l        { flex-wrap: nowrap; }
+  .flexwrap-wrapreverse-l   { flex-wrap: wrap-reverse; }
   .flexdirection-columnreverse-l  { flex-direction: column-reverse; }
   .flexdirection-rowreverse-l     { flex-direction: row-reverse; }
-  .flexwrap-wrapreverse-l    { flex-wrap: wrap-reverse; }
 
   .alignitems-flexstart-l   { align-items: flex-start; }
   .alignitems-flexend-l     { align-items: flex-end; }

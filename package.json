@@ -1,6 +1,6 @@
 {
   "name": "tachyons",
-  "version": "4.7.1",
+  "version": "4.8.0",
   "description": "Functional CSS for humans. Verbose edition.",
   "author": "mrmrs",
   "style": "css/tachyons.css",
@@ -23,10 +23,10 @@
   "devDependencies": {
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
-    "normalize.css": "^6.0.0",
-    "tachyons-cli": "^1.0.10",
-    "tachyons-modules": "^1.1.9",
-    "watch": "^1.0.1"
+    "normalize.css": "^7.0.0",
+    "tachyons-cli": "^1.0.11",
+    "tachyons-modules": "^1.1.10",
+    "watch": "^1.0.2"
   },
   "contributors": [
     {

@@ -8,22 +8,26 @@
 .textalign-left  { text-align: left; }
 .textalign-right  { text-align: right; }
 .textalign-center  { text-align: center; }
+.textalign-justify { text-align: justify; }
 
 @media (--breakpoint-not-small) {
   .textalign-left-ns  { text-align: left; }
   .textalign-right-ns  { text-align: right; }
   .textalign-center-ns  { text-align: center; }
+  .textalign-justify-ns { text-align: justify; }
 }
 
 @media (--breakpoint-medium) {
   .textalign-left-m  { text-align: left; }
   .textalign-right-m  { text-align: right; }
   .textalign-center-m  { text-align: center; }
+  .textalign-justify-m { text-align: justify; }
 }
 
 @media (--breakpoint-large) {
   .textalign-left-l  { text-align: left; }
   .textalign-right-l  { text-align: right; }
   .textalign-center-l  { text-align: center; }
+  .textalign-justify-l { text-align: justify; }
 }
 
