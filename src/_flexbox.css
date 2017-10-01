@@ -46,7 +46,7 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
 .justifycontent-flexend       { justify-content: flex-end; }
 .justifycontent-center        { justify-content: center; }
 .justifycontent-spacebetween  { justify-content: space-between; }
-.justifycontent-spaceround    { justify-content: space-around; }
+.justifycontent-spacearound    { justify-content: space-around; }
 
 .aligncontent-flexstart    { align-content: flex-start; }
 .aligncontent-flexend      { align-content: flex-end; }
@@ -98,7 +98,7 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
   .justifycontent-flexend-ns       { justify-content: flex-end; }
   .justifycontent-center-ns        { justify-content: center; }
   .justifycontent-spacebetween-ns  { justify-content: space-between; }
-  .justifycontent-spaceround-ns    { justify-content: space-around; }
+  .justifycontent-spacearound-ns    { justify-content: space-around; }
 
   .aligncontent-flexstart-ns    { align-content: flex-start; }
   .aligncontent-flexend-ns      { align-content: flex-end; }
@@ -151,7 +151,7 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
   .justifycontent-flexend-m       { justify-content: flex-end; }
   .justifycontent-center-m        { justify-content: center; }
   .justifycontent-spacebetween-m  { justify-content: space-between; }
-  .justifycontent-spaceround-m    { justify-content: space-around; }
+  .justifycontent-spacearound-m    { justify-content: space-around; }
 
   .aligncontent-flexstart-m    { align-content: flex-start; }
   .aligncontent-flexend-m      { align-content: flex-end; }
@@ -204,7 +204,7 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
   .justifycontent-flexend-l       { justify-content: flex-end; }
   .justifycontent-center-l        { justify-content: center; }
   .justifycontent-spacebetween-l  { justify-content: space-between; }
-  .justifycontent-spaceround-l    { justify-content: space-around; }
+  .justifycontent-spacearound-l    { justify-content: space-around; }
 
   .aligncontent-flexstart-l    { align-content: flex-start; }
   .aligncontent-flexend-l      { align-content: flex-end; }

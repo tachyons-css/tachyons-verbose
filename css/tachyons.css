@@ -627,7 +627,7 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
 .justifycontent-flexend { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 .justifycontent-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .justifycontent-spacebetween { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.justifycontent-spaceround { -ms-flex-pack: distribute; justify-content: space-around; }
+.justifycontent-spacearound { -ms-flex-pack: distribute; justify-content: space-around; }
 .aligncontent-flexstart { -ms-flex-line-pack: start; align-content: flex-start; }
 .aligncontent-flexend { -ms-flex-line-pack: end; align-content: flex-end; }
 .aligncontent-center { -ms-flex-line-pack: center; align-content: center; }
@@ -1865,7 +1865,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .justifycontent-flexend-ns { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
  .justifycontent-center-ns { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
  .justifycontent-spacebetween-ns { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
- .justifycontent-spaceround-ns { -ms-flex-pack: distribute; justify-content: space-around; }
+ .justifycontent-spacearound-ns { -ms-flex-pack: distribute; justify-content: space-around; }
  .aligncontent-flexstart-ns { -ms-flex-line-pack: start; align-content: flex-start; }
  .aligncontent-flexend-ns { -ms-flex-line-pack: end; align-content: flex-end; }
  .aligncontent-center-ns { -ms-flex-line-pack: center; align-content: center; }
@@ -2332,7 +2332,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .justifycontent-flexend-m { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
  .justifycontent-center-m { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
  .justifycontent-spacebetween-m { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
- .justifycontent-spaceround-m { -ms-flex-pack: distribute; justify-content: space-around; }
+ .justifycontent-spacearound-m { -ms-flex-pack: distribute; justify-content: space-around; }
  .aligncontent-flexstart-m { -ms-flex-line-pack: start; align-content: flex-start; }
  .aligncontent-flexend-m { -ms-flex-line-pack: end; align-content: flex-end; }
  .aligncontent-center-m { -ms-flex-line-pack: center; align-content: center; }
@@ -2798,7 +2798,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .justifycontent-flexend-l { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
  .justifycontent-center-l { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
  .justifycontent-spacebetween-l { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
- .justifycontent-spaceround-l { -ms-flex-pack: distribute; justify-content: space-around; }
+ .justifycontent-spacearound-l { -ms-flex-pack: distribute; justify-content: space-around; }
  .aligncontent-flexstart-l { -ms-flex-line-pack: start; align-content: flex-start; }
  .aligncontent-flexend-l { -ms-flex-line-pack: end; align-content: flex-end; }
  .aligncontent-center-l { -ms-flex-line-pack: center; align-content: center; }
