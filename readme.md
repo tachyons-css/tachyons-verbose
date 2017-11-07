@@ -4,7 +4,7 @@ Functional css for humans. Verbose edition.
 
 Quickly build and design new UI without writing css.
 
-Version 4.8.0.
+Version 4.9.0.
 
 ## Principles
 

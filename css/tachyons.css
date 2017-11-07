@@ -644,6 +644,10 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
 .order-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
 .order-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
 .order-last { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
+.flexgrow-0, .flexgrow-none { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
+.flexgrow-1 { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+.flexshrink-0, .flexshrink-none { -ms-flex-negative: 0; flex-shrink: 0; }
+.flexshrink-1 { -ms-flex-negative: 1; flex-shrink: 1; }
 /*
 
    FLOATS
@@ -1882,6 +1886,10 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .order-7-ns { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
  .order-8-ns { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
  .order-last-ns { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
+ .flexgrow-0-ns, .flexgrow-none-ns { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
+ .flexgrow-1-ns { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+ .flexshrink-0-ns, .flexshrink-none-ns { -ms-flex-negative: 0; flex-shrink: 0; }
+ .flexshrink-1-ns { -ms-flex-negative: 1; flex-shrink: 1; }
  .float-left-ns { float: left; display: inline; }
  .float-right-ns { float: right; display: inline; }
  .float-none-ns { float: none; }
@@ -2349,6 +2357,10 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .order-7-m { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
  .order-8-m { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
  .order-last-m { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
+ .flexgrow-0-m, .flexgrow-none-m { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
+ .flexgrow-1-m { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+ .flexshrink-0-m, .flexshrink-none-m { -ms-flex-negative: 0; flex-shrink: 0; }
+ .flexshrink-1-m { -ms-flex-negative: 1; flex-shrink: 1; }
  .float-left-m { float: left; display: inline; }
  .float-right-m { float: right; display: inline; }
  .float-none-m { float: none; }
@@ -2815,6 +2827,10 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .order-7-l { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
  .order-8-l { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
  .order-last-l { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
+ .flexgrow-0-l, .flexgrow-none-l { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
+ .flexgrow-1-l { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+ .flexshrink-0-l, .flexshrink-none-l { -ms-flex-negative: 0; flex-shrink: 0; }
+ .flexshrink-1-l { -ms-flex-negative: 1; flex-shrink: 1; }
  .float-left-l { float: left; display: inline; }
  .float-right-l { float: right; display: inline; }
  .float-none-l { float: none; }
