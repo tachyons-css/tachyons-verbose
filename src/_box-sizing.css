@@ -1,5 +1,5 @@
 /*
-
+ 
   BOX SIZING
 
 */
@@ -8,8 +8,10 @@ html,
 body,
 div,
 article,
+aside,
 section,
 main,
+nav,
 footer,
 header,
 form,
@@ -26,8 +28,11 @@ li,
 dl,
 dt,
 dd,
+blockquote,
+figcaption,
+figure,
 textarea,
-table,
+table, 
 td,
 th,
 tr,
@@ -40,3 +45,4 @@ input[type="url"],
 .border-box {
   box-sizing: border-box;
 }
+

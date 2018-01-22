@@ -1,4 +1,4 @@
-/* TACHYONS v4.8.0 | http://tachyons.io */
+/* TACHYONS v4.9.1 | http://tachyons.io */
 /*
  *    ████████╗ █████╗  ██████╗██╗  ██╗██╗   ██╗ ██████╗ ███╗   ██╗███████╗
  *    ╚══██╔══╝██╔══██╗██╔════╝██║  ██║╚██╗ ██╔╝██╔═══██╗████╗  ██║██╔════╝
@@ -237,13 +237,14 @@ template { display: none; }
 [hidden] { display: none; }
 /* Modules */
 /*
-
+ 
   BOX SIZING
 
 */
-html, body, div, article, section, main, footer, header, form, fieldset, legend,
-pre, code, a, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, textarea, table,
-td, th, tr, input[type="email"], input[type="number"], input[type="password"],
+html, body, div, article, aside, section, main, nav, footer, header, form,
+fieldset, legend, pre, code, a, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt,
+dd, blockquote, figcaption, figure, textarea, table, td, th, tr,
+input[type="email"], input[type="number"], input[type="password"],
 input[type="tel"], input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
 /*
    ASPECT RATIOS
@@ -1664,7 +1665,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .nested-headline-line-height h6, .nested-headline-lineheight h6 { line-height: 1.25; }
 .nested-list-reset ul, .nested-list-reset ol { padding-left: 0; margin-left: 0; list-style-type: none; }
 .nested-copy-indent p+p { text-indent: 1em; margin-top: 0; margin-bottom: 0; }
-.nested-copy-seperator p+p { margin-top: 1.5em; }
+.nested-copy-separator p+p { margin-top: 1.5em; }
 .nested-img img { width: 100%; max-width: 100%; display: block; }
 .nested-links a { color: #357edd; transition: color .15s ease-in; }
 .nested-links a:hover { color: #96ccff; transition: color .15s ease-in; }
