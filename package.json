@@ -1,5 +1,5 @@
 {
-  "name": "tachyons",
+  "name": "tachyons-verbose",
   "version": "4.9.0",
   "description": "Functional CSS for humans. Verbose edition.",
   "author": "mrmrs",
@@ -9,7 +9,7 @@
     "css",
     "src"
   ],
-  "repository": "tachyons-css/tachyons",
+  "repository": "tachyons-css/tachyons-verbose",
   "keywords": [
     "css",
     "oocss",
