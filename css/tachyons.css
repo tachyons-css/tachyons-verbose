@@ -237,7 +237,7 @@ template { display: none; }
 [hidden] { display: none; }
 /* Modules */
 /*
- 
+
   BOX SIZING
 
 */
@@ -922,8 +922,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
    Docs: http://tachyons.io/docs/themes/skins/
 
    Classes for setting foreground and background colors on elements.
-   If you haven't declared a border color, but set border on an element, it will 
-   be set to the current text color. 
+   If you haven't declared a border color, but set border on an element, it will
+   be set to the current text color.
 
 */
 /* Text colors */
@@ -2247,8 +2247,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .border-bottom-m { border-bottom-style: solid; border-bottom-width: 1px; }
  .border-left-m { border-left-style: solid; border-left-width: 1px; }
  .border-none-m { border-style: solid; border-width: 0; }
- .borderradius-none-m.
-  .borderradius-0-m { border-radius: 0; }
+ .borderradius-none-m, .borderradius-0-m { border-radius: 0; }
  .borderradius-1-m { border-radius: .125rem; }
  .borderradius-2-m { border-radius: .25rem; }
  .borderradius-3-m { border-radius: .5rem; }
