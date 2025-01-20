@@ -4,6 +4,8 @@ Functional css for humans. Verbose edition.
 
 Quickly build and design new UI without writing css.
 
+Version 5.0.0.alpha
+
 ## Principles
 
 * Everything should be 100% responsive
@@ -32,11 +34,11 @@ Quickly build and design new UI without writing css.
 
 ## Verbose?
 
-The main difference between [Tachyons](https://github.com/tachyons-css/tachyons/) and [Tachyons Verbose](https://github.com/tachyons-css/tachyons-verbose) is the latter spells out all of its classes. So instead of `dib`, we will spell it out as `display-inlineblock`. Our naming conventions stay close to the original CSS properties so that you don't have to remember an extra acronym or naming convention. As a bonus, if your memory is rusty about CSS property names and values, using Tachyons Verbose will help you remember that too. In short, it's functional CSS with the lightest cognitive load possible, and the only downside is that the code initially looks ugly because there are a lot of words in the class declaration.
+The main difference between [Tachyons](https://github.com/tachyons-css/tachyons/) and [Tachyons Verbose](https://github.com/tachyons-css/tachyons-verbose) is the latter spells out all of its classes. So instead of `dib`, we will spell it out as `display-inlineblock`. Our naming conventions stay close to the original CSS properties so that you don't have to remember an extra acronym or naming convention. As a bonus, if your memory is rusty about CSS property names and values, using Tachyons Verbose will help you remember that too. In short, it's functional CSS with the lightest cognitive load possible, and the only downside is that the code initially looks "ugly" because there are a lot of words in the class declaration.
 
 ### Verbose class naming conventions
 
-Tachyons Verbose classes use unambiguous naming:
+Tachyons Verbose classes use an unambiguous naming formula:
 
 `.propertyname-value-mediaquerysize`
 
