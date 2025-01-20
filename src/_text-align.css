@@ -5,29 +5,35 @@
 
 */
 
-.textalign-left  { text-align: left; }
-.textalign-right  { text-align: right; }
-.textalign-center  { text-align: center; }
-.textalign-justify { text-align: justify; }
+.textalign-left     { text-align: left; }
+.textalign-right    { text-align: right; }
+.textalign-center   { text-align: center; }
+.textalign-justify  { text-align: justify; }
 
-@media (--breakpoint-not-small) {
-  .textalign-left-ns  { text-align: left; }
-  .textalign-right-ns  { text-align: right; }
-  .textalign-center-ns  { text-align: center; }
-  .textalign-justify-ns { text-align: justify; }
+@media (--breakpoint-small) {
+  .textalign-left-mediaS    { text-align: left; }
+  .textalign-right-mediaS   { text-align: right; }
+  .textalign-center-mediaS  { text-align: center; }
+  .textalign-justify-mediaS { text-align: justify; }
 }
 
 @media (--breakpoint-medium) {
-  .textalign-left-m  { text-align: left; }
-  .textalign-right-m  { text-align: right; }
-  .textalign-center-m  { text-align: center; }
-  .textalign-justify-m { text-align: justify; }
+  .textalign-left-mediaM    { text-align: left; }
+  .textalign-right-mediaM   { text-align: right; }
+  .textalign-center-mediaM  { text-align: center; }
+  .textalign-justify-mediaM { text-align: justify; }
 }
 
 @media (--breakpoint-large) {
-  .textalign-left-l  { text-align: left; }
-  .textalign-right-l  { text-align: right; }
-  .textalign-center-l  { text-align: center; }
-  .textalign-justify-l { text-align: justify; }
+  .textalign-left-mediaL    { text-align: left; }
+  .textalign-right-mediaL   { text-align: right; }
+  .textalign-center-mediaL  { text-align: center; }
+  .textalign-justify-mediaL { text-align: justify; }
 }
 
+@media (--breakpoint-xlarge) {
+  .textalign-left-mediaXL    { text-align: left; }
+  .textalign-right-mediaXL   { text-align: right; }
+  .textalign-center-mediaXL  { text-align: center; }
+  .textalign-justify-mediaXL { text-align: justify; }
+}

@@ -1,0 +1,23 @@
+/*
+
+  CONTAINER-TYPE
+
+  MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/container-type
+
+*/
+
+/*
+To be completed; waiting for variables
+to work on container queries (or need
+a postCSS workaround)
+*/
+
+.container-size,
+.containertype-size { container-type: size; }
+
+.root,
+.container-inline,
+.containertype-inlinesize { container-type: inline-size; }
+
+.container-normal,
+.containertype-normal { container-type: normal; }

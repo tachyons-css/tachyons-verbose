@@ -8,7 +8,7 @@
 */
 
 
-@media (--breakpoint-not-small) {
+@media (--breakpoint-small) {
 
 }
 
@@ -20,3 +20,6 @@
 
 }
 
+@media (--breakpoint-xlarge) {
+
+}

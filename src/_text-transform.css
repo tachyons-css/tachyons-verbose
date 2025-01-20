@@ -6,27 +6,34 @@
 */
 
 .texttransform-capitalize { text-transform: capitalize; }
-.texttransform-lowercase { text-transform: lowercase; }
-.texttransform-uppercase { text-transform: uppercase; }
-.texttransform-none { text-transform: none; }
+.texttransform-lowercase  { text-transform: lowercase; }
+.texttransform-uppercase  { text-transform: uppercase; }
+.texttransform-none       { text-transform: none; }
 
-@media (--breakpoint-not-small) {
-  .texttransform-capitalize-ns { text-transform: capitalize; }
-  .texttransform-lowercase-ns { text-transform: lowercase; }
-  .texttransform-uppercase-ns { text-transform: uppercase; }
-  .texttransform-none-ns { text-transform: none; }
+@media (--breakpoint-small) {
+  .texttransform-capitalize-mediaS  { text-transform: capitalize; }
+  .texttransform-lowercase-mediaS   { text-transform: lowercase; }
+  .texttransform-uppercase-mediaS   { text-transform: uppercase; }
+  .texttransform-none-mediaS        { text-transform: none; }
 }
 
 @media (--breakpoint-medium) {
-  .texttransform-capitalize-m { text-transform: capitalize; }
-  .texttransform-lowercase-m { text-transform: lowercase; }
-  .texttransform-uppercase-m { text-transform: uppercase; }
-  .texttransform-none-m { text-transform: none; }
+  .texttransform-capitalize-mediaM { text-transform: capitalize; }
+  .texttransform-lowercase-mediaM  { text-transform: lowercase; }
+  .texttransform-uppercase-mediaM  { text-transform: uppercase; }
+  .texttransform-none-mediaM       { text-transform: none; }
 }
 
 @media (--breakpoint-large) {
-  .texttransform-capitalize-l { text-transform: capitalize; }
-  .texttransform-lowercase-l { text-transform: lowercase; }
-  .texttransform-uppercase-l { text-transform: uppercase; }
-  .texttransform-none-l { text-transform: none; }
+  .texttransform-capitalize-mediaL { text-transform: capitalize; }
+  .texttransform-lowercase-mediaL  { text-transform: lowercase; }
+  .texttransform-uppercase-mediaL  { text-transform: uppercase; }
+  .texttransform-none-mediaL       { text-transform: none; }
+}
+
+@media (--breakpoint-xlarge) {
+  .texttransform-capitalize-mediaXL { text-transform: capitalize; }
+  .texttransform-lowercase-mediaXL  { text-transform: lowercase; }
+  .texttransform-uppercase-mediaXL  { text-transform: uppercase; }
+  .texttransform-none-mediaXL       { text-transform: none; }
 }

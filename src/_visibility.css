@@ -2,52 +2,66 @@
 
    VISIBILITY
 
-*/
+   Text that is hidden but accessible
+   Ref: https://accessibility.18f.gov/hidden-content/
+   Ref: https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/
 
-
-/*
-    Text that is hidden but accessible
-    Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
 
 .clip,
-.says, 
+.sr-only,
 .screen-reader-text {
-  position: fixed !important;
-  _position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
-@media (--breakpoint-not-small) {
-  .clip-ns,
-  .says-ns,
-  .screen-reader-text-ns {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
+@media (--breakpoint-small) {
+  .clip-mediaS,
+  .sr-only-mediaS,
+  .screen-reader-text-mediaS {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 }
 
 @media (--breakpoint-medium) {
-  .clip-m,
-  .says-m,
-  .screen-reader-text-m {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
+  .clip-mediaM,
+  .sr-only-mediaM,
+  .screen-reader-text-mediaM {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 }
 
 @media (--breakpoint-large) {
-  .clip-l,
-  .says-l,
-  .screen-reader-text-l {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
+  .clip-mediaL,
+  .sr-only-mediaL,
+  .screen-reader-text-mediaL {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 }

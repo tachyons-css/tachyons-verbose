@@ -1,0 +1,56 @@
+/*
+
+  ALIGN-CONTENT
+
+  Media Query Extensions:
+   -s = small
+   -m  = medium
+   -l  = large
+
+  MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+
+*/
+
+.aligncontent-flexstart    { align-content: flex-start; }
+.aligncontent-flexend      { align-content: flex-end; }
+.aligncontent-center       { align-content: center; }
+.aligncontent-spacebetween { align-content: space-between; }
+.aligncontent-spacearound  { align-content: space-around; }
+.aligncontent-stretch      { align-content: stretch; }
+
+
+@media (--breakpoint-small) {
+  .aligncontent-flexstart-mediaS    { align-content: flex-start; }
+  .aligncontent-flexend-mediaS      { align-content: flex-end; }
+  .aligncontent-center-mediaS       { align-content: center; }
+  .aligncontent-spacebetween-mediaS { align-content: space-between; }
+  .aligncontent-spacearound-mediaS  { align-content: space-around; }
+  .aligncontent-stretch-mediaS      { align-content: stretch; }
+}
+
+@media (--breakpoint-medium) {
+  .aligncontent-flexstart-mediaM    { align-content: flex-start; }
+  .aligncontent-flexend-mediaM      { align-content: flex-end; }
+  .aligncontent-center-mediaM       { align-content: center; }
+  .aligncontent-spacebetween-mediaM { align-content: space-between; }
+  .aligncontent-spacearound-mediaM  { align-content: space-around; }
+  .aligncontent-stretch-mediaM      { align-content: stretch; }
+}
+
+@media (--breakpoint-large) {
+  .aligncontent-flexstart-mediaL    { align-content: flex-start; }
+  .aligncontent-flexend-mediaL      { align-content: flex-end; }
+  .aligncontent-center-mediaL       { align-content: center; }
+  .aligncontent-spacebetween-mediaL { align-content: space-between; }
+  .aligncontent-spacearound-mediaL  { align-content: space-around; }
+  .aligncontent-stretch-mediaL      { align-content: stretch; }
+}
+
+@media (--breakpoint-xlarge) {
+  .aligncontent-flexstart-mediaXL    { align-content: flex-start; }
+  .aligncontent-flexend-mediaXL      { align-content: flex-end; }
+  .aligncontent-center-mediaXL       { align-content: center; }
+  .aligncontent-spacebetween-mediaXL { align-content: space-between; }
+  .aligncontent-spacearound-mediaXL  { align-content: space-around; }
+  .aligncontent-stretch-mediaXL      { align-content: stretch; }
+}

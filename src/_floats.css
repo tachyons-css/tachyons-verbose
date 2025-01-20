@@ -9,33 +9,34 @@
 
    2. Don't forget to clearfix your floats with .clearfix
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
 */
 
 
 
-.float-left { float: left;  _display: inline; }
-.float-right { float: right; _display: inline; }
+.float-left { float: left; }
+.float-right { float: right }
 .float-none { float: none; }
 
-@media (--breakpoint-not-small) {
-  .float-left-ns { float: left; _display: inline; }
-  .float-right-ns { float: right; _display: inline; }
-  .float-none-ns { float: none; }
+@media (--breakpoint-small) {
+  .float-left-mediaS { float: left }
+  .float-right-mediaS { float: right }
+  .float-none-mediaS { float: none; }
 }
 
 @media (--breakpoint-medium) {
-  .float-left-m { float: left; _display: inline; }
-  .float-right-m { float: right; _display: inline; }
-  .float-none-m { float: none; }
+  .float-left-mediaM { float: left }
+  .float-right-mediaM { float: right }
+  .float-none-mediaM { float: none; }
 }
 
 @media (--breakpoint-large) {
-  .float-left-l { float: left; _display: inline; }
-  .float-right-l { float: right; _display: inline; }
-  .float-none-l { float: none; }
+  .float-left-mediaL { float: left }
+  .float-right-mediaL { float: right }
+  .float-none-mediaL { float: none; }
+}
+
+@media (--breakpoint-xlarge) {
+  .float-left-mediaXL { float: left }
+  .float-right-mediaXL { float: right }
+  .float-none-mediaXL { float: none; }
 }

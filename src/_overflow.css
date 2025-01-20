@@ -19,52 +19,70 @@
 .overflowy-scroll { overflow-y: scroll; }
 .overflowy-auto { overflow-y: auto; }
 
-@media (--breakpoint-not-small) {
-  .overflow-visible-ns { overflow: visible; }
-  .overflow-hidden-ns { overflow: hidden; }
-  .overflow-scroll-ns { overflow: scroll; }
-  .overflow-auto-ns { overflow: auto; }
-  .overflowx-visible-ns { overflow-x: visible; }
-  .overflowx-hidden-ns { overflow-x: hidden; }
-  .overflowx-scroll-ns { overflow-x: scroll; }
-  .overflowx-auto-ns { overflow-x: auto; }
+@media (--breakpoint-small) {
+  .overflow-visible-mediaS { overflow: visible; }
+  .overflow-hidden-mediaS { overflow: hidden; }
+  .overflow-scroll-mediaS { overflow: scroll; }
+  .overflow-auto-mediaS { overflow: auto; }
 
-  .overflowy-visible-ns { overflow-y: visible; }
-  .overflowy-hidden-ns { overflow-y: hidden; }
-  .overflowy-scroll-ns { overflow-y: scroll; }
-  .overflowy-auto-ns { overflow-y: auto; }
+  .overflowx-visible-mediaS { overflow-x: visible; }
+  .overflowx-hidden-mediaS { overflow-x: hidden; }
+  .overflowx-scroll-mediaS { overflow-x: scroll; }
+  .overflowx-auto-mediaS { overflow-x: auto; }
+
+  .overflowy-visible-mediaS { overflow-y: visible; }
+  .overflowy-hidden-mediaS { overflow-y: hidden; }
+  .overflowy-scroll-mediaS { overflow-y: scroll; }
+  .overflowy-auto-mediaS { overflow-y: auto; }
 }
 
 @media (--breakpoint-medium) {
-  .overflow-visible-m { overflow: visible; }
-  .overflow-hidden-m { overflow: hidden; }
-  .overflow-scroll-m { overflow: scroll; }
-  .overflow-auto-m { overflow: auto; }
+  .overflow-visible-mediaM { overflow: visible; }
+  .overflow-hidden-mediaM { overflow: hidden; }
+  .overflow-scroll-mediaM { overflow: scroll; }
+  .overflow-auto-mediaM { overflow: auto; }
 
-  .overflowx-visible-m { overflow-x: visible; }
-  .overflowx-hidden-m { overflow-x: hidden; }
-  .overflowx-scroll-m { overflow-x: scroll; }
-  .overflowx-auto-m { overflow-x: auto; }
+  .overflowx-visible-mediaM { overflow-x: visible; }
+  .overflowx-hidden-mediaM { overflow-x: hidden; }
+  .overflowx-scroll-mediaM { overflow-x: scroll; }
+  .overflowx-auto-mediaM { overflow-x: auto; }
 
-  .overflowy-visible-m { overflow-y: visible; }
-  .overflowy-hidden-m { overflow-y: hidden; }
-  .overflowy-scroll-m { overflow-y: scroll; }
-  .overflowy-auto-m { overflow-y: auto; }
+  .overflowy-visible-mediaM { overflow-y: visible; }
+  .overflowy-hidden-mediaM { overflow-y: hidden; }
+  .overflowy-scroll-mediaM { overflow-y: scroll; }
+  .overflowy-auto-mediaM { overflow-y: auto; }
 }
 
 @media (--breakpoint-large) {
-  .overflow-visible-l { overflow: visible; }
-  .overflow-hidden-l { overflow: hidden; }
-  .overflow-scroll-l { overflow: scroll; }
-  .overflow-auto-l { overflow: auto; }
+  .overflow-visible-mediaL { overflow: visible; }
+  .overflow-hidden-mediaL { overflow: hidden; }
+  .overflow-scroll-mediaL { overflow: scroll; }
+  .overflow-auto-mediaL { overflow: auto; }
 
-  .overflowx-visible-l { overflow-x: visible; }
-  .overflowx-hidden-l { overflow-x: hidden; }
-  .overflowx-scroll-l { overflow-x: scroll; }
-  .overflowx-auto-l { overflow-x: auto; }
+  .overflowx-visible-mediaL { overflow-x: visible; }
+  .overflowx-hidden-mediaL { overflow-x: hidden; }
+  .overflowx-scroll-mediaL { overflow-x: scroll; }
+  .overflowx-auto-mediaL { overflow-x: auto; }
 
-  .overflowy-visible-l { overflow-y: visible; }
-  .overflowy-hidden-l { overflow-y: hidden; }
-  .overflowy-scroll-l { overflow-y: scroll; }
-  .overflowy-auto-l { overflow-y: auto; }
+  .overflowy-visible-mediaL { overflow-y: visible; }
+  .overflowy-hidden-mediaL { overflow-y: hidden; }
+  .overflowy-scroll-mediaL { overflow-y: scroll; }
+  .overflowy-auto-mediaL { overflow-y: auto; }
+}
+
+@media (--breakpoint-xlarge) {
+  .overflow-visible-mediaXL { overflow: visible; }
+  .overflow-hidden-mediaXL { overflow: hidden; }
+  .overflow-scroll-mediaXL { overflow: scroll; }
+  .overflow-auto-mediaXL { overflow: auto; }
+
+  .overflowx-visible-mediaXL { overflow-x: visible; }
+  .overflowx-hidden-mediaXL { overflow-x: hidden; }
+  .overflowx-scroll-mediaXL { overflow-x: scroll; }
+  .overflowx-auto-mediaXL { overflow-x: auto; }
+
+  .overflowy-visible-mediaXL { overflow-y: visible; }
+  .overflowy-hidden-mediaXL { overflow-y: hidden; }
+  .overflowy-scroll-mediaXL { overflow-y: scroll; }
+  .overflowy-auto-mediaXL { overflow-y: auto; }
 }

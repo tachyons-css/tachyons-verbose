@@ -1,0 +1,59 @@
+/*
+
+   GAP: GRID AND FLEX SPACING
+   Docs: http://tachyons.io/docs/layout/gap/
+
+*/
+
+.gapcolumn-0 { gap-column: var(--spacing-0, 0); }
+.gapcolumn-1 { gap-column: var(--spacing-1, 4px); }
+.gapcolumn-2 { gap-column: var(--spacing-2, 8px); }
+.gapcolumn-3 { gap-column: var(--spacing-3, 16px); }
+.gapcolumn-4 { gap-column: var(--spacing-4, 32px); }
+.gapcolumn-5 { gap-column: var(--spacing-5, 64px); }
+.gapcolumn-6 { gap-column: var(--spacing-6, 128px); }
+.gapcolumn-7 { gap-column: var(--spacing-7, 256px); }
+
+@media (--breakpoint-small) {
+  .gapcolumn-0-mediaS { gap-column: var(--spacing-0, 0); }
+  .gapcolumn-1-mediaS { gap-column: var(--spacing-1, 4px); }
+  .gapcolumn-2-mediaS { gap-column: var(--spacing-2, 8px); }
+  .gapcolumn-3-mediaS { gap-column: var(--spacing-3, 16px); }
+  .gapcolumn-4-mediaS { gap-column: var(--spacing-4, 32px); }
+  .gapcolumn-5-mediaS { gap-column: var(--spacing-5, 64px); }
+  .gapcolumn-6-mediaS { gap-column: var(--spacing-6, 128px); }
+  .gapcolumn-7-mediaS { gap-column: var(--spacing-7, 256px); }
+}
+
+@media (--breakpoint-medium) {
+  .gapcolumn-0-mediaM { gap-column: var(--spacing-0, 0); }
+  .gapcolumn-1-mediaM { gap-column: var(--spacing-1, 4px); }
+  .gapcolumn-2-mediaM { gap-column: var(--spacing-2, 8px); }
+  .gapcolumn-3-mediaM { gap-column: var(--spacing-3, 16px); }
+  .gapcolumn-4-mediaM { gap-column: var(--spacing-4, 32px); }
+  .gapcolumn-5-mediaM { gap-column: var(--spacing-5, 64px); }
+  .gapcolumn-6-mediaM { gap-column: var(--spacing-6, 128px); }
+  .gapcolumn-7-mediaM { gap-column: var(--spacing-7, 256px); }
+}
+
+@media (--breakpoint-large) {
+  .gapcolumn-0-mediaL { gap-column: var(--spacing-0, 0); }
+  .gapcolumn-1-mediaL { gap-column: var(--spacing-1, 4px); }
+  .gapcolumn-2-mediaL { gap-column: var(--spacing-2, 8px); }
+  .gapcolumn-3-mediaL { gap-column: var(--spacing-3, 16px); }
+  .gapcolumn-4-mediaL { gap-column: var(--spacing-4, 32px); }
+  .gapcolumn-5-mediaL { gap-column: var(--spacing-5, 64px); }
+  .gapcolumn-6-mediaL { gap-column: var(--spacing-6, 128px); }
+  .gapcolumn-7-mediaL { gap-column: var(--spacing-7, 256px); }
+}
+
+@media (--breakpoint-xlarge) {
+  .gapcolumn-0-mediaXL { gap-column: var(--spacing-0, 0); }
+  .gapcolumn-1-mediaXL { gap-column: var(--spacing-1, 4px); }
+  .gapcolumn-2-mediaXL { gap-column: var(--spacing-2, 8px); }
+  .gapcolumn-3-mediaXL { gap-column: var(--spacing-3, 16px); }
+  .gapcolumn-4-mediaXL { gap-column: var(--spacing-4, 32px); }
+  .gapcolumn-5-mediaXL { gap-column: var(--spacing-5, 64px); }
+  .gapcolumn-6-mediaXL { gap-column: var(--spacing-6, 128px); }
+  .gapcolumn-7-mediaXL { gap-column: var(--spacing-7, 256px); }
+}

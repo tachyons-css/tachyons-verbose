@@ -4,28 +4,35 @@
 
 */
 
-.verticalalign-baseline     { vertical-align: baseline; }
-.verticalalign-middle      { vertical-align: middle; }
+.verticalalign-baseline { vertical-align: baseline; }
+.verticalalign-middle   { vertical-align: middle; }
 .verticalalign-top      { vertical-align: top; }
-.verticalalign-bottom      { vertical-align: bottom; }
+.verticalalign-bottom   { vertical-align: bottom; }
 
-@media (--breakpoint-not-small) {
-  .verticalalign-baseline-ns     { vertical-align: baseline; }
-  .verticalalign-middle-ns      { vertical-align: middle; }
-  .verticalalign-top-ns      { vertical-align: top; }
-  .verticalalign-bottom-ns      { vertical-align: bottom; }
+@media (--breakpoint-small) {
+  .verticalalign-baseline-mediaS { vertical-align: baseline; }
+  .verticalalign-middle-mediaS   { vertical-align: middle; }
+  .verticalalign-top-mediaS      { vertical-align: top; }
+  .verticalalign-bottom-mediaS   { vertical-align: bottom; }
 }
 
 @media (--breakpoint-medium) {
-  .verticalalign-baseline-m     { vertical-align: baseline; }
-  .verticalalign-middle-m      { vertical-align: middle; }
-  .verticalalign-top-m      { vertical-align: top; }
-  .verticalalign-bottom-m      { vertical-align: bottom; }
+  .verticalalign-baseline-mediaM { vertical-align: baseline; }
+  .verticalalign-middle-mediaM   { vertical-align: middle; }
+  .verticalalign-top-mediaM      { vertical-align: top; }
+  .verticalalign-bottom-mediaM   { vertical-align: bottom; }
 }
 
 @media (--breakpoint-large) {
-  .verticalalign-baseline-l     { vertical-align: baseline; }
-  .verticalalign-middle-l      { vertical-align: middle; }
-  .verticalalign-top-l      { vertical-align: top; }
-  .verticalalign-bottom-l      { vertical-align: bottom; }
+  .verticalalign-baseline-mediaL { vertical-align: baseline; }
+  .verticalalign-middle-mediaL   { vertical-align: middle; }
+  .verticalalign-top-mediaL      { vertical-align: top; }
+  .verticalalign-bottom-mediaL   { vertical-align: bottom; }
+}
+
+@media (--breakpoint-xlarge) {
+  .verticalalign-baseline-mediaXL { vertical-align: baseline; }
+  .verticalalign-middle-mediaXL   { vertical-align: middle; }
+  .verticalalign-top-mediaXL      { vertical-align: top; }
+  .verticalalign-bottom-mediaXL   { vertical-align: bottom; }
 }

@@ -11,7 +11,9 @@
 }
 
 .button-reset::-moz-focus-inner,
-.input-reset::-moz-focus-inner {
+.buttonreset::-moz-focus-inner,
+.input-reset::-moz-focus-inner,
+.inputreset::-moz-focus-inner {
   border: 0;
   padding: 0;
 }

@@ -18,44 +18,58 @@
 .fontweight-900               { font-weight: 900; }
 
 
-@media (--breakpoint-not-small) {
-  .normal-ns, .fontweight-normal-ns   { font-weight: normal; }
-  .b-ns, .fontweight-bold-ns          { font-weight: bold; }
-  .fontweight-100-ns                  { font-weight: 100; }
-  .fontweight-200-ns                  { font-weight: 200; }
-  .fontweight-300-ns                  { font-weight: 300; }
-  .fontweight-400-ns                  { font-weight: 400; }
-  .fontweight-500-ns                  { font-weight: 500; }
-  .fontweight-600-ns                  { font-weight: 600; }
-  .fontweight-700-ns                  { font-weight: 700; }
-  .fontweight-800-ns                  { font-weight: 800; }
-  .fontweight-900-ns                  { font-weight: 900; }
+@media (--breakpoint-small) {
+  .normal-mediaS, .fontweight-normal-mediaS   { font-weight: normal; }
+  .b-mediaS, .fontweight-bold-mediaS          { font-weight: bold; }
+  .fontweight-100-mediaS                  { font-weight: 100; }
+  .fontweight-200-mediaS                  { font-weight: 200; }
+  .fontweight-300-mediaS                  { font-weight: 300; }
+  .fontweight-400-mediaS                  { font-weight: 400; }
+  .fontweight-500-mediaS                  { font-weight: 500; }
+  .fontweight-600-mediaS                  { font-weight: 600; }
+  .fontweight-700-mediaS                  { font-weight: 700; }
+  .fontweight-800-mediaS                  { font-weight: 800; }
+  .fontweight-900-mediaS                  { font-weight: 900; }
 }
 
 @media (--breakpoint-medium) {
-  .normal-m, .fontweight-normal-m   { font-weight: normal; }
-  .b-m, .fontweight-bold-m          { font-weight: bold; }
-  .fontweight-100-m                 { font-weight: 100; }
-  .fontweight-200-m                 { font-weight: 200; }
-  .fontweight-300-m                 { font-weight: 300; }
-  .fontweight-400-m                 { font-weight: 400; }
-  .fontweight-500-m                 { font-weight: 500; }
-  .fontweight-600-m                 { font-weight: 600; }
-  .fontweight-700-m                 { font-weight: 700; }
-  .fontweight-800-m                 { font-weight: 800; }
-  .fontweight-900-m                 { font-weight: 900; }
+  .normal-mediaM, .fontweight-normal-mediaM   { font-weight: normal; }
+  .b-mediaM, .fontweight-bold-mediaM          { font-weight: bold; }
+  .fontweight-100-mediaM                 { font-weight: 100; }
+  .fontweight-200-mediaM                 { font-weight: 200; }
+  .fontweight-300-mediaM                 { font-weight: 300; }
+  .fontweight-400-mediaM                 { font-weight: 400; }
+  .fontweight-500-mediaM                 { font-weight: 500; }
+  .fontweight-600-mediaM                 { font-weight: 600; }
+  .fontweight-700-mediaM                 { font-weight: 700; }
+  .fontweight-800-mediaM                 { font-weight: 800; }
+  .fontweight-900-mediaM                 { font-weight: 900; }
 }
 
 @media (--breakpoint-large) {
-  .normal-l, .fontweight-normal-l   { font-weight: normal; }
-  .b-l, .fontweight-bold-l          { font-weight: bold; }
-  .fontweight-100-l                 { font-weight: 100; }
-  .fontweight-200-l                 { font-weight: 200; }
-  .fontweight-300-l                 { font-weight: 300; }
-  .fontweight-400-l                 { font-weight: 400; }
-  .fontweight-500-l                 { font-weight: 500; }
-  .fontweight-600-l                 { font-weight: 600; }
-  .fontweight-700-l                 { font-weight: 700; }
-  .fontweight-800-l                 { font-weight: 800; }
-  .fontweight-900-l                 { font-weight: 900; }
+  .normal-mediaL, .fontweight-normal-mediaL   { font-weight: normal; }
+  .b-mediaL, .fontweight-bold-mediaL          { font-weight: bold; }
+  .fontweight-100-mediaL                 { font-weight: 100; }
+  .fontweight-200-mediaL                 { font-weight: 200; }
+  .fontweight-300-mediaL                 { font-weight: 300; }
+  .fontweight-400-mediaL                 { font-weight: 400; }
+  .fontweight-500-mediaL                 { font-weight: 500; }
+  .fontweight-600-mediaL                 { font-weight: 600; }
+  .fontweight-700-mediaL                 { font-weight: 700; }
+  .fontweight-800-mediaL                 { font-weight: 800; }
+  .fontweight-900-mediaL                 { font-weight: 900; }
+}
+
+@media (--breakpoint-xlarge) {
+  .normal-mediaXL, .fontweight-normal-mediaXL   { font-weight: normal; }
+  .b-mediaXL, .fontweight-bold-mediaXL          { font-weight: bold; }
+  .fontweight-100-mediaXL                 { font-weight: 100; }
+  .fontweight-200-mediaXL                 { font-weight: 200; }
+  .fontweight-300-mediaXL                 { font-weight: 300; }
+  .fontweight-400-mediaXL                 { font-weight: 400; }
+  .fontweight-500-mediaXL                 { font-weight: 500; }
+  .fontweight-600-mediaXL                 { font-weight: 600; }
+  .fontweight-700-mediaXL                 { font-weight: 700; }
+  .fontweight-800-mediaXL                 { font-weight: 800; }
+  .fontweight-900-mediaXL                 { font-weight: 900; }
 }

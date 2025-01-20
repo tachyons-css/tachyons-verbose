@@ -1,0 +1,47 @@
+/*
+
+  JUSTIFY-CONTENT
+
+  MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+
+*/
+
+.justifycontent-flexstart     { justify-content: flex-start; }
+.justifycontent-flexend       { justify-content: flex-end; }
+.justifycontent-center        { justify-content: center; }
+.justifycontent-spacebetween  { justify-content: space-between; }
+.justifycontent-spacearound   { justify-content: space-around; }
+
+
+@media (--breakpoint-small) {
+  .justifycontent-flexstart-mediaS     { justify-content: flex-start; }
+  .justifycontent-flexend-mediaS       { justify-content: flex-end; }
+  .justifycontent-center-mediaS        { justify-content: center; }
+  .justifycontent-spacebetween-mediaS  { justify-content: space-between; }
+  .justifycontent-spacearound-mediaS   { justify-content: space-around; }
+}
+
+@media (--breakpoint-medium) {
+  .justifycontent-flexstart-mediaM     { justify-content: flex-start; }
+  .justifycontent-flexend-mediaM       { justify-content: flex-end; }
+  .justifycontent-center-mediaM        { justify-content: center; }
+  .justifycontent-spacebetween-mediaM  { justify-content: space-between; }
+  .justifycontent-spacearound-mediaM   { justify-content: space-around; }
+}
+
+@media (--breakpoint-large) {
+  .justifycontent-flexstart-mediaL     { justify-content: flex-start; }
+  .justifycontent-flexend-mediaL       { justify-content: flex-end; }
+  .justifycontent-center-mediaL        { justify-content: center; }
+  .justifycontent-spacebetween-mediaL  { justify-content: space-between; }
+  .justifycontent-spacearound-mediaL   { justify-content: space-around; }
+}
+
+@media (--breakpoint-xlarge) {
+  .justifycontent-flexstart-mediaXL     { justify-content: flex-start; }
+  .justifycontent-flexend-mediaXL       { justify-content: flex-end; }
+  .justifycontent-center-mediaXL        { justify-content: center; }
+  .justifycontent-spacebetween-mediaXL  { justify-content: space-between; }
+  .justifycontent-spacearound-mediaXL   { justify-content: space-around; }
+}
+

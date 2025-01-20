@@ -1,0 +1,15 @@
+/*
+
+  TEXT-SHADOW
+  Docs: http://tachyons.io/docs/themes/text-shadow/
+
+ */
+
+.textshadow-1 { text-shadow: rgb(var(--shadow-color)) -4px 4px 0px; }
+.textshadow-2 { text-shadow: rgb(var(--shadow-color)) -8px 8px 0px; }
+.textshadow-3 { text-shadow: rgb(var(--shadow-color) / var(--shadow-opacity ,.5)) -8px 8px 0px; }
+.textshadow-4 { text-shadow: rgba(var(--shadow-color) / var(--shadow-opacity, .5)) -4px 4px 8px; }
+.textshadow-5 { text-shadow: rgb(var(--shadow-color)) 2px 0px 0px, rgb(var(--shadow-color)) 0px 2px 0px, rgb(var(--shadow-color)) -2px 0px 0px, rgb(var(--shadow-color)) 0px -2px 0px, rgb(var(--shadow-color)) -2px -2px 0px, rgb(var(--shadow-color)) 2px -2px 0px, rgb(var(--shadow-color)) 2px 2px 0px, rgb(var(--shadow-color)) -2px 2px 0px; }
+.textshadow-6 { text-shadow: rgb(var(--shadow-color-invert)) 2px 0px 0px, rgb(var(--shadow-color-invert)) 0px 2px 0px, rgb(var(--shadow-color-invert)) -2px 0px 0px, rgb(var(--shadow-color-invert)) 0px -2px 0px, rgb(var(--shadow-color-invert)) -2px -2px 0px, rgb(var(--shadow-color-invert)) 2px -2px 0px, rgb(var(--shadow-color-invert)) 2px 2px 0px, rgb(var(--shadow-color-invert)) -2px 2px 0px; }
+
+

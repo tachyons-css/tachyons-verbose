@@ -7,7 +7,7 @@
 .nested-copy-line-height p, .nested-copy-lineheight p,
 .nested-copy-line-height ul, .nested-copy-lineheight ul,
 .nested-copy-line-height ol, .nested-copy-lineheight ol {
-  line-height: 1.5;
+  line-height: var(--line-height-body, 1.5);
 }
 
 .nested-headline-line-height h1, .nested-headline-lineheight h1,
@@ -16,7 +16,7 @@
 .nested-headline-line-height h4, .nested-headline-lineheight h4,
 .nested-headline-line-height h5, .nested-headline-lineheight h5,
 .nested-headline-line-height h6, .nested-headline-lineheight h6 {
-  line-height: 1.25;
+  line-height: var(--line-height-title, 1.25);
 }
 
 .nested-list-reset ul,
@@ -43,12 +43,12 @@
 }
 
 .nested-links a {
-  color: var(--blue);
+  color: var(--blue-5);
   transition: color .15s ease-in;
 }
 
 .nested-links a:hover,
 .nested-links a:focus {
-  color: var(--light-blue);
+  color: var(--blue-3);
   transition: color .15s ease-in;
 }

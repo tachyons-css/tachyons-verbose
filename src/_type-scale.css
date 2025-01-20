@@ -5,67 +5,204 @@
 
 */
 
-/* For Hero Titles */
-.f-6,
-.f-headline {
-  font-size: 6rem;
-}
-.f-5,
-.f-subheadline {
-  font-size: 5rem;
-}
+.f1, .fontsize-1    { font-size:  var(--font-size-1, .75rem); }
+.f2, .fontsize-2    { font-size:  var(--font-size-2, .875rem); }
+.f3, .fontsize-3    { font-size:  var(--font-size-3, 1rem); }
+.f4, .fontsize-4    { font-size:  var(--font-size-4, 1.125rem); }
+.f5, .fontsize-5    { font-size:  var(--font-size-5, 1.25rem); }
+.f6, .fontsize-6    { font-size:  var(--font-size-6, 1.5rem); }
+.f7, .fontsize-7    { font-size:  var(--font-size-7, 2rem); } 
+.f8, .fontsize-8    { font-size:  var(--font-size-8, 3rem); } 
+.f9, .fontsize-9    { font-size:  var(--font-size-9, 4rem); } 
+.f10, .fontsize-10  { font-size:  var(--font-size-10, 6rem); } 
+.f11, .fontsize-11  { font-size:  var(--font-size-11, 8rem); } 
+.f12, .fontsize-12  { font-size:  var(--font-size-12, 12rem); } 
 
-/* Type Scale */
-.f1 { font-size: 3rem; }
-.f2 { font-size: 2.25rem; }
-.f3 { font-size: 1.5rem; }
-.f4 { font-size: 1.25rem; }
-.f5 { font-size: 1rem; }
-.f6 { font-size: .875rem; }
-.f7 { font-size: 0.75rem; }
+/*
+    Tachyons Verbose experiment:
+    pixel type sizes that we're used to from regular apps
+    (human readable, but not a scale that's easy to remember)
+*/
+.fontsize-10px     { font-size: var(--font-size-10px ); }
+.fontsize-11px     { font-size: var(--font-size-11px ); }
+.fontsize-12px     { font-size: var(--font-size-12px ); }
+.fontsize-14px     { font-size: var(--font-size-14px ); }
+.fontsize-16px     { font-size: var(--font-size-16px ); }
+.fontsize-20px     { font-size: var(--font-size-20px ); }
+.fontsize-24px     { font-size: var(--font-size-24px ); }
+.fontsize-32px     { font-size: var(--font-size-32px ); }
+.fontsize-48px     { font-size: var(--font-size-48px ); }
+.fontsize-64px     { font-size: var(--font-size-64px ); }  
+.fontsize-96px     { font-size: var(--font-size-96px ); }  
+.fontsize-128px    { font-size: var(--font-size-128px ); }  
+.fontsize-192px    { font-size: var(--font-size-192px ); }  
+.fontsize-256px    { font-size: var(--font-size-256px ); }  
 
-@media (--breakpoint-not-small){
-  .f-6-ns,
-  .f-headline-ns { font-size: 6rem; }
-  .f-5-ns,
-  .f-subheadline-ns { font-size: 5rem; }
-  .f1-ns { font-size: 3rem; }
-  .f2-ns { font-size: 2.25rem; }
-  .f3-ns { font-size: 1.5rem; }
-  .f4-ns { font-size: 1.25rem; }
-  .f5-ns { font-size: 1rem; }
-  .f6-ns { font-size: .875rem; }
-  .f7-ns { font-size: .75rem; }
+
+@media (--breakpoint-small){
+  .f1-mediaS,
+  .fontsize-1-mediaS   { font-size:  var(--font-size-1, .75rem); }
+  .f2-mediaS, 
+  .fontsize-2-mediaS   { font-size:  var(--font-size-2, .875rem); }
+  .f3-mediaS, 
+  .fontsize-3-mediaS   { font-size:  var(--font-size-3, 1rem); }
+  .f4-mediaS, 
+  .fontsize-4-mediaS   { font-size:  var(--font-size-4, 1.125rem); }
+  .f5-mediaS, 
+  .fontsize-5-mediaS   { font-size:  var(--font-size-5, 1.25rem); }
+  .f6-mediaS, 
+  .fontsize-6-mediaS   { font-size:  var(--font-size-6, 1.5rem); }
+  .f7-mediaS, 
+  .fontsize-7-mediaS   { font-size:  var(--font-size-7, 2rem); } 
+  .f8-mediaS, 
+  .fontsize-8-mediaS   { font-size:  var(--font-size-8, 3rem); } 
+  .f9-mediaS, 
+  .fontsize-9-mediaS   { font-size:  var(--font-size-9, 4rem); } 
+  .f10-mediaS, 
+  .fontsize-10-mediaS  { font-size:  var(--font-size-10, 6rem); } 
+  .f11-mediaS, 
+  .fontsize-11-mediaS  { font-size:  var(--font-size-11, 8rem); } 
+  .f12-mediaS, 
+  .fontsize-12-mediaS  { font-size:  var(--font-size-12, 12rem); } 
+
+  .fontsize-10px-mediaS     { font-size: var(--font-size-10px ); }
+  .fontsize-11px-mediaS     { font-size: var(--font-size-11px ); }
+  .fontsize-12px-mediaS     { font-size: var(--font-size-12px ); }
+  .fontsize-14px-mediaS     { font-size: var(--font-size-14px ); }
+  .fontsize-16px-mediaS     { font-size: var(--font-size-16px ); }
+  .fontsize-20px-mediaS     { font-size: var(--font-size-20px ); }
+  .fontsize-24px-mediaS     { font-size: var(--font-size-24px ); }
+  .fontsize-32px-mediaS     { font-size: var(--font-size-32px ); }
+  .fontsize-48px-mediaS     { font-size: var(--font-size-48px ); }
+  .fontsize-64px-mediaS     { font-size: var(--font-size-64px ); }  
+  .fontsize-96px-mediaS     { font-size: var(--font-size-96px ); }  
+  .fontsize-128px-mediaS    { font-size: var(--font-size-128px ); }  
+  .fontsize-192px-mediaS    { font-size: var(--font-size-192px ); }  
+  .fontsize-256px-mediaS    { font-size: var(--font-size-256px ); }  
 }
 
 @media (--breakpoint-medium) {
-  .f-6-m,
-  .f-headline-m { font-size: 6rem; }
-  .f-5-m,
-  .f-subheadline-m { font-size: 5rem; }
-  .f1-m { font-size: 3rem; }
-  .f2-m { font-size: 2.25rem; }
-  .f3-m { font-size: 1.5rem; }
-  .f4-m { font-size: 1.25rem; }
-  .f5-m { font-size: 1rem; }
-  .f6-m { font-size: .875rem; }
-  .f7-m { font-size: .75rem; }
+  .f1-mediaM,
+  .fontsize-1-mediaM   { font-size:  var(--font-size-1, .75rem); }
+  .f2-mediaM, 
+  .fontsize-2-mediaM   { font-size:  var(--font-size-2, .875rem); }
+  .f3-mediaM, 
+  .fontsize-3-mediaM   { font-size:  var(--font-size-3, 1rem); }
+  .f4-mediaM, 
+  .fontsize-4-mediaM   { font-size:  var(--font-size-4, 1.125rem); }
+  .f5-mediaM, 
+  .fontsize-5-mediaM   { font-size:  var(--font-size-5, 1.25rem); }
+  .f6-mediaM, 
+  .fontsize-6-mediaM   { font-size:  var(--font-size-6, 1.5rem); }
+  .f7-mediaM, 
+  .fontsize-7-mediaM   { font-size:  var(--font-size-7, 2rem); } 
+  .f8-mediaM, 
+  .fontsize-8-mediaM   { font-size:  var(--font-size-8, 3rem); } 
+  .f9-mediaM, 
+  .fontsize-9-mediaM   { font-size:  var(--font-size-9, 4rem); } 
+  .f10-mediaM, 
+  .fontsize-10-mediaM  { font-size:  var(--font-size-10, 6rem); } 
+  .f11-mediaM, 
+  .fontsize-11-mediaM  { font-size:  var(--font-size-11, 8rem); } 
+  .f12-mediaM, 
+  .fontsize-12-mediaM  { font-size:  var(--font-size-12, 12rem); } 
+
+  .fontsize-10px-mediaM     { font-size: var(--font-size-10px ); }
+  .fontsize-11px-mediaM     { font-size: var(--font-size-11px ); }
+  .fontsize-12px-mediaM     { font-size: var(--font-size-12px ); }
+  .fontsize-14px-mediaM     { font-size: var(--font-size-14px ); }
+  .fontsize-16px-mediaM     { font-size: var(--font-size-16px ); }
+  .fontsize-20px-mediaM     { font-size: var(--font-size-20px ); }
+  .fontsize-24px-mediaM     { font-size: var(--font-size-24px ); }
+  .fontsize-32px-mediaM     { font-size: var(--font-size-32px ); }
+  .fontsize-48px-mediaM     { font-size: var(--font-size-48px ); }
+  .fontsize-64px-mediaM     { font-size: var(--font-size-64px ); }  
+  .fontsize-96px-mediaM     { font-size: var(--font-size-96px ); }  
+  .fontsize-128px-mediaM    { font-size: var(--font-size-128px ); }  
+  .fontsize-192px-mediaM    { font-size: var(--font-size-192px ); }  
+  .fontsize-256px-mediaM    { font-size: var(--font-size-256px ); } 
 }
 
 @media (--breakpoint-large) {
-  .f-6-l,
-  .f-headline-l {
-    font-size: 6rem;
-  }
-  .f-5-l,
-  .f-subheadline-l {
-    font-size: 5rem;
-  }
-  .f1-l { font-size: 3rem; }
-  .f2-l { font-size: 2.25rem; }
-  .f3-l { font-size: 1.5rem; }
-  .f4-l { font-size: 1.25rem; }
-  .f5-l { font-size: 1rem; }
-  .f6-l { font-size: .875rem; }
-  .f7-l { font-size: .75rem; }
+  .f1-mediaL,
+  .fontsize-1-mediaL   { font-size:  var(--font-size-1, .75rem); }
+  .f2-mediaL, 
+  .fontsize-2-mediaL   { font-size:  var(--font-size-2, .875rem); }
+  .f3-mediaL, 
+  .fontsize-3-mediaL   { font-size:  var(--font-size-3, 1rem); }
+  .f4-mediaL, 
+  .fontsize-4-mediaL   { font-size:  var(--font-size-4, 1.125rem); }
+  .f5-mediaL, 
+  .fontsize-5-mediaL   { font-size:  var(--font-size-5, 1.25rem); }
+  .f6-mediaL, 
+  .fontsize-6-mediaL   { font-size:  var(--font-size-6, 1.5rem); }
+  .f7-mediaL, 
+  .fontsize-7-mediaL   { font-size:  var(--font-size-7, 2rem); } 
+  .f8-mediaL, 
+  .fontsize-8-mediaL   { font-size:  var(--font-size-8, 3rem); } 
+  .f9-mediaL, 
+  .fontsize-9-mediaL   { font-size:  var(--font-size-9, 4rem); } 
+  .f10-mediaL, 
+  .fontsize-10-mediaL  { font-size:  var(--font-size-10, 6rem); } 
+  .f11-mediaL, 
+  .fontsize-11-mediaL  { font-size:  var(--font-size-11, 8rem); } 
+  .f12-mediaL, 
+  .fontsize-12-mediaL  { font-size:  var(--font-size-12, 12rem); } 
+
+  .fontsize-10px-mediaL     { font-size: var(--font-size-10px ); }
+  .fontsize-11px-mediaL     { font-size: var(--font-size-11px ); }
+  .fontsize-12px-mediaL     { font-size: var(--font-size-12px ); }
+  .fontsize-14px-mediaL     { font-size: var(--font-size-14px ); }
+  .fontsize-16px-mediaL     { font-size: var(--font-size-16px ); }
+  .fontsize-20px-mediaL     { font-size: var(--font-size-20px ); }
+  .fontsize-24px-mediaL     { font-size: var(--font-size-24px ); }
+  .fontsize-32px-mediaL     { font-size: var(--font-size-32px ); }
+  .fontsize-48px-mediaL     { font-size: var(--font-size-48px ); }
+  .fontsize-64px-mediaL     { font-size: var(--font-size-64px ); }  
+  .fontsize-96px-mediaL     { font-size: var(--font-size-96px ); }  
+  .fontsize-128px-mediaL    { font-size: var(--font-size-128px ); }  
+  .fontsize-192px-mediaL    { font-size: var(--font-size-192px ); }  
+  .fontsize-256px-mediaL    { font-size: var(--font-size-256px ); } 
+}
+
+@media (--breakpoint-large) {
+  .f1-mediaXL,
+  .fontsize-1-mediaXL   { font-size:  var(--font-size-1, .75rem); }
+  .f2-mediaXL, 
+  .fontsize-2-mediaXL   { font-size:  var(--font-size-2, .875rem); }
+  .f3-mediaXL, 
+  .fontsize-3-mediaXL   { font-size:  var(--font-size-3, 1rem); }
+  .f4-mediaXL, 
+  .fontsize-4-mediaXL   { font-size:  var(--font-size-4, 1.125rem); }
+  .f5-mediaXL, 
+  .fontsize-5-mediaXL   { font-size:  var(--font-size-5, 1.25rem); }
+  .f6-mediaXL, 
+  .fontsize-6-mediaXL   { font-size:  var(--font-size-6, 1.5rem); }
+  .f7-mediaXL, 
+  .fontsize-7-mediaXL   { font-size:  var(--font-size-7, 2rem); } 
+  .f8-mediaXL, 
+  .fontsize-8-mediaXL   { font-size:  var(--font-size-8, 3rem); } 
+  .f9-mediaXL, 
+  .fontsize-9-mediaXL   { font-size:  var(--font-size-9, 4rem); } 
+  .f10-mediaXL, 
+  .fontsize-10-mediaXL  { font-size:  var(--font-size-10, 6rem); } 
+  .f11-mediaXL, 
+  .fontsize-11-mediaXL  { font-size:  var(--font-size-11, 8rem); } 
+  .f12-mediaXL, 
+  .fontsize-12-mediaXL  { font-size:  var(--font-size-12, 12rem); } 
+
+  .fontsize-10px-mediaXL     { font-size: var(--font-size-10px ); }
+  .fontsize-11px-mediaXL     { font-size: var(--font-size-11px ); }
+  .fontsize-12px-mediaXL     { font-size: var(--font-size-12px ); }
+  .fontsize-14px-mediaXL     { font-size: var(--font-size-14px ); }
+  .fontsize-16px-mediaXL     { font-size: var(--font-size-16px ); }
+  .fontsize-20px-mediaXL     { font-size: var(--font-size-20px ); }
+  .fontsize-24px-mediaXL     { font-size: var(--font-size-24px ); }
+  .fontsize-32px-mediaXL     { font-size: var(--font-size-32px ); }
+  .fontsize-48px-mediaXL     { font-size: var(--font-size-48px ); }
+  .fontsize-64px-mediaXL     { font-size: var(--font-size-64px ); }  
+  .fontsize-96px-mediaXL     { font-size: var(--font-size-96px ); }  
+  .fontsize-128px-mediaXL    { font-size: var(--font-size-128px ); }  
+  .fontsize-192px-mediaXL    { font-size: var(--font-size-192px ); }  
+  .fontsize-256px-mediaXL    { font-size: var(--font-size-256px ); } 
 }

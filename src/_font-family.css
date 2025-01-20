@@ -5,9 +5,13 @@
 
 */
 
+.fontfamily-heading { font-family: var(--font-family-heading, sans-serif); }
+.fontfamily-body { font-family: var(--font-family-body, sans-serif); }
+.fontfamily-mono { font-family: var(--font-family-mono, monospace); }
 
-.sans-serif,
-.sansserif {
+/* Legacy font stacks below */
+
+.fontfamily-sansserif {
   font-family: -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
                'helvetica neue', helvetica, 
@@ -16,87 +20,8 @@
                'segoe ui', arial,
                sans-serif;
 }
-
-.serif {
+.fontfamily-serif {
   font-family: georgia,
                times,
-               serif;
-}
-
-.system-sans-serif,
-.systemsansserif {
-  font-family: sans-serif;
-}
-
-.system-serif,
-.systemserif {
-  font-family: serif;
-}
-
-
-/* Monospaced Typefaces (for code) */
-
-/* From http://cssfontstack.com */
-code, .code {
-  font-family: Consolas,
-               monaco,
-               monospace;
-}
-
-.courier {
-  font-family: 'Courier Next',
-               courier,
-               monospace;
-}
-
-
-/* Sans-Serif Typefaces */
-
-.helvetica {
-  font-family: 'helvetica neue', helvetica,
-               sans-serif;
-}
-
-.avenir {
-  font-family: 'avenir next', avenir,
-               sans-serif;
-}
-
-
-/* Serif Typefaces */
-
-.athelas {
-  font-family: athelas,
-               georgia,
-               serif;
-}
-
-.georgia {
-  font-family: georgia,
-               serif;
-}
-
-.times {
-  font-family: times,
-               serif;
-}
-
-.bodoni {
-  font-family: "Bodoni MT",
-                serif;
-}
-
-.calisto {
-  font-family: "Calisto MT",
-                serif;
-}
-
-.garamond {
-  font-family: garamond,
-               serif;
-}
-
-.baskerville {
-  font-family: baskerville,
                serif;
 }

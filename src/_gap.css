@@ -1,0 +1,47 @@
+/*
+
+   GAP: GRID AND FLEX SPACING
+   Docs: http://tachyons.io/docs/layout/gap/
+
+*/
+
+
+.gap-0 { gap: var(--spacing-0, 0); }
+.gap-1 { gap: var(--spacing-1, 4px); }
+.gap-2 { gap: var(--spacing-2, 8px); }
+.gap-3 { gap: var(--spacing-3, 16px); }
+.gap-4 { gap: var(--spacing-4, 32px); }
+.gap-5 { gap: var(--spacing-5, 64px); }
+.gap-6 { gap: var(--spacing-6, 128px); }
+.gap-7 { gap: var(--spacing-7, 256px); }
+
+@media (--breakpoint-small) {
+  .gap-0-mediaS { gap: var(--spacing-0, 0); }
+  .gap-1-mediaS { gap: var(--spacing-1, 4px); }
+  .gap-2-mediaS { gap: var(--spacing-2, 8px); }
+  .gap-3-mediaS { gap: var(--spacing-3, 16px); }
+  .gap-4-mediaS { gap: var(--spacing-4, 32px); }
+  .gap-5-mediaS { gap: var(--spacing-5, 64px); }
+  .gap-6-mediaS { gap: var(--spacing-6, 128px); }
+  .gap-7-mediaS { gap: var(--spacing-7, 256px); }
+}
+@media (--breakpoint-medium) {
+  .gap-0-mediaM { gap: var(--spacing-0, 0); }
+  .gap-1-mediaM { gap: var(--spacing-1, 4px); }
+  .gap-2-mediaM { gap: var(--spacing-2, 8px); }
+  .gap-3-mediaM { gap: var(--spacing-3, 16px); }
+  .gap-4-mediaM { gap: var(--spacing-4, 32px); }
+  .gap-5-mediaM { gap: var(--spacing-5, 64px); }
+  .gap-6-mediaM { gap: var(--spacing-6, 128px); }
+  .gap-7-mediaM { gap: var(--spacing-7, 256px); }
+}
+@media (--breakpoint-xlarge) {
+  .gap-0-mediaXL { gap: var(--spacing-0, 0); }
+  .gap-1-mediaXL { gap: var(--spacing-1, 4px); }
+  .gap-2-mediaXL { gap: var(--spacing-2, 8px); }
+  .gap-3-mediaXL { gap: var(--spacing-3, 16px); }
+  .gap-4-mediaXL { gap: var(--spacing-4, 32px); }
+  .gap-5-mediaXL { gap: var(--spacing-5, 64px); }
+  .gap-6-mediaXL { gap: var(--spacing-6, 128px); }
+  .gap-7-mediaXL { gap: var(--spacing-7, 256px); }
+}

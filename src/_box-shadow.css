@@ -3,39 +3,115 @@
   BOX-SHADOW
   Docs: http://tachyons.io/docs/themes/box-shadow/
 
-  Media Query Extensions:
-   -ns = not-small
-   -m  = medium
-   -l  = large
+  REF
+  Layered shadows: https://tobiasahlin.com/blog/layered-smooth-box-shadows/
 
  */
 
-.boxshadow-1 { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-.boxshadow-2 { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
-.boxshadow-3 { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-.boxshadow-4 { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
-.boxshadow-5 { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
-
-@media (--breakpoint-not-small) {
-  .boxshadow-1-ns { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-2-ns { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-3-ns { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-4-ns { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-5-ns { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+.boxshadow { 
+  box-shadow: var(--shadow, inset 0 0 1px 0 rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .5))); 
 }
 
-@media (--breakpoint-medium) {
-  .boxshadow-1-m { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-2-m { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-3-m { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-4-m { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-5-m { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+.boxshadow-hover:hover,
+.boxshadow-hover:focus { 
+  --shadow-opacity: .6;
 }
 
-@media (--breakpoint-large) {
-  .boxshadow-1-l { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-2-l { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-3-l { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-4-l { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
-  .boxshadow-5-l { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+/* 
+ * TODO: potential pattern 
+  .shadow-hover:hover {
+    --shadow-opacity: .09;
+    --shadow-x: 1px;
+    --shadow-y: 1px;
+    --shadow-blur: 1px;
+    --shadow-spread: 1px;
+    --shadow-multiplier: 2;
+  }
+*/
+
+/* Box shadow based borders */
+ 
+.boxshadow-border1 { box-shadow: inset 0 0 var(--shadow-border-width, 1px) 0 rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)); }
+.boxshadow-border2 { box-shadow: inset 0 0 var(--shadow-border-width, 1px) 0 rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .25)); }
+.boxshadow-border3 { box-shadow: inset 0 0 var(--shadow-border-width) 0 currentColor; }
+.boxshadow-border4 { box-shadow: inset 0 0 2px 0 rgb(var(--shadow-color-light, 255 255 255) / var(--shadow-opacity, .125)); }
+.boxshadow-border5 { box-shadow: inset 0 0 2px 0 rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125))}
+.boxshadow-border6 { box-shadow: inset 0 0 2px 0 currentColor; }
+
+.boxshadow-1 { 
+  box-shadow: 
+    0 1px 1px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)), 
+    0 2px 2px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)), 
+    0 4px 4px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)), 
+    0 8px 8px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)), 
+    0 16px 16px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)); 
+}
+
+.boxshadow-2 {  
+  box-shadow: 
+    0 1px 1px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)), 
+    0 2px 2px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)), 
+    0 4px 4px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)), 
+    0 8px 8px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .125)); 
+}
+
+.boxshadow-3 {  
+  --shadow-opacity: .11;
+  box-shadow: 
+    0 1px 1px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .11)),
+    0 2px 2px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .11)),
+    0 4px 4px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .11)),
+    0 8px 8px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .11)),
+    0 16px 16px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .11)), 
+    0 32px 32px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, .11)); 
+}
+
+.boxshadow-4 {  
+  --shadow-opacity: .05;
+  box-shadow: 
+    0 1px 1px rgb(var(--shadow-color, 0 0 0) / calc(var(--shadow-opacity, 0.25) * 5)), 
+    0 2px 2px rgb(var(--shadow-color, 0 0 0) / calc(var(--shadow-opacity, 0.20) * 4)),
+    0 4px 4px rgb(var(--shadow-color, 0 0 0) / calc(var(--shadow-opacity, 0.15) * 3)), 
+    0 8px 8px rgb(var(--shadow-color, 0 0 0) / calc(var(--shadow-opacity, 0.10) * 2)), 
+    0 16px 16px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.05)); 
+}
+
+.boxshadow-5 {  
+  --shadow-opacity: .08;
+  box-shadow: 
+    0 var(--shadow-y) 1px rgb(var(--shadow-color, 0 0 0) / calc(var(--shadow-opacity, 0.08) * 1)), 
+    0 calc(var(--shadow-y) * 2) 2px rgb(var(--shadow-color, 0 0 0) / calc(var(--shadow-opacity, 0.12) * 1.5)), 
+    0 calc(var(--shadow-y) * 4) 4px rgb(var(--shadow-color, 0 0 0) / calc(var(--shadow-opacity, 0.16) * 2)), 
+    0 calc(var(--shadow-y) * 8) 8px rgb(var(--shadow-color, 0 0 0) / calc(var(--shadow-opacity, 0.20) * 2.5)); 
+}
+
+.boxshadow-6 {  
+  --shadow-opacity: .07;
+  box-shadow: 
+    0 1px 2px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.7)), 
+    0 2px 4px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.7)), 
+    0 4px 8px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.7)), 
+    0 8px 16px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.7)), 
+    0 16px 32px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.7)), 
+    0 32px 64px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.7)); 
+}
+
+.boxshadow-7 {  
+  --shadow-opacity: .11;
+  box-shadow: 
+    0 1px 1px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.11)), 
+    0 2px 2px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.11)), 
+    0 4px 4px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.11)), 
+    0 6px 8px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.11)), 
+    0 8px 16px rgb(var(--shadow-color, 0 0 0) / var(--shadow-opacity, 0.11)); 
+}
+
+.boxshadow-8 {  
+  --shadow-opacity: .09;
+  box-shadow: 
+    0 2px 1px rgb(var(--shadow-color, 0 0 0) / 0.09), 
+    0 4px 2px rgb(var(--shadow-color, 0 0 0) / 0.09), 
+    0 8px 4px rgb(var(--shadow-color, 0 0 0) / 0.09), 
+    0 16px 8px rgb(var(--shadow-color, 0 0 0) / 0.09), 
+    0 32px 16px rgb(var(--shadow-color, 0 0 0) / 0.09); 
 }

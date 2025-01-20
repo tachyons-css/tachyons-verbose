@@ -18,23 +18,3 @@
 .clear-both { clear: both; }
 .clear-none { clear: none; }
 
-@media (--breakpoint-not-small) {
-  .clear-left-ns { clear: left; }
-  .clear-right-ns { clear: right; }
-  .clear-both-ns { clear: both; }
-  .clear-none-ns { clear: none; }
-}
-
-@media (--breakpoint-medium) {
-  .clear-left-m { clear: left; }
-  .clear-right-m { clear: right; }
-  .clear-both-m { clear: both; }
-  .clear-none-m { clear: none; }
-}
-
-@media (--breakpoint-large) {
-  .clear-left-l { clear: left; }
-  .clear-right-l { clear: right; }
-  .clear-both-l { clear: both; }
-  .clear-none-l { clear: none; }
-}

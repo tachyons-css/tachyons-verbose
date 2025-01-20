@@ -5,26 +5,45 @@
 
 */
 
-  .lineheight-solid, .lineheight-1       { line-height: 1; }
-  .lineheight-title, .lineheight-1p25 { line-height: 1.25; }
-  .lineheight-copy, .lineheight-1p5  { line-height: 1.5; }
+  .lineheight-solid { line-height: var(--line-height-solid, 1); }
+  .lineheight-title { line-height: var(--line-height-title, 1.25); }
+  .lineheight-body  { line-height: var(--line-height-body, 1.5); }
+  .lineheight-1     { line-height: 1; }
+  .lineheight-1p25  { line-height: 1.25; }
+  .lineheight-1p5   { line-height: 1.5; }
 
-@media (--breakpoint-not-small) {
-  .lineheight-solid, .lineheight-1-ns       { line-height: 1; }
-  .lineheight-title-ns, .lineheight-1p25-ns { line-height: 1.25; }
-  .lineheight-copy-ns, .lineheight-1p5-ns  { line-height: 1.5; }
+@media (--breakpoint-small) {
+  .lineheight-solid-mediaS { line-height: var(--line-height-solid, 1); }
+  .lineheight-title-mediaS { line-height: var(--line-height-title, 1.25); }
+  .lineheight-body-mediaS  { line-height: var(--line-height-body, 1.5); }
+  .lineheight-1-mediaS     { line-height: 1; }
+  .lineheight-1p25-mediaS  { line-height: 1.25; }
+  .lineheight-1p5-mediaS   { line-height: 1.5; }
 }
 
 @media (--breakpoint-medium) {
-  .lineheight-solid, .lineheight-1-m       { line-height: 1; }
-  .lineheight-title-m, .lineheight-1p25-m { line-height: 1.25; }
-  .lineheight-copy-m, .lineheight-1p5-m  { line-height: 1.5; }
+  .lineheight-solid-mediaM { line-height: var(--line-height-solid, 1); }
+  .lineheight-title-mediaM { line-height: var(--line-height-title, 1.25); }
+  .lineheight-body-mediaM  { line-height: var(--line-height-body, 1.5); }
+  .lineheight-1-mediaM     { line-height: 1; }
+  .lineheight-1p25-mediaM  { line-height: 1.25; }
+  .lineheight-1p5-mediaM   { line-height: 1.5; }
 }
 
 @media (--breakpoint-large) {
-  .lineheight-solid, .lineheight-1-l       { line-height: 1; }
-  .lineheight-title-l, .lineheight-1p25-l { line-height: 1.25; }
-  .lineheight-copy-l, .lineheight-1p5-l  { line-height: 1.5; }
+  .lineheight-solid-mediaL { line-height: var(--line-height-solid, 1); }
+  .lineheight-title-mediaL { line-height: var(--line-height-title, 1.25); }
+  .lineheight-body-mediaL  { line-height: var(--line-height-body, 1.5); }
+  .lineheight-1-mediaL     { line-height: 1; }
+  .lineheight-1p25-mediaL  { line-height: 1.25; }
+  .lineheight-1p5-mediaL   { line-height: 1.5; }
 }
 
-
+@media (--breakpoint-xlarge) {
+  .lineheight-solid-mediaXL { line-height: var(--line-height-solid, 1); }
+  .lineheight-title-mediaXL { line-height: var(--line-height-title, 1.25); }
+  .lineheight-body-mediaXL  { line-height: var(--line-height-body, 1.5); }
+  .lineheight-1-mediaXL     { line-height: 1; }
+  .lineheight-1p25-mediaXL  { line-height: 1.25; }
+  .lineheight-1p5-mediaXL   { line-height: 1.5; }
+}

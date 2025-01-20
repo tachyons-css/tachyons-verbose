@@ -1,0 +1,115 @@
+/*
+
+  FILTER EFFECTS
+
+    - Blur
+    - Grayscale
+    - Hue Rotate
+    - Invert
+
+*/
+
+.filter-none { filter: none; }
+
+.filter-blur1,
+.filter-blur4px { filter: blur(4px); }
+.filter-blur2,
+.filter-blur16px { filter: blur(16px); }
+.filter-blur3,
+.filter-blur96px { filter: blur(96px); }
+
+.filter-grayscale0,
+.filter-grayscale1 { filter: grayscale(0); }
+.filter-grayscale2,
+.filter-grayscale50percent { filter: grayscale(50%); }
+.filter-grayscale3,
+.filter-grayscale100percent { filter: grayscale(100%); }
+
+.filter-huerotate0 { filter: hue-rotate(0deg);}
+.filter-huerotate1,
+.filter-huerotate45deg { filter: hue-rotate(45deg);}
+.filter-huerotate2,
+.filter-huerotate90deg { filter: hue-rotate(90deg);}
+.filter-huerotate3,
+.filter-huerotate135deg { filter: hue-rotate(135deg);}
+.filter-huerotate4,
+.filter-huerotate180deg { filter: hue-rotate(180deg);}
+.filter-huerotate5,
+.filter-huerotate225deg { filter: hue-rotate(225deg);}
+.filter-huerotate6,
+.filter-huerotate270deg { filter: hue-rotate(270deg);}
+.filter-huerotate7,
+.filter-huerotate315deg { filter: hue-rotate(315deg);}
+
+.filter-invert,
+.filter-invert100percent { filter: invert(100%); }
+
+/* TODO: Add drop-shadow */
+
+.filter-none-hover:hover { filter: none; }
+
+.filter-blur1-hover:hover,
+.filter-blur4px-hover:hover { filter: blur(4px); }
+.filter-blur2-hover:hover,
+.filter-blur16px-hover:hover { filter: blur(16px); }
+.filter-blur3-hover:hover,
+.filter-blur96px-hover:hover { filter: blur(96px); }
+
+.filter-grayscale0-hover:hover,
+.filter-grayscale1-hover:hover { filter: grayscale(0); }
+.filter-grayscale2-hover:hover,
+.filter-grayscale50percent-hover:hover { filter: grayscale(50%); }
+.filter-grayscale3-hover:hover,
+.filter-grayscale100percent-hover:hover { filter: grayscale(100%); }
+
+.filter-huerotate0:hover { filter: hue-rotate(0deg);}
+.filter-huerotate1:hover,
+.filter-huerotate45deg:hover { filter: hue-rotate(45deg);}
+.filter-huerotate2:hover,
+.filter-huerotate90deg:hover { filter: hue-rotate(90deg);}
+.filter-huerotate3:hover,
+.filter-huerotate135deg:hover { filter: hue-rotate(135deg);}
+.filter-huerotate4:hover,
+.filter-huerotate180deg:hover { filter: hue-rotate(180deg);}
+.filter-huerotate5:hover,
+.filter-huerotate225deg:hover { filter: hue-rotate(225deg);}
+.filter-huerotate6:hover,
+.filter-huerotate270deg:hover { filter: hue-rotate(270deg);}
+.filter-huerotate7:hover,
+.filter-huerotate315deg:hover { filter: hue-rotate(315deg);}
+
+.filter-invert-hover:hover,
+.filter-invert100percent:hover { filter: invert(100%); }
+
+.filter-blur1-focus:focus,
+.filter-blur4px-focus:focus { filter: blur(4px); }
+.filter-blur2-focus:focus,
+.filter-blur16px-focus:focus { filter: blur(16px); }
+.filter-blur3-focus:focus,
+.filter-blur96px-focus:focus { filter: blur(96px); }
+
+.filter-grayscale1-focus:focus,
+.filter-grayscale0-focus:focus { filter: grayscale(0); }
+.filter-grayscale2-focus:focus,
+.filter-grayscale50percent-focus:focus { filter: grayscale(50%); }
+.filter-grayscale3-focus:focus,
+.filter-grayscale100percent-focus:focus { filter: grayscale(100%); }
+
+.filter-huerotate0-focus:focus { filter: hue-rotate(0deg);}
+.filter-huerotate1-focus:focus,
+.filter-huerotate45deg-focus:focus { filter: hue-rotate(45deg);}
+.filter-huerotate2-focus:focus,
+.filter-huerotate90deg-focus:focus { filter: hue-rotate(90deg);}
+.filter-huerotate3-focus:focus,
+.filter-huerotate135deg-focus:focus { filter: hue-rotate(135deg);}
+.filter-huerotate4-focus:focus,
+.filter-huerotate180deg-focus:focus { filter: hue-rotate(180deg);}
+.filter-huerotate5-focus:focus,
+.filter-huerotate225deg-focus:focus { filter: hue-rotate(225deg);}
+.filter-huerotate6-focus:focus,
+.filter-huerotate270deg-focus:focus { filter: hue-rotate(270deg);}
+.filter-huerotate7-focus:focus,
+.filter-huerotate315deg-focus:focus { filter: hue-rotate(315deg);}
+
+.filter-invert-focus:focus,
+.filter-invert100percent-focus:focus { filter: invert(100%); }

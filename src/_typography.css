@@ -5,61 +5,76 @@
 
 */
 
-
-
-/* Measure is limited to ~66 characters */
-.measure {
-  max-width: 30em;
+/* Measure is limited to 66 characters */
+.measure,
+.maxwidth-measure {
+  max-width: var(--measure, 66ch);
 }
 
 /* Measure is limited to ~80 characters */
-.measure-wide, .measurewide {
-  max-width: 34em;
+.measure-wide,
+.measurewide,
+.maxwidth-measurewide {
+  max-width: var(--measure-wide, 80ch);
 }
 
-/* Measure is limited to ~45 characters */
-.measure-narrow, .measurenarrow {
-  max-width: 20em;
+/* Measure is limited to 45 characters */
+.measure-narrow,
+.measurenarrow,
+.maxwidth-measurenarrow {
+  max-width: var(--measure-narrow, 45ch);
 }
 
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */
-.indent {
+.indent,
+.textindent-1 {
   text-indent: 1em;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.small-caps, .smallcaps, .fontvariant-smallcaps {
+.small-caps,
+.smallcaps,
+.fontvariant-smallcaps  {
   font-variant: small-caps;
 }
 
 /* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
-
 .truncate {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-@media (--breakpoint-not-small) {
-  .measure-ns  {
-    max-width: 30em;
+
+@media (--breakpoint-small) {
+
+  .measure-mediaS,
+  .maxwidth-measure-mediaS {
+    max-width: var(--measure, 66ch);
   }
-  .measure-wide-ns, .measurewide-ns {
-    max-width: 34em;
+  .measure-wide-mediaS,
+  .measurewide-mediaS,
+  .maxwidth-measurewide-mediaS {
+    max-width: var(--measure-wide, 80ch);
   }
-  .measure-narrow-ns, .measurenarrow-ns {
-    max-width: 20em;
+  .measure-narrow-mediaS,
+  .measurenarrow-mediaS,
+  .maxwidth-measurenarrow-mediaS {
+    max-width: var(--measure-narrow, 45ch);
   }
-  .indent-ns {
+  .indent-mediaS,
+  .textindent-1-mediaS {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .small-caps-ns, .smallcaps-ns, .fontvariant-smallcaps-ns {
+  .small-caps-mediaS,
+  .smallcaps-mediaS,
+  .fontvariant-smallcaps-mediaS  {
     font-variant: small-caps;
   }
-  .truncate-ns {
+  .truncate-mediaS {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -67,24 +82,33 @@
 }
 
 @media (--breakpoint-medium) {
-  .measure-m {
-    max-width: 30em;
+
+  .measure-mediaM,
+  .maxwidth-measure-mediaM {
+    max-width: var(--measure, 66ch);
   }
-  .measure-wide-m, .measurewide-m {
-    max-width: 34em;
+  .measure-wide-mediaM,
+  .measurewide-mediaM,
+  .maxwidth-measurewide-mediaM {
+    max-width: var(--measure-wide, 80ch);
   }
-  .measure-narrow-m, .measurenarrow-m {
-    max-width: 20em;
+  .measure-narrow-mediaM,
+  .measurenarrow-mediaM,
+  .maxwidth-measurenarrow-mediaM {
+    max-width: var(--measure-narrow, 45ch);
   }
-  .indent-m {
+  .indent-mediaM,
+  .textindent-1-mediaM {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .small-caps-m, .smallcaps-m, .fontvariant-smallcaps-m {
+  .small-caps-mediaM,
+  .smallcaps-mediaM,
+  .fontvariant-smallcaps-mediaM  {
     font-variant: small-caps;
   }
-  .truncate-m {
+  .truncate-mediaM {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -92,24 +116,67 @@
 }
 
 @media (--breakpoint-large) {
-  .measure-l {
-    max-width: 30em;
+  
+  .measure-mediaL,
+  .maxwidth-measure-mediaL {
+    max-width: var(--measure, 66ch);
   }
-  .measure-wide-l, .measurewide-l {
-    max-width: 34em;
+  .measure-wide-mediaL,
+  .measurewide-mediaL,
+  .maxwidth-measurewide-mediaL {
+    max-width: var(--measure-wide, 80ch);
   }
-  .measure-narrow-l, .measurenarrow-l {
-    max-width: 20em;
+  .measure-narrow-mediaL,
+  .measurenarrow-mediaL,
+  .maxwidth-measurenarrow-mediaL {
+    max-width: var(--measure-narrow, 45ch);
   }
-  .indent-l {
+  .indent-mediaL,
+  .textindent-1-mediaL {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .small-caps-l, .smallcaps-l, .fontvariant-smallcaps-l {
+  .small-caps-mediaL,
+  .smallcaps-mediaL,
+  .fontvariant-smallcaps-mediaL  {
     font-variant: small-caps;
   }
-  .truncate-l {
+  .truncate-mediaL {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (--breakpoint-xlarge) {
+  
+  .measure-mediaXL,
+  .maxwidth-measure-mediaXL {
+    max-width: var(--measure, 66ch);
+  }
+  .measure-wide-mediaXL,
+  .measurewide-mediaXL,
+  .maxwidth-measurewide-mediaXL {
+    max-width: var(--measure-wide, 80ch);
+  }
+  .measure-narrow-mediaXL,
+  .measurenarrow-mediaXL,
+  .maxwidth-measurenarrow-mediaXL {
+    max-width: var(--measure-narrow, 45ch);
+  }
+  .indent-mediaXL,
+  .textindent-1-mediaXL {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .small-caps-mediaXL,
+  .smallcaps-mediaXL,
+  .fontvariant-smallcaps-mediaXL  {
+    font-variant: small-caps;
+  }
+  .truncate-mediaXL {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

@@ -4,9 +4,14 @@
    Docs: http://tachyons.io/docs/themes/background-size/
 
    Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
+     -mediaS = small
+     -mediaM  = medium
+     -mediaL  = large
+
+   Container Query Extensions:
+     -containerS = small
+     -containerM = medium
+     -containerL = large
 
 */
 
@@ -18,18 +23,113 @@
   .backgroundsize-cover  { background-size: cover!important; }
   .backgroundsize-contain  { background-size: contain!important; }
 
-@media (--breakpoint-not-small) {
-  .backgroundsize-cover-ns { background-size: cover!important; }
-  .backgroundsize-contain-ns { background-size: contain!important; }
+  .backgroundsize-1     { background-size: 4px; }
+  .backgroundsize-2     { background-size: 8px; }
+  .backgroundsize-3     { background-size: 16px; }
+  .backgroundsize-4     { background-size: 32px; }
+  .backgroundsize-5     { background-size: 64px; }
+  .backgroundsize-6  { background-size: 100%; }
+  .backgroundsize-7  { background-size: 150%; }
+  .backgroundsize-8  { background-size: 200%; }
+
+  .backgroundsize-4px     { background-size: 4px; }
+  .backgroundsize-8px     { background-size: 8px; }
+  .backgroundsize-16px     { background-size: 16px; }
+  .backgroundsize-32px     { background-size: 32px; }
+  .backgroundsize-64px     { background-size: 64px; }
+  .backgroundsize-100percent  { background-size: 100%; }
+  .backgroundsize-150percent  { background-size: 150%; }
+  .backgroundsize-200percent  { background-size: 200%; }
+  
+@media (--breakpoint-small) {
+  .backgroundsize-cover-s { background-size: cover!important; }
+  .backgroundsize-contain-s { background-size: contain!important; }
+
+  .backgroundsize-1-mediaS     { background-size: 4px; }
+  .backgroundsize-2-mediaS     { background-size: 8px; }
+  .backgroundsize-3-mediaS     { background-size: 16px; }
+  .backgroundsize-4-mediaS     { background-size: 32px; }
+  .backgroundsize-5-mediaS     { background-size: 64px; }
+  .backgroundsize-6-mediaS  { background-size: 100%; }
+  .backgroundsize-7-mediaS  { background-size: 150%; }
+  .backgroundsize-8-mediaS  { background-size: 200%; }
+
+  .backgroundsize-4px-mediaS     { background-size: 4px; }
+  .backgroundsize-8px-mediaS     { background-size: 8px; }
+  .backgroundsize-16px-mediaS     { background-size: 16px; }
+  .backgroundsize-32px-mediaS     { background-size: 32px; }
+  .backgroundsize-64px-mediaS     { background-size: 64px; }
+  .backgroundsize-100percent-mediaS  { background-size: 100%; }
+  .backgroundsize-150percent-mediaS  { background-size: 150%; }
+  .backgroundsize-200percent-mediaS  { background-size: 200%; }
 }
 
 @media (--breakpoint-medium) {
-  .backgroundsize-cover-m { background-size: cover!important; }
-  .backgroundsize-contain-m { background-size: contain!important; }
+  .backgroundsize-cover-mediaM  { background-size: cover!important; }
+  .backgroundsize-contain-mediaM  { background-size: contain!important; }
+
+  .backgroundsize-1-mediaM      { background-size: 4px; }
+  .backgroundsize-2-mediaM      { background-size: 8px; }
+  .backgroundsize-3-mediaM      { background-size: 16px; }
+  .backgroundsize-4-mediaM      { background-size: 32px; }
+  .backgroundsize-5-mediaM      { background-size: 64px; }
+  .backgroundsize-6-mediaM   { background-size: 100%; }
+  .backgroundsize-7-mediaM   { background-size: 150%; }
+  .backgroundsize-8-mediaM   { background-size: 200%; }
+
+  .backgroundsize-4px-mediaM      { background-size: 4px; }
+  .backgroundsize-8px-mediaM      { background-size: 8px; }
+  .backgroundsize-16px-mediaM      { background-size: 16px; }
+  .backgroundsize-32px-mediaM      { background-size: 32px; }
+  .backgroundsize-64px-mediaM      { background-size: 64px; }
+  .backgroundsize-100percent-mediaM   { background-size: 100%; }
+  .backgroundsize-150percent-mediaM   { background-size: 150%; }
+  .backgroundsize-200percent-mediaM   { background-size: 200%; }
 }
 
 @media (--breakpoint-large) {
-  .backgroundsize-cover-l { background-size: cover!important; }
-  .backgroundsize-contain-l { background-size: contain!important; }
+  .backgroundsize-cover-mediaL  { background-size: cover!important; }
+  .backgroundsize-contain-mediaL  { background-size: contain!important; }
+
+  .backgroundsize-1-mediaL      { background-size: 4px; }
+  .backgroundsize-2-mediaL      { background-size: 8px; }
+  .backgroundsize-3-mediaL      { background-size: 16px; }
+  .backgroundsize-4-mediaL      { background-size: 32px; }
+  .backgroundsize-5-mediaL      { background-size: 64px; }
+  .backgroundsize-6-mediaL   { background-size: 100%; }
+  .backgroundsize-7-mediaL   { background-size: 150%; }
+  .backgroundsize-8-mediaL   { background-size: 200%; }
+
+  .backgroundsize-4px-mediaL      { background-size: 4px; }
+  .backgroundsize-8px-mediaL      { background-size: 8px; }
+  .backgroundsize-16px-mediaL      { background-size: 16px; }
+  .backgroundsize-32px-mediaL      { background-size: 32px; }
+  .backgroundsize-64px-mediaL      { background-size: 64px; }
+  .backgroundsize-100percent-mediaL   { background-size: 100%; }
+  .backgroundsize-150percent-mediaL   { background-size: 150%; }
+  .backgroundsize-200percent-mediaL   { background-size: 200%; }
 }
 
+
+@media (--breakpoint-xlarge) {
+  .backgroundsize-cover-mediaXL  { background-size: cover!important; }
+  .backgroundsize-contain-mediaXL  { background-size: contain!important; }
+
+  .backgroundsize-1-mediaXL      { background-size: 4px; }
+  .backgroundsize-2-mediaXL      { background-size: 8px; }
+  .backgroundsize-3-mediaXL      { background-size: 16px; }
+  .backgroundsize-4-mediaXL      { background-size: 32px; }
+  .backgroundsize-5-mediaXL      { background-size: 64px; }
+  .backgroundsize-6-mediaXL   { background-size: 100%; }
+  .backgroundsize-7-mediaXL   { background-size: 150%; }
+  .backgroundsize-8-mediaXL   { background-size: 200%; }
+
+  .backgroundsize-4px-mediaXL      { background-size: 4px; }
+  .backgroundsize-8px-mediaXL      { background-size: 8px; }
+  .backgroundsize-16px-mediaXL      { background-size: 16px; }
+  .backgroundsize-32px-mediaXL      { background-size: 32px; }
+  .backgroundsize-64px-mediaXL      { background-size: 64px; }
+  .backgroundsize-100percent-mediaXL   { background-size: 100%; }
+  .backgroundsize-150percent-mediaXL   { background-size: 150%; }
+  .backgroundsize-200percent-mediaXL   { background-size: 200%; }
+}

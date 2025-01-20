@@ -1,6 +1,8 @@
 /*
+
   HOVER EFFECTS
   Docs: http://tachyons.io/docs/themes/hovers/
+
     - Dim
     - Glow
     - Hide Child
@@ -8,6 +10,7 @@
     - Grow
     - Pointer
     - Shadow
+
 */
 
 /*
@@ -108,23 +111,29 @@
 
 /* Add pointer on hover */
 
-.hover-pointer:hover {
+.hover-pointer:hover,
+.cursor-pointer {
   cursor: pointer;
 }
 
-/*
-   Add shadow on hover.
-   Performant box-shadow animation pattern from
-   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
-*/
+.transition-all {
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
-.hover-shadow {
+/* 
+ * TODO: Test and rename
+   Add shadow on hover.
+
+   Performant box-shadow animation pattern from 
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/ 
+
+.shadow-hover {
   cursor: pointer;
   position: relative;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.hover-shadow:after {
+.shadow-hover::after {
   content: '';
   box-shadow: 0px 0px 16px 2px rgba( 0, 0, 0, .2 );
   border-radius: inherit;
@@ -138,16 +147,28 @@
   transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.hover-shadow:hover::after,
-.hover-shadow:focus::after {
+.shadow-hover:hover::after,
+.shadow-hover:focus::after {
   opacity: 1;
 }
+*/
 
 /* Combine with classes in skins and skins-pseudo for
  * many different transition possibilities. */
 
-.hover-backgroundanimate,
-.hover-backgroundanimate:hover,
-.hover-backgroundanimate:focus {
-  transition: background-color .15s ease-in-out;
+.transition-backgroundcolor {
+  transition: background-color .25s ease-in-out; 
 }
+
+.transition-color {
+  transition: color .25s ease-in-out; 
+}
+
+.hover-filter-none:hover { filter: none; }
+
+.hover-filter-blur-none:hover { filter: blur(0); }
+.hover-filter-blur:hover { filter: blur(96px); }
+
+.hover-grayscale-0:hover { filter: grayscale(0); }
+.hover-grayscale-50percent:hover { filter: grayscale(50%); }
+.hover-grayscale-100percent:hover { filter: grayscale(100%); }

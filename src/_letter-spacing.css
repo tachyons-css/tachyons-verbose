@@ -5,24 +5,30 @@
 
 */
 
-.tracked, .letterspacing-tracked           { letter-spacing:  .1em; }
-.trackedtight, .letterspacing-tight       { letter-spacing: -.0.05em; }
-.megatracked, .letterspacing-megatracked  { letter-spacing:  .25em; }
+.letterspacing-tracked     { letter-spacing: var( --letter-spacing-tracked, .1em ) }
+.letterspacing-tight       { letter-spacing: var( --letter-spacing-tight, -0.05em ); }
+.letterspacing-mega        { letter-spacing: var( --letter-spacing-large, .25em ) }
 
-@media (--breakpoint-not-small) {
-  .tracked-ns, .letterspacing-tracked-ns           { letter-spacing:  .1em; }
-  .trackedtight-ns, .letterspacing-tight-ns       { letter-spacing: -.0.05em; }
-  .megatracked-ns, .letterspacing-megatracked-ns  { letter-spacing:  .25em; }
+@media (--breakpoint-small) {
+  .letterspacing-tracked-mediaS { letter-spacing: var( --letter-spacing-tracked, .1em ) }
+  .letterspacing-tight-media    { letter-spacing: var( --letter-spacing-tight, -0.05em ); }
+  .letterspacing-mega-mediaS    { letter-spacing: var( --letter-spacing-large, .25em ) }
 }
 
 @media (--breakpoint-medium) {
-  .tracked-m, .letterspacing-tracked-m             { letter-spacing:  .1em; }
-  .trackedtight-m, .letterspacing-tight-m         { letter-spacing: -.0.05em; }
-  .megatracked-m, .letterspacing-megatracked-m    { letter-spacing:  .25em; }
+  .letterspacing-tracked-mediaM { letter-spacing: var( --letter-spacing-tracked, .1em ) }
+  .letterspacing-tight-mediaM   { letter-spacing: var( --letter-spacing-tight, -0.05em ); }
+  .letterspacing-mega-mediaM    { letter-spacing: var( --letter-spacing-large, .25em ) }
 }
 
 @media (--breakpoint-large) {
-  .tracked-l, .letterspacing-tracked-l             { letter-spacing:  .1em; }
-  .trackedtight-l, .letterspacing-tight-l         { letter-spacing: -.0.05em; }
-  .megatracked-l, .letterspacing-megatracked-l    { letter-spacing:  .25em; }
+  .letterspacing-tracked-mediaL { letter-spacing: var( --letter-spacing-tracked, .1em ) }
+  .letterspacing-tight-mediaL   { letter-spacing: var( --letter-spacing-tight, -0.05em ); }
+  .letterspacing-mega-mediaL    { letter-spacing: var( --letter-spacing-large, .25em ) }
+}
+
+@media (--breakpoint-xlarge) {
+  .letterspacing-tracked-mediaXL { letter-spacing: var( --letter-spacing-tracked, .1em ) }
+  .letterspacing-tight-mediaXL   { letter-spacing: var( --letter-spacing-tight, -0.05em ); }
+  .letterspacing-mega-mediaXL    { letter-spacing: var( --letter-spacing-large, .25em ) }
 }

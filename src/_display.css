@@ -3,92 +3,58 @@
    DISPLAY
    Docs: http://tachyons.io/docs/layout/display
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
 */
 
-.display-none {               display: none; }
-.display-inline {             display: inline; }
-.display-block {              display: block; }
-.display-inlineblock {        display: inline-block; }
-.display-inlinetable {        display: inline-table; }
-.display-table {              display: table; }
-.display-tablecell {          display: table-cell; }
-.display-tablerow {           display: table-row; }
-.display-tablerowgroup {      display: table-row-group; }
-.display-tablecolumn {        display: table-column; }
-.display-tablecolumngroup {   display: table-column-group; }
+.display-none             { display: none; }
+.display-inline           { display: inline; }
+.display-block            { display: block; }
+.display-inlineblock      { display: inline-block; }
+.display-flex             { display: flex; }
+.display-inlineflex       { display: inline-flex; }
+.display-grid             { display: grid; }
+.display-inlinegrid       { display: inline-grid; }
 
-/*
-  This will set table to full width and then
-  all cells will be equal width
-*/
-.displaytable-fixed,
-.tablelayout-fixed {
-  table-layout: fixed;
-  width: 100%;
-}
 
-@media (--breakpoint-not-small) {
-  .display-none-ns {              display: none; }
-  .display-inline-ns {            display: inline; }
-  .display-block-ns {             display: block; }
-  .display-inlineblock-ns {       display: inline-block; }
-  .display-inlinetable-ns {       display: inline-table; }
-  .display-table-ns {             display: table; }
-  .display-tablecell-ns {         display: table-cell; }
-  .display-tablerow-ns {          display: table-row; }
-  .display-tablerowgroup-ns {     display: table-row-group; }
-  .display-tablecolumn-ns {       display: table-column; }
-  .display-tablecolumngroup-ns {  display: table-column-group; }
-
-  .displaytable-fixed-ns,
-  .tablelayout-fixed-ns {
-    table-layout: fixed;
-    width: 100%;
-  }
+@media (--breakpoint-small) {
+  .display-none-mediaS             { display: none; }
+  .display-inline-mediaS           { display: inline; }
+  .display-block-mediaS            { display: block; }
+  .display-inlineblock-mediaS      { display: inline-block; }
+  .display-flex-mediaS             { display: flex; }
+  .display-inlineflex-mediaS       { display: inline-flex; }
+  .display-grid-mediaS             { display: grid; }
+  .display-inlinegrid-mediaS       { display: inline-grid; }
 }
 
 @media (--breakpoint-medium) {
-  .display-none-m {              display: none; }
-  .display-inline-m {            display: inline; }
-  .display-block-m {             display: block; }
-  .display-inlineblock-m {       display: inline-block; }
-  .display-inlinetable-m {       display: inline-table; }
-  .display-table-m {             display: table; }
-  .display-tablecell-m {         display: table-cell; }
-  .display-tablerow-m {          display: table-row; }
-  .display-tablerowgroup-m {     display: table-row-group; }
-  .display-tablecolumn-m {       display: table-column; }
-  .display-tablecolumngroup-m {  display: table-column-group; }
-
-  .displaytable-fixed-m,
-  .tablelayout-fixed-m {
-    table-layout: fixed;
-    width: 100%;
-  }
+  .display-none-mediaM             { display: none; }
+  .display-inline-mediaM           { display: inline; }
+  .display-block-mediaM            { display: block; }
+  .display-inlineblock-mediaM      { display: inline-block; }
+  .display-flex-mediaM             { display: flex; }
+  .display-inlineflex-mediaM       { display: inline-flex; }
+  .display-grid-mediaM             { display: grid; }
+  .display-inlinegrid-mediaM       { display: inline-grid; }
 }
 
 @media (--breakpoint-large) {
-  .display-none-l {              display: none; }
-  .display-inline-l {            display: inline; }
-  .display-block-l {             display: block; }
-  .display-inlineblock-l {       display: inline-block; }
-  .display-inlinetable-l {       display: inline-table; }
-  .display-table-l {             display: table; }
-  .display-tablecell-l {         display: table-cell; }
-  .display-tablerow-l {          display: table-row; }
-  .display-tablerowgroup-l {     display: table-row-group; }
-  .display-tablecolumn-l {       display: table-column; }
-  .display-tablecolumngroup-l {  display: table-column-group; }
-
-  .displaytable-fixed-l,
-  .tablelayout-fixed-l {
-    table-layout: fixed;
-    width: 100%;
-  }
+  .display-none-mediaL             { display: none; }
+  .display-inline-mediaL           { display: inline; }
+  .display-block-mediaL            { display: block; }
+  .display-inlineblock-mediaL      { display: inline-block; }
+  .display-flex-mediaL             { display: flex; }
+  .display-inlineflex-mediaL       { display: inline-flex; }
+  .display-grid-mediaL             { display: grid; }
+  .display-inlinegrid-mediaL       { display: inline-grid; }
 }
 
+@media (--breakpoint-xlarge) {
+  .display-none-mediaXL             { display: none; }
+  .display-inline-mediaXL           { display: inline; }
+  .display-block-mediaXL            { display: block; }
+  .display-inlineblock-mediaXL      { display: inline-block; }
+  .display-flex-mediaXL             { display: flex; }
+  .display-inlineflex-mediaXL       { display: inline-flex; }
+  .display-grid-mediaXL             { display: grid; }
+  .display-inlinegrid-mediaXL       { display: inline-grid; }
+}

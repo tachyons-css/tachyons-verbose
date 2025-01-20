@@ -5,28 +5,40 @@
 
  */
 
-.position-static { position: static; }
+.position-static    { position: static; }
 .position-relative  { position: relative; }
 .position-absolute  { position: absolute; }
-.position-fixed  { position: fixed; }
+.position-fixed     { position: fixed; }
+.position-sticky    { position: sticky; }
 
-@media (--breakpoint-not-small) {
-  .position-static-ns { position: static; }
-  .position-relative-ns  { position: relative; }
-  .position-absolute-ns  { position: absolute; }
-  .position-fixed-ns  { position: fixed; }
+@media (--breakpoint-small) {
+  .position-static-mediaS    { position: static; }
+  .position-relative-mediaS  { position: relative; }
+  .position-absolute-mediaS  { position: absolute; }
+  .position-fixed-mediaS     { position: fixed; }
+  .position-sticky-mediaS    { position: sticky; }
 }
 
 @media (--breakpoint-medium) {
-  .position-static-m { position: static; }
-  .position-relative-m  { position: relative; }
-  .position-absolute-m  { position: absolute; }
-  .position-fixed-m  { position: fixed; }
+  .position-static-mediaM    { position: static; }
+  .position-relative-mediaM  { position: relative; }
+  .position-absolute-mediaM  { position: absolute; }
+  .position-fixed-mediaM     { position: fixed; }
+  .position-sticky-mediaM    { position: sticky; }
 }
 
 @media (--breakpoint-large) {
-  .position-static-l { position: static; }
-  .position-relative-l  { position: relative; }
-  .position-absolute-l  { position: absolute; }
-  .position-fixed-l  { position: fixed; }
+  .position-static-mediaL    { position: static; }
+  .position-relative-mediaL  { position: relative; }
+  .position-absolute-mediaL  { position: absolute; }
+  .position-fixed-mediaL     { position: fixed; }
+  .position-sticky-mediaL    { position: sticky; }
+}
+
+@media (--breakpoint-xlarge) {
+  .position-static-mediaXL    { position: static; }
+  .position-relative-mediaXL  { position: relative; }
+  .position-absolute-mediaXL  { position: absolute; }
+  .position-fixed-mediaXL     { position: fixed; }
+  .position-sticky-mediaXL    { position: sticky; }
 }

@@ -3,35 +3,37 @@
    BORDER STYLES
    Docs: http://tachyons.io/docs/themes/borders/
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
  */
 
-.borderstyle-dotted { border-style: dotted; }
-.borderstyle-dashed { border-style: dashed; }
-.borderstyle-solid {  border-style: solid; }
-.borderstyle-none {   border-style: none; }
+.borderstyle-dotted  { border-style: dotted; }
+.borderstyle-dashed  { border-style: dashed; }
+.borderstyle-solid   {  border-style: solid; }
+.borderstyle-none    {   border-style: none; }
 
-@media (--breakpoint-not-small) {
-   .borderstyle-dotted-ns { border-style: dotted; }
-   .borderstyle-dashed-ns { border-style: dashed; }
-   .borderstyle-solid-ns {  border-style: solid; }
-   .borderstyle-none-ns {   border-style: none; }
+@media (--breakpoint-small) {
+   .borderstyle-dotted-mediaS  { border-style: dotted; }
+   .borderstyle-dashed-mediaS  { border-style: dashed; }
+   .borderstyle-solid-mediaS   {  border-style: solid; }
+   .borderstyle-none-mediaS    {   border-style: none; }
 }
 
 @media (--breakpoint-medium) {
-   .borderstyle-dotted-m { border-style: dotted; }
-   .borderstyle-dashed-m { border-style: dashed; }
-   .borderstyle-solid-m {  border-style: solid; }
-   .borderstyle-none-m {   border-style: none; }
+   .borderstyle-dotted-mediaM  { border-style: dotted; }
+   .borderstyle-dashed-mediaM  { border-style: dashed; }
+   .borderstyle-solid-mediaM   {  border-style: solid; }
+   .borderstyle-none-mediaM    {   border-style: none; }
 }
 
 @media (--breakpoint-large) {
-  .borderstyle-dotted-l { border-style: dotted; }
-  .borderstyle-dashed-l { border-style: dashed; }
-  .borderstyle-solid-l {  border-style: solid; }
-  .borderstyle-none-l {   border-style: none; }
+  .borderstyle-dotted-mediaL  { border-style: dotted; }
+  .borderstyle-dashed-mediaL  { border-style: dashed; }
+  .borderstyle-solid-mediaL   {  border-style: solid; }
+  .borderstyle-none-mediaL    {   border-style: none; }
+}
+
+@media (--breakpoint-xlarge) {
+  .borderstyle-dotted-mediaXL  { border-style: dotted; }
+  .borderstyle-dashed-mediaXL  { border-style: dashed; }
+  .borderstyle-solid-mediaXL   {  border-style: solid; }
+  .borderstyle-none-mediaXL    {   border-style: none; }
 }

@@ -1,0 +1,43 @@
+/*
+
+  ALIGN-ITEMS
+
+*/
+
+.alignitems-flexstart   { align-items: flex-start; }
+.alignitems-flexend     { align-items: flex-end; }
+.alignitems-center      { align-items: center; }
+.alignitems-baseline    { align-items: baseline; }
+.alignitems-stretch     { align-items: stretch; }
+
+@media (--breakpoint-small) {
+  .alignitems-flexstart-mediaS   { align-items: flex-start; }
+  .alignitems-flexend-mediaS     { align-items: flex-end; }
+  .alignitems-center-mediaS      { align-items: center; }
+  .alignitems-baseline-mediaS    { align-items: baseline; }
+  .alignitems-stretch-mediaS     { align-items: stretch; }
+}
+
+@media (--breakpoint-medium) {
+  .alignitems-flexstart-mediaM   { align-items: flex-start; }
+  .alignitems-flexend-mediaM     { align-items: flex-end; }
+  .alignitems-center-mediaM      { align-items: center; }
+  .alignitems-baseline-mediaM    { align-items: baseline; }
+  .alignitems-stretch-mediaM     { align-items: stretch; }
+}
+
+@media (--breakpoint-large) {
+  .alignitems-flexstart-mediaL   { align-items: flex-start; }
+  .alignitems-flexend-mediaL     { align-items: flex-end; }
+  .alignitems-center-mediaL      { align-items: center; }
+  .alignitems-baseline-mediaL    { align-items: baseline; }
+  .alignitems-stretch-mediaL     { align-items: stretch; }
+}
+
+@media (--breakpoint-xlarge) {
+  .alignitems-flexstart-mediaXL   { align-items: flex-start; }
+  .alignitems-flexend-mediaXL     { align-items: flex-end; }
+  .alignitems-center-mediaXL      { align-items: center; }
+  .alignitems-baseline-mediaXL    { align-items: baseline; }
+  .alignitems-stretch-mediaXL     { align-items: stretch; }
+}

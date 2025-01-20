@@ -5,17 +5,51 @@
 
 */
 
-.opacity-100p { opacity: 1;    }
-.opacity-90p  { opacity: .9;   }
-.opacity-80p  { opacity: .8;   }
-.opacity-70p  { opacity: .7;   }
-.opacity-60p  { opacity: .6;   }
-.opacity-50p  { opacity: .5;   }
-.opacity-40p  { opacity: .4;   }
-.opacity-30p  { opacity: .3;   }
-.opacity-20p  { opacity: .2;   }
-.opacity-10p  { opacity: .1;   }
-.opacity-5p  { opacity: .05;  }
-.opacity-2p5p { opacity: .025; }
-.opacity-0, 
-.opacity-0p { opacity: 0; }
+/*
+  Tachyons Verbose implementation note:
+  Not using step variables for now, because not
+  sure how to make opacity-1 both the first step
+  but also when opacity value is 1 (i.e. 100%)
+*/
+
+.opacity-1     { opacity: var(--opacity-1, 1); }
+.opacity-0p9   { opacity: var(--opacity-0p9,.9); }
+.opacity-0p8   { opacity: var(--opacity-10,.8); }
+.opacity-0p7   { opacity: var(--opacity-9,.7);  }
+.opacity-0p6   { opacity: var(--opacity-8,.6);  }
+.opacity-0p5   { opacity: var(--opacity-7,.5);  }
+.opacity-0p4   { opacity: var(--opacity-6,.4);  }
+.opacity-0p3   { opacity: var(--opacity-5,.3);  }
+.opacity-0p2   { opacity: var(--opacity-4,.2);  }
+.opacity-0p1   { opacity: var(--opacity-3,.1);  }
+.opacity-0p05  { opacity: var(--opacity-2,.05); }
+.opacity-0p025 { opacity: var(--opacity-1,.025);}
+.opacity-0     { opacity: var(--opacity-0,0);   }
+
+.opacity-hover-1     { opacity: var(--opacity-1, 1); }
+.opacity-hover-0p9   { opacity: var(--opacity-0p9,.9); }
+.opacity-hover-0p8   { opacity: var(--opacity-10,.8); }
+.opacity-hover-0p7   { opacity: var(--opacity-9,.7);  }
+.opacity-hover-0p6   { opacity: var(--opacity-8,.6);  }
+.opacity-hover-0p5   { opacity: var(--opacity-7,.5);  }
+.opacity-hover-0p4   { opacity: var(--opacity-6,.4);  }
+.opacity-hover-0p3   { opacity: var(--opacity-5,.3);  }
+.opacity-hover-0p2   { opacity: var(--opacity-4,.2);  }
+.opacity-hover-0p1   { opacity: var(--opacity-3,.1);  }
+.opacity-hover-0p05  { opacity: var(--opacity-2,.05); }
+.opacity-hover-0p025 { opacity: var(--opacity-1,.025);}
+.opacity-hover-0     { opacity: var(--opacity-0,0);   }
+
+.opacity-focus-1     { opacity: var(--opacity-1, 1); }
+.opacity-focus-0p9   { opacity: var(--opacity-0p9,.9); }
+.opacity-focus-0p8   { opacity: var(--opacity-10,.8); }
+.opacity-focus-0p7   { opacity: var(--opacity-9,.7);  }
+.opacity-focus-0p6   { opacity: var(--opacity-8,.6);  }
+.opacity-focus-0p5   { opacity: var(--opacity-7,.5);  }
+.opacity-focus-0p4   { opacity: var(--opacity-6,.4);  }
+.opacity-focus-0p3   { opacity: var(--opacity-5,.3);  }
+.opacity-focus-0p2   { opacity: var(--opacity-4,.2);  }
+.opacity-focus-0p1   { opacity: var(--opacity-3,.1);  }
+.opacity-focus-0p05  { opacity: var(--opacity-2,.05); }
+.opacity-focus-0p025 { opacity: var(--opacity-1,.025);}
+.opacity-focus-0     { opacity: var(--opacity-0,0);   }

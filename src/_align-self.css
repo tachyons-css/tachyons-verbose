@@ -1,0 +1,43 @@
+/*
+
+  ALIGN-SELF
+
+*/
+
+.alignself-flexstart    { align-self: flex-start; }
+.alignself-flexend      { align-self: flex-end; }
+.alignself-center       { align-self: center; }
+.alignself-baseline     { align-self: baseline; }
+.alignself-stretch      { align-self: stretch; }
+
+@media (--breakpoint-small) {
+  .alignself-flexstart-mediaS    { align-self: flex-start; }
+  .alignself-flexend-mediaS      { align-self: flex-end; }
+  .alignself-center-mediaS       { align-self: center; }
+  .alignself-baseline-mediaS     { align-self: baseline; }
+  .alignself-stretch-mediaS      { align-self: stretch; }
+}
+
+@media (--breakpoint-medium) {
+  .alignself-flexstart-mediaM    { align-self: flex-start; }
+  .alignself-flexend-mediaM      { align-self: flex-end; }
+  .alignself-center-mediaM       { align-self: center; }
+  .alignself-baseline-mediaM     { align-self: baseline; }
+  .alignself-stretch-mediaM      { align-self: stretch; }
+}
+
+@media (--breakpoint-large) {
+  .alignself-flexstart-mediaL    { align-self: flex-start; }
+  .alignself-flexend-mediaL      { align-self: flex-end; }
+  .alignself-center-mediaL       { align-self: center; }
+  .alignself-baseline-mediaL     { align-self: baseline; }
+  .alignself-stretch-mediaL      { align-self: stretch; }
+}
+
+@media (--breakpoint-xlarge) {
+  .alignself-flexstart-mediaXL    { align-self: flex-start; }
+  .alignself-flexend-mediaXL      { align-self: flex-end; }
+  .alignself-center-mediaXL       { align-self: center; }
+  .alignself-baseline-mediaXL     { align-self: baseline; }
+  .alignself-stretch-mediaXL      { align-self: stretch; }
+}

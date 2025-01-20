@@ -9,21 +9,27 @@
 .whitespace-nowrap  { white-space: nowrap; }
 .whitespace-pre     { white-space: pre; }
 
-@media (--breakpoint-not-small) {
-  .whitespace-normal-ns    { white-space: normal; }
-  .whitespace-nowrap-ns  { white-space: nowrap; }
-  .whitespace-pre-ns     { white-space: pre; }
+@media (--breakpoint-small) {
+  .whitespace-normal-mediaS    { white-space: normal; }
+  .whitespace-nowrap-mediaS  { white-space: nowrap; }
+  .whitespace-pre-mediaS     { white-space: pre; }
 }
 
 @media (--breakpoint-medium) {
-  .whitespace-normal-m    { white-space: normal; }
-  .whitespace-nowrap-m  { white-space: nowrap; }
-  .whitespace-pre-m     { white-space: pre; }
+  .whitespace-normal-mediaM    { white-space: normal; }
+  .whitespace-nowrap-mediaM  { white-space: nowrap; }
+  .whitespace-pre-mediaM     { white-space: pre; }
 }
 
 @media (--breakpoint-large) {
-  .whitespace-normal-l    { white-space: normal; }
-  .whitespace-nowrap-l  { white-space: nowrap; }
-  .whitespace-pre-l     { white-space: pre; }
+  .whitespace-normal-mediaL    { white-space: normal; }
+  .whitespace-nowrap-mediaL  { white-space: nowrap; }
+  .whitespace-pre-mediaL     { white-space: pre; }
+}
+
+@media (--breakpoint-xlarge) {
+  .whitespace-normal-mediaXL    { white-space: normal; }
+  .whitespace-nowrap-mediaXL  { white-space: nowrap; }
+  .whitespace-pre-mediaXL     { white-space: pre; }
 }
 

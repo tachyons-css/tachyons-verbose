@@ -1,0 +1,41 @@
+/*
+
+  JUSTIFY-SELF
+
+  MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self
+
+*/
+
+.justifyself-start    { justify-self: start; }
+.justifyself-end      { justify-self: end; }
+.justifyself-center   { justify-self: center; }
+.justifyself-stretch  { justify-self: stretch; }
+
+
+@media (--breakpoint-small) {
+  .justifyself-start-mediaS    { justify-self: start; }
+  .justifyself-end-mediaS      { justify-self: end; }
+  .justifyself-center-mediaS   { justify-self: center; }
+  .justifyself-stretch-mediaS  { justify-self: stretch; }
+}
+
+@media (--breakpoint-medium) {
+  .justifyself-start-mediaM    { justify-self: start; }
+  .justifyself-end-mediaM      { justify-self: end; }
+  .justifyself-center-mediaM   { justify-self: center; }
+  .justifyself-stretch-mediaM  { justify-self: stretch; }
+}
+
+@media (--breakpoint-large) {
+  .justifyself-start-mediaL    { justify-self: start; }
+  .justifyself-end-mediaL      { justify-self: end; }
+  .justifyself-center-mediaL   { justify-self: center; }
+  .justifyself-stretch-mediaL  { justify-self: stretch; }
+}
+
+@media (--breakpoint-xlarge) {
+  .justifyself-start-mediaXL    { justify-self: start; }
+  .justifyself-end-mediaXL      { justify-self: end; }
+  .justifyself-center-mediaXL   { justify-self: center; }
+  .justifyself-stretch-mediaXL  { justify-self: stretch; }
+}

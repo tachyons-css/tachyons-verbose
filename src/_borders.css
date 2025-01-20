@@ -5,38 +5,45 @@
 
 */
 
- .border, .border-all { border-style: solid; border-width: 1px; }
- .border-top { border-top-style: solid; border-top-width: 1px; }
- .border-right { border-right-style: solid; border-right-width: 1px; }
- .border-bottom { border-bottom-style: solid; border-bottom-width: 1px; }
- .border-left { border-left-style: solid; border-left-width: 1px; }
- .border-none { border-style: solid; border-width: 0; }
+.border-all     { border-style: solid; border-width: var( --border-width, 1px ); }
+.border-top     { border-top-style: solid; border-top-width: var( --border-width, 1px ); }
+.border-right   { border-right-style: solid; border-right-width: var( --border-width, 1px ); }
+.border-bottom  { border-bottom-style: solid; border-bottom-width: var( --border-width, 1px ); }
+.border-left    { border-left-style: solid; border-left-width: var( --border-width, 1px ); }
+.border-none    { border-style: none; border-width: 0; }
 
-
-@media (--breakpoint-not-small) {
-  .border-ns, .border-all-ns { border-style: solid; border-width: 1px; }
-  .border-top-ns { border-top-style: solid; border-top-width: 1px; }
-  .border-right-ns { border-right-style: solid; border-right-width: 1px; }
-  .border-bottom-ns { border-bottom-style: solid; border-bottom-width: 1px; }
-  .border-left-ns { border-left-style: solid; border-left-width: 1px; }
-  .border-none-ns { border-style: solid; border-width: 0; }
+@media (--breakpoint-small) {
+  .border-all-mediaS     { border-style: solid; border-width: var( --border-width, 1px ); }
+  .border-top-mediaS     { border-top-style: solid; border-top-width: var( --border-width, 1px ); }
+  .border-right-mediaS   { border-right-style: solid; border-right-width: var( --border-width, 1px ); }
+  .border-bottom-mediaS  { border-bottom-style: solid; border-bottom-width: var( --border-width, 1px ); }
+  .border-left-mediaS    { border-left-style: solid; border-left-width: var( --border-width, 1px ); }
+  .border-none-mediaS    { border-style: none; border-width: 0; }
 }
 
 @media (--breakpoint-medium) {
-  .border-m, .border-all-m { border-style: solid; border-width: 1px; }
-  .border-top-m { border-top-style: solid; border-top-width: 1px; }
-  .border-right-m { border-right-style: solid; border-right-width: 1px; }
-  .border-bottom-m { border-bottom-style: solid; border-bottom-width: 1px; }
-  .border-left-m { border-left-style: solid; border-left-width: 1px; }
-  .border-none-m { border-style: solid; border-width: 0; }
+  .border-all-mediaM     { border-style: solid; border-width: var( --border-width, 1px ); }
+  .border-top-mediaM     { border-top-style: solid; border-top-width: var( --border-width, 1px ); }
+  .border-right-mediaM   { border-right-style: solid; border-right-width: var( --border-width, 1px ); }
+  .border-bottom-mediaM  { border-bottom-style: solid; border-bottom-width: var( --border-width, 1px ); }
+  .border-left-mediaM    { border-left-style: solid; border-left-width: var( --border-width, 1px ); }
+  .border-none-mediaM    { border-style: none; border-width: 0; }
 }
 
 @media (--breakpoint-large) {
-  .border-l, .border-all-l { border-style: solid; border-width: 1px; }
-  .border-top-l { border-top-style: solid; border-top-width: 1px; }
-  .border-right-l { border-right-style: solid; border-right-width: 1px; }
-  .border-bottom-l { border-bottom-style: solid; border-bottom-width: 1px; }
-  .border-left-l { border-left-style: solid; border-left-width: 1px; }
-  .border-none-l { border-style: solid; border-width: 0; }
+  .border-all-mediaL     { border-style: solid; border-width: var( --border-width, 1px ); }
+  .border-top-mediaL     { border-top-style: solid; border-top-width: var( --border-width, 1px ); }
+  .border-right-mediaL   { border-right-style: solid; border-right-width: var( --border-width, 1px ); }
+  .border-bottom-mediaL  { border-bottom-style: solid; border-bottom-width: var( --border-width, 1px ); }
+  .border-left-mediaL    { border-left-style: solid; border-left-width: var( --border-width, 1px ); }
+  .border-none-mediaL    { border-style: none; border-width: 0; }
 }
 
+@media (--breakpoint-xlarge) {
+  .border-all-mediaXL     { border-style: solid; border-width: var( --border-width, 1px ); }
+  .border-top-mediaXL     { border-top-style: solid; border-top-width: var( --border-width, 1px ); }
+  .border-right-mediaXL   { border-right-style: solid; border-right-width: var( --border-width, 1px ); }
+  .border-bottom-mediaXL  { border-bottom-style: solid; border-bottom-width: var( --border-width, 1px ); }
+  .border-left-mediaXL    { border-left-style: solid; border-left-width: var( --border-width, 1px ); }
+  .border-none-mediaXL    { border-style: none; border-width: 0; }
+}

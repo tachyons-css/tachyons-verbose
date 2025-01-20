@@ -5,4 +5,4 @@
 
 */
 
-.list {         list-style-type: none; }
+.list, .liststyletype-none { list-style-type: none; }
