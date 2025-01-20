@@ -1,6 +1,6 @@
 {
   "name": "tachyons",
-  "version": "5.0.0-beta.0",
+  "version": "5.0.0.alpha",
   "description": "Functional CSS for humans",
   "author": "mrmrs",
   "style": "css/tachyons.min.css",
