@@ -7,7 +7,7 @@
 
 .fontfamily-heading { font-family: var(--font-family-heading, sans-serif); }
 .fontfamily-body { font-family: var(--font-family-body, sans-serif); }
-.fontfamily-mono { font-family: var(--font-family-mono, monospace); }
+.fontfamily-monospace { font-family: var(--font-family-mono, monospace); }
 
 /* Legacy font stacks below */
 

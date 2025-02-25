@@ -7,22 +7,38 @@
 
 */
 
-.gridcolumn-1         { grid-column: span 1 / span 1; }
-.gridcolumn-2         { grid-column: span 2 / span 2; }
-.gridcolumn-3         { grid-column: span 3 / span 3; }
-.gridcolumn-4         { grid-column: span 4 / span 4; }
-.gridcolumn-5         { grid-column: span 5 / span 5; }
-.gridcolumn-6         { grid-column: span 6 / span 6; }
-.gridcolumn-7         { grid-column: span 7 / span 7; }
-.gridcolumn-8         { grid-column: span 8 / span 8; }
-.gridcolumn-9         { grid-column: span 9 / span 9; }
-.gridcolumn-10        { grid-column: span 10 / span 10; }
-.gridcolumn-11        { grid-column: span 11 / span 11; }
-.gridcolumn-12        { grid-column: span 12 / span 12; }
-.gridcolumn-13        { grid-column: span 13 / span 13; }
-.gridcolumn-14        { grid-column: span 14 / span 14; }
-.gridcolumn-15        { grid-column: span 15 / span 15; }
-.gridcolumn-16        { grid-column: span 16 / span 16; }
+.gridcolumn-1,
+.gridcolumn-span1     { grid-column: span 1 / span 1; }
+.gridcolumn-2,
+.gridcolumn-span2     { grid-column: span 2 / span 2; }
+.gridcolumn-3,
+.gridcolumn-span3     { grid-column: span 3 / span 3; }
+.gridcolumn-4,
+.gridcolumn-span4     { grid-column: span 4 / span 4; }
+.gridcolumn-5,
+.gridcolumn-span5     { grid-column: span 5 / span 5; }
+.gridcolumn-6,
+.gridcolumn-span6     { grid-column: span 6 / span 6; }
+.gridcolumn-7,
+.gridcolumn-span7     { grid-column: span 7 / span 7; }
+.gridcolumn-8,
+.gridcolumn-span8     { grid-column: span 8 / span 8; }
+.gridcolumn-9,
+.gridcolumn-span9     { grid-column: span 9 / span 9; }
+.gridcolumn-10,
+.gridcolumn-span10    { grid-column: span 10 / span 10; }
+.gridcolumn-11,
+.gridcolumn-span11    { grid-column: span 11 / span 11; }
+.gridcolumn-12,
+.gridcolumn-span12    { grid-column: span 12 / span 12; }
+.gridcolumn-13,
+.gridcolumn-span13    { grid-column: span 13 / span 13; }
+.gridcolumn-14,
+.gridcolumn-span14    { grid-column: span 14 / span 14; }
+.gridcolumn-15,
+.gridcolumn-span15    { grid-column: span 15 / span 15; }
+.gridcolumn-16,
+.gridcolumn-span16    { grid-column: span 16 / span 16; }
 .gridcolumn-full      { grid-column: 1 / -1; }
 .gridcolumn-center1   { grid-column: 2 / -2; }
 .gridcolumn-center2   { grid-column: 3 / -3; }
@@ -65,22 +81,38 @@
 
 
 @media (--breakpoint-small) {
-  .gridcolumn-1-mediaS         { grid-column: span 1 / span 1; }
-  .gridcolumn-2-mediaS         { grid-column: span 2 / span 2; }
-  .gridcolumn-3-mediaS         { grid-column: span 3 / span 3; }
-  .gridcolumn-4-mediaS         { grid-column: span 4 / span 4; }
-  .gridcolumn-5-mediaS         { grid-column: span 5 / span 5; }
-  .gridcolumn-6-mediaS         { grid-column: span 6 / span 6; }
-  .gridcolumn-7-mediaS         { grid-column: span 7 / span 7; }
-  .gridcolumn-8-mediaS         { grid-column: span 8 / span 8; }
-  .gridcolumn-9-mediaS         { grid-column: span 9 / span 9; }
-  .gridcolumn-10-mediaS        { grid-column: span 10 / span 10; }
-  .gridcolumn-11-mediaS        { grid-column: span 11 / span 11; }
-  .gridcolumn-12-mediaS        { grid-column: span 12 / span 12; }
-  .gridcolumn-13-mediaS        { grid-column: span 13 / span 13; }
-  .gridcolumn-14-mediaS        { grid-column: span 14 / span 14; }
-  .gridcolumn-15-mediaS        { grid-column: span 15 / span 15; }
-  .gridcolumn-16-mediaS        { grid-column: span 16 / span 16; }
+  .gridcolumn-1-mediaS,
+  .gridcolumn-span1-mediaS     { grid-column: span 1 / span 1; }
+  .gridcolumn-2-mediaS,
+  .gridcolumn-span2-mediaS     { grid-column: span 2 / span 2; }
+  .gridcolumn-3-mediaS,
+  .gridcolumn-span3-mediaS     { grid-column: span 3 / span 3; }
+  .gridcolumn-4-mediaS,
+  .gridcolumn-span4-mediaS     { grid-column: span 4 / span 4; }
+  .gridcolumn-5-mediaS,
+  .gridcolumn-span5-mediaS     { grid-column: span 5 / span 5; }
+  .gridcolumn-6-mediaS,
+  .gridcolumn-span6-mediaS     { grid-column: span 6 / span 6; }
+  .gridcolumn-7-mediaS,
+  .gridcolumn-span7-mediaS     { grid-column: span 7 / span 7; }
+  .gridcolumn-8-mediaS,
+  .gridcolumn-span8-mediaS     { grid-column: span 8 / span 8; }
+  .gridcolumn-9-mediaS,
+  .gridcolumn-span9-mediaS     { grid-column: span 9 / span 9; }
+  .gridcolumn-10-mediaS,
+  .gridcolumn-span10-mediaS    { grid-column: span 10 / span 10; }
+  .gridcolumn-11-mediaS,
+  .gridcolumn-span11-mediaS    { grid-column: span 11 / span 11; }
+  .gridcolumn-12-mediaS,
+  .gridcolumn-span12-mediaS    { grid-column: span 12 / span 12; }
+  .gridcolumn-13-mediaS,
+  .gridcolumn-span13-mediaS    { grid-column: span 13 / span 13; }
+  .gridcolumn-14-mediaS,
+  .gridcolumn-span14-mediaS    { grid-column: span 14 / span 14; }
+  .gridcolumn-15-mediaS,
+  .gridcolumn-span15-mediaS    { grid-column: span 15 / span 15; }
+  .gridcolumn-16-mediaS,
+  .gridcolumn-span16-mediaS    { grid-column: span 16 / span 16; }
   .gridcolumn-full-mediaS      { grid-column: 1 / -1; }
   .gridcolumn-center1-mediaS   { grid-column: 2 / -2; }
   .gridcolumn-center2-mediaS   { grid-column: 3 / -3; }
@@ -123,22 +155,38 @@
 }
 
 @media (--breakpoint-medium) {
-  .gridcolumn-1-mediaM         { grid-column: span 1 / span 1; }
-  .gridcolumn-2-mediaM         { grid-column: span 2 / span 2; }
-  .gridcolumn-3-mediaM         { grid-column: span 3 / span 3; }
-  .gridcolumn-4-mediaM         { grid-column: span 4 / span 4; }
-  .gridcolumn-5-mediaM         { grid-column: span 5 / span 5; }
-  .gridcolumn-6-mediaM         { grid-column: span 6 / span 6; }
-  .gridcolumn-7-mediaM         { grid-column: span 7 / span 7; }
-  .gridcolumn-8-mediaM         { grid-column: span 8 / span 8; }
-  .gridcolumn-9-mediaM         { grid-column: span 9 / span 9; }
-  .gridcolumn-10-mediaM        { grid-column: span 10 / span 10; }
-  .gridcolumn-11-mediaM        { grid-column: span 11 / span 11; }
-  .gridcolumn-12-mediaM        { grid-column: span 12 / span 12; }
-  .gridcolumn-13-mediaM        { grid-column: span 13 / span 13; }
-  .gridcolumn-14-mediaM        { grid-column: span 14 / span 14; }
-  .gridcolumn-15-mediaM        { grid-column: span 15 / span 15; }
-  .gridcolumn-16-mediaM        { grid-column: span 16 / span 16; }
+  .gridcolumn-1-mediaM,
+  .gridcolumn-span1-mediaM     { grid-column: span 1 / span 1; }
+  .gridcolumn-2-mediaM,
+  .gridcolumn-span2-mediaM     { grid-column: span 2 / span 2; }
+  .gridcolumn-3-mediaM,
+  .gridcolumn-span3-mediaM     { grid-column: span 3 / span 3; }
+  .gridcolumn-4-mediaM,
+  .gridcolumn-span4-mediaM     { grid-column: span 4 / span 4; }
+  .gridcolumn-5-mediaM,
+  .gridcolumn-span5-mediaM     { grid-column: span 5 / span 5; }
+  .gridcolumn-6-mediaM,
+  .gridcolumn-span6-mediaM     { grid-column: span 6 / span 6; }
+  .gridcolumn-7-mediaM,
+  .gridcolumn-span7-mediaM     { grid-column: span 7 / span 7; }
+  .gridcolumn-8-mediaM,
+  .gridcolumn-span8-mediaM     { grid-column: span 8 / span 8; }
+  .gridcolumn-9-mediaM,
+  .gridcolumn-span9-mediaM     { grid-column: span 9 / span 9; }
+  .gridcolumn-10-mediaM,
+  .gridcolumn-span10-mediaM    { grid-column: span 10 / span 10; }
+  .gridcolumn-11-mediaM,
+  .gridcolumn-span11-mediaM    { grid-column: span 11 / span 11; }
+  .gridcolumn-12-mediaM,
+  .gridcolumn-span12-mediaM    { grid-column: span 12 / span 12; }
+  .gridcolumn-13-mediaM,
+  .gridcolumn-span13-mediaM    { grid-column: span 13 / span 13; }
+  .gridcolumn-14-mediaM,
+  .gridcolumn-span14-mediaM    { grid-column: span 14 / span 14; }
+  .gridcolumn-15-mediaM,
+  .gridcolumn-span15-mediaM    { grid-column: span 15 / span 15; }
+  .gridcolumn-16-mediaM,
+  .gridcolumn-span16-mediaM    { grid-column: span 16 / span 16; }
   .gridcolumn-full-mediaM      { grid-column: 1 / -1; }
   .gridcolumn-center1-mediaM   { grid-column: 2 / -2; }
   .gridcolumn-center2-mediaM   { grid-column: 3 / -3; }
@@ -182,22 +230,38 @@
 
 @media (--breakpoint-large) {
 
-  .gridcolumn-1-mediaL         { grid-column: span 1 / span 1; }
-  .gridcolumn-2-mediaL         { grid-column: span 2 / span 2; }
-  .gridcolumn-3-mediaL         { grid-column: span 3 / span 3; }
-  .gridcolumn-4-mediaL         { grid-column: span 4 / span 4; }
-  .gridcolumn-5-mediaL         { grid-column: span 5 / span 5; }
-  .gridcolumn-6-mediaL         { grid-column: span 6 / span 6; }
-  .gridcolumn-7-mediaL         { grid-column: span 7 / span 7; }
-  .gridcolumn-8-mediaL         { grid-column: span 8 / span 8; }
-  .gridcolumn-9-mediaL         { grid-column: span 9 / span 9; }
-  .gridcolumn-10-mediaL        { grid-column: span 10 / span 10; }
-  .gridcolumn-11-mediaL        { grid-column: span 11 / span 11; }
-  .gridcolumn-12-mediaL        { grid-column: span 12 / span 12; }
-  .gridcolumn-13-mediaL        { grid-column: span 13 / span 13; }
-  .gridcolumn-14-mediaL        { grid-column: span 14 / span 14; }
-  .gridcolumn-15-mediaL        { grid-column: span 15 / span 15; }
-  .gridcolumn-16-mediaL        { grid-column: span 16 / span 16; }
+  .gridcolumn-1-mediaL,
+  .gridcolumn-span1-mediaL     { grid-column: span 1 / span 1; }
+  .gridcolumn-2-mediaL,
+  .gridcolumn-span2-mediaL     { grid-column: span 2 / span 2; }
+  .gridcolumn-3-mediaL,
+  .gridcolumn-span3-mediaL     { grid-column: span 3 / span 3; }
+  .gridcolumn-4-mediaL,
+  .gridcolumn-span4-mediaL     { grid-column: span 4 / span 4; }
+  .gridcolumn-5-mediaL,
+  .gridcolumn-span5-mediaL     { grid-column: span 5 / span 5; }
+  .gridcolumn-6-mediaL,
+  .gridcolumn-span6-mediaL     { grid-column: span 6 / span 6; }
+  .gridcolumn-7-mediaL,
+  .gridcolumn-span7-mediaL     { grid-column: span 7 / span 7; }
+  .gridcolumn-8-mediaL,
+  .gridcolumn-span8-mediaL     { grid-column: span 8 / span 8; }
+  .gridcolumn-9-mediaL,
+  .gridcolumn-span9-mediaL     { grid-column: span 9 / span 9; }
+  .gridcolumn-10-mediaL,
+  .gridcolumn-span10-mediaL    { grid-column: span 10 / span 10; }
+  .gridcolumn-11-mediaL,
+  .gridcolumn-span11-mediaL    { grid-column: span 11 / span 11; }
+  .gridcolumn-12-mediaL,
+  .gridcolumn-span12-mediaL    { grid-column: span 12 / span 12; }
+  .gridcolumn-13-mediaL,
+  .gridcolumn-span13-mediaL    { grid-column: span 13 / span 13; }
+  .gridcolumn-14-mediaL,
+  .gridcolumn-span14-mediaL    { grid-column: span 14 / span 14; }
+  .gridcolumn-15-mediaL,
+  .gridcolumn-span15-mediaL    { grid-column: span 15 / span 15; }
+  .gridcolumn-16-mediaL,
+  .gridcolumn-span16-mediaL    { grid-column: span 16 / span 16; }
   .gridcolumn-full-mediaL      { grid-column: 1 / -1; }
   .gridcolumn-center1-mediaL   { grid-column: 2 / -2; }
   .gridcolumn-center2-mediaL   { grid-column: 3 / -3; }
@@ -241,22 +305,38 @@
 
 @media (--breakpoint-xlarge) {
 
-  .gridcolumn-1-mediaXL         { grid-column: span 1 / span 1; }
-  .gridcolumn-2-mediaXL         { grid-column: span 2 / span 2; }
-  .gridcolumn-3-mediaXL         { grid-column: span 3 / span 3; }
-  .gridcolumn-4-mediaXL         { grid-column: span 4 / span 4; }
-  .gridcolumn-5-mediaXL         { grid-column: span 5 / span 5; }
-  .gridcolumn-6-mediaXL         { grid-column: span 6 / span 6; }
-  .gridcolumn-7-mediaXL         { grid-column: span 7 / span 7; }
-  .gridcolumn-8-mediaXL         { grid-column: span 8 / span 8; }
-  .gridcolumn-9-mediaXL         { grid-column: span 9 / span 9; }
-  .gridcolumn-10-mediaXL        { grid-column: span 10 / span 10; }
-  .gridcolumn-11-mediaXL        { grid-column: span 11 / span 11; }
-  .gridcolumn-12-mediaXL        { grid-column: span 12 / span 12; }
-  .gridcolumn-13-mediaXL        { grid-column: span 13 / span 13; }
-  .gridcolumn-14-mediaXL        { grid-column: span 14 / span 14; }
-  .gridcolumn-15-mediaXL        { grid-column: span 15 / span 15; }
-  .gridcolumn-16-mediaXL        { grid-column: span 16 / span 16; }
+  .gridcolumn-1-mediaXL,
+  .gridcolumn-span1-mediaXL     { grid-column: span 1 / span 1; }
+  .gridcolumn-2-mediaXL,
+  .gridcolumn-span2-mediaXL     { grid-column: span 2 / span 2; }
+  .gridcolumn-3-mediaXL,
+  .gridcolumn-span3-mediaXL     { grid-column: span 3 / span 3; }
+  .gridcolumn-4-mediaXL,
+  .gridcolumn-span4-mediaXL     { grid-column: span 4 / span 4; }
+  .gridcolumn-5-mediaXL,
+  .gridcolumn-span5-mediaXL     { grid-column: span 5 / span 5; }
+  .gridcolumn-6-mediaXL,
+  .gridcolumn-span6-mediaXL     { grid-column: span 6 / span 6; }
+  .gridcolumn-7-mediaXL,
+  .gridcolumn-span7-mediaXL     { grid-column: span 7 / span 7; }
+  .gridcolumn-8-mediaXL,
+  .gridcolumn-span8-mediaXL     { grid-column: span 8 / span 8; }
+  .gridcolumn-9-mediaXL,
+  .gridcolumn-span9-mediaXL     { grid-column: span 9 / span 9; }
+  .gridcolumn-10-mediaXL,
+  .gridcolumn-span10-mediaXL    { grid-column: span 10 / span 10; }
+  .gridcolumn-11-mediaXL,
+  .gridcolumn-span11-mediaXL    { grid-column: span 11 / span 11; }
+  .gridcolumn-12-mediaXL,
+  .gridcolumn-span12-mediaXL    { grid-column: span 12 / span 12; }
+  .gridcolumn-13-mediaXL,
+  .gridcolumn-span13-mediaXL    { grid-column: span 13 / span 13; }
+  .gridcolumn-14-mediaXL,
+  .gridcolumn-span14-mediaXL    { grid-column: span 14 / span 14; }
+  .gridcolumn-15-mediaXL,
+  .gridcolumn-span15-mediaXL    { grid-column: span 15 / span 15; }
+  .gridcolumn-16-mediaXL,
+  .gridcolumn-span16-mediaXL    { grid-column: span 16 / span 16; }
   .gridcolumn-full-mediaXL      { grid-column: 1 / -1; }
   .gridcolumn-center1-mediaXL   { grid-column: 2 / -2; }
   .gridcolumn-center2-mediaXL   { grid-column: 3 / -3; }

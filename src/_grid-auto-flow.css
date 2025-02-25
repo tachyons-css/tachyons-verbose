@@ -1,0 +1,44 @@
+/*
+
+  Grid Auto Flow
+
+*/
+
+.gridautoflow-row         { grid-auto-flow: row; }
+.gridautoflow-column      { grid-auto-flow: column; }
+.gridautoflow-dense       { grid-auto-flow: dense; }
+.gridautoflow-rowdense    { grid-auto-flow: row dense; }
+.gridautoflow-columndense { grid-auto-flow: column dense; }
+
+
+@media (--breakpoint-small) {
+  .gridautoflow-row-mediaS         { grid-auto-flow: row; }
+  .gridautoflow-column-mediaS      { grid-auto-flow: column; }
+  .gridautoflow-dense-mediaS       { grid-auto-flow: dense; }
+  .gridautoflow-rowdense-mediaS    { grid-auto-flow: row dense; }
+  .gridautoflow-columndense-mediaS { grid-auto-flow: column dense; }
+}
+
+@media (--breakpoint-medium) {
+  .gridautoflow-row-mediaM         { grid-auto-flow: row; }
+  .gridautoflow-column-mediaM      { grid-auto-flow: column; }
+  .gridautoflow-dense-mediaM       { grid-auto-flow: dense; }
+  .gridautoflow-rowdense-mediaM    { grid-auto-flow: row dense; }
+  .gridautoflow-columndense-mediaM { grid-auto-flow: column dense; }
+}
+
+@media (--breakpoint-large) {
+  .gridautoflow-row-mediaL         { grid-auto-flow: row; }
+  .gridautoflow-column-mediaL      { grid-auto-flow: column; }
+  .gridautoflow-dense-mediaL       { grid-auto-flow: dense; }
+  .gridautoflow-rowdense-mediaL    { grid-auto-flow: row dense; }
+  .gridautoflow-columndense-mediaL { grid-auto-flow: column dense; }
+}
+
+@media (--breakpoint-xlarge) {
+  .gridautoflow-row-mediaXL         { grid-auto-flow: row; }
+  .gridautoflow-column-mediaXL      { grid-auto-flow: column; }
+  .gridautoflow-dense-mediaXL       { grid-auto-flow: dense; }
+  .gridautoflow-rowdense-mediaXL    { grid-auto-flow: row dense; }
+  .gridautoflow-columndense-mediaXL { grid-auto-flow: column dense; }
+}

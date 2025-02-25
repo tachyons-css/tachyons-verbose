@@ -66,6 +66,7 @@
 @import './_grid-template-columns';
 @import './_grid-column';
 @import './_grid-row';
+@import './_grid-auto-flow';
 /* Duplicate of filters? */
 /* @import './_backdrop-filters'; */
 @import './_filters';

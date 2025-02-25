@@ -5,55 +5,55 @@
 
 */
 
-.gaprow-0 { gap-row: var(--spacing-0, 0); }
-.gaprow-1 { gap-row: var(--spacing-1, 4px); }
-.gaprow-2 { gap-row: var(--spacing-2, 8px); }
-.gaprow-3 { gap-row: var(--spacing-3, 16px); }
-.gaprow-4 { gap-row: var(--spacing-4, 32px); }
-.gaprow-5 { gap-row: var(--spacing-5, 64px); }
-.gaprow-6 { gap-row: var(--spacing-6, 128px); }
-.gaprow-7 { gap-row: var(--spacing-7, 256px); }
+.rowgap-0 { row-gap: var(--spacing-0, 0); }
+.rowgap-1 { row-gap: var(--spacing-1, 4px); }
+.rowgap-2 { row-gap: var(--spacing-2, 8px); }
+.rowgap-3 { row-gap: var(--spacing-3, 16px); }
+.rowgap-4 { row-gap: var(--spacing-4, 32px); }
+.rowgap-5 { row-gap: var(--spacing-5, 64px); }
+.rowgap-6 { row-gap: var(--spacing-6, 128px); }
+.rowgap-7 { row-gap: var(--spacing-7, 256px); }
 
 @media (--breakpoint-small) {
-  .gaprow-0-mediaS { gap-row: var(--spacing-0, 0); }
-  .gaprow-1-mediaS { gap-row: var(--spacing-1, 4px); }
-  .gaprow-2-mediaS { gap-row: var(--spacing-2, 8px); }
-  .gaprow-3-mediaS { gap-row: var(--spacing-3, 16px); }
-  .gaprow-4-mediaS { gap-row: var(--spacing-4, 32px); }
-  .gaprow-5-mediaS { gap-row: var(--spacing-5, 64px); }
-  .gaprow-6-mediaS { gap-row: var(--spacing-6, 128px); }
-  .gaprow-7-mediaS { gap-row: var(--spacing-7, 256px); }
+  .rowgap-0-mediaS { row-gap: var(--spacing-0, 0); }
+  .rowgap-1-mediaS { row-gap: var(--spacing-1, 4px); }
+  .rowgap-2-mediaS { row-gap: var(--spacing-2, 8px); }
+  .rowgap-3-mediaS { row-gap: var(--spacing-3, 16px); }
+  .rowgap-4-mediaS { row-gap: var(--spacing-4, 32px); }
+  .rowgap-5-mediaS { row-gap: var(--spacing-5, 64px); }
+  .rowgap-6-mediaS { row-gap: var(--spacing-6, 128px); }
+  .rowgap-7-mediaS { row-gap: var(--spacing-7, 256px); }
 }
 
 @media (--breakpoint-medium) {
-  .gaprow-0-mediaM { gap-row: var(--spacing-0, 0); }
-  .gaprow-1-mediaM { gap-row: var(--spacing-1, 4px); }
-  .gaprow-2-mediaM { gap-row: var(--spacing-2, 8px); }
-  .gaprow-3-mediaM { gap-row: var(--spacing-3, 16px); }
-  .gaprow-4-mediaM { gap-row: var(--spacing-4, 32px); }
-  .gaprow-5-mediaM { gap-row: var(--spacing-5, 64px); }
-  .gaprow-6-mediaM { gap-row: var(--spacing-6, 128px); }
-  .gaprow-7-mediaM { gap-row: var(--spacing-7, 256px); }
+  .rowgap-0-mediaM { row-gap: var(--spacing-0, 0); }
+  .rowgap-1-mediaM { row-gap: var(--spacing-1, 4px); }
+  .rowgap-2-mediaM { row-gap: var(--spacing-2, 8px); }
+  .rowgap-3-mediaM { row-gap: var(--spacing-3, 16px); }
+  .rowgap-4-mediaM { row-gap: var(--spacing-4, 32px); }
+  .rowgap-5-mediaM { row-gap: var(--spacing-5, 64px); }
+  .rowgap-6-mediaM { row-gap: var(--spacing-6, 128px); }
+  .rowgap-7-mediaM { row-gap: var(--spacing-7, 256px); }
 }
 
 @media (--breakpoint-large) {
-  .gaprow-0-mediaL { gap-row: var(--spacing-0, 0); }
-  .gaprow-1-mediaL { gap-row: var(--spacing-1, 4px); }
-  .gaprow-2-mediaL { gap-row: var(--spacing-2, 8px); }
-  .gaprow-3-mediaL { gap-row: var(--spacing-3, 16px); }
-  .gaprow-4-mediaL { gap-row: var(--spacing-4, 32px); }
-  .gaprow-5-mediaL { gap-row: var(--spacing-5, 64px); }
-  .gaprow-6-mediaL { gap-row: var(--spacing-6, 128px); }
-  .gaprow-7-mediaL { gap-row: var(--spacing-7, 256px); }
+  .rowgap-0-mediaL { row-gap: var(--spacing-0, 0); }
+  .rowgap-1-mediaL { row-gap: var(--spacing-1, 4px); }
+  .rowgap-2-mediaL { row-gap: var(--spacing-2, 8px); }
+  .rowgap-3-mediaL { row-gap: var(--spacing-3, 16px); }
+  .rowgap-4-mediaL { row-gap: var(--spacing-4, 32px); }
+  .rowgap-5-mediaL { row-gap: var(--spacing-5, 64px); }
+  .rowgap-6-mediaL { row-gap: var(--spacing-6, 128px); }
+  .rowgap-7-mediaL { row-gap: var(--spacing-7, 256px); }
 }
 
 @media (--breakpoint-xlarge) {
-  .gaprow-0-mediaXL { gap-row: var(--spacing-0, 0); }
-  .gaprow-1-mediaXL { gap-row: var(--spacing-1, 4px); }
-  .gaprow-2-mediaXL { gap-row: var(--spacing-2, 8px); }
-  .gaprow-3-mediaXL { gap-row: var(--spacing-3, 16px); }
-  .gaprow-4-mediaXL { gap-row: var(--spacing-4, 32px); }
-  .gaprow-5-mediaXL { gap-row: var(--spacing-5, 64px); }
-  .gaprow-6-mediaXL { gap-row: var(--spacing-6, 128px); }
-  .gaprow-7-mediaXL { gap-row: var(--spacing-7, 256px); }
+  .rowgap-0-mediaXL { row-gap: var(--spacing-0, 0); }
+  .rowgap-1-mediaXL { row-gap: var(--spacing-1, 4px); }
+  .rowgap-2-mediaXL { row-gap: var(--spacing-2, 8px); }
+  .rowgap-3-mediaXL { row-gap: var(--spacing-3, 16px); }
+  .rowgap-4-mediaXL { row-gap: var(--spacing-4, 32px); }
+  .rowgap-5-mediaXL { row-gap: var(--spacing-5, 64px); }
+  .rowgap-6-mediaXL { row-gap: var(--spacing-6, 128px); }
+  .rowgap-7-mediaXL { row-gap: var(--spacing-7, 256px); }
 }
