@@ -11,7 +11,7 @@
 
 @media (--breakpoint-small) {
   .letterspacing-tracked-mediaS { letter-spacing: var( --letter-spacing-tracked, .1em ) }
-  .letterspacing-tight-media    { letter-spacing: var( --letter-spacing-tight, -0.05em ); }
+  .letterspacing-tight-mediaS    { letter-spacing: var( --letter-spacing-tight, -0.05em ); }
   .letterspacing-mega-mediaS    { letter-spacing: var( --letter-spacing-large, .25em ) }
 }
 

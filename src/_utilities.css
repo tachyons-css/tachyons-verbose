@@ -15,6 +15,12 @@
 .marginleft-auto {
   margin-left: auto;
 }
+.margininlineend-auto {
+  margin-inline-end: auto;
+}
+.margininlinestart-auto {
+  margin-inline-start: auto;
+}
 
 @media (--breakpoint-small){
   .center-mediaS,
@@ -27,6 +33,12 @@
   }
   .marginleft-auto-mediaS {
     margin-left: auto;
+  }
+  .margininlineend-auto-mediaS {
+    margin-inline-end: auto;
+  }
+  .margininlinestart-auto-mediaS {
+    margin-inline-start: auto;
   }
 }
 
@@ -42,6 +54,12 @@
   .marginleft-auto-mediaM {
     margin-left: auto;
   }
+  .margininlineend-auto-mediaM {
+    margin-inline-end: auto;
+  }
+  .margininlinestart-auto-mediaM {
+    margin-inline-start: auto;
+  }
 }
 
 @media (--breakpoint-large){
@@ -56,6 +74,12 @@
   .marginleft-auto-mediaL {
     margin-left: auto;
   }
+  .margininlineend-auto-mediaL {
+    margin-inline-end: auto;
+  }
+  .margininlinestart-auto-mediaL {
+    margin-inline-start: auto;
+  }
 }
 
 @media (--breakpoint-xlarge){
@@ -69,5 +93,11 @@
   }
   .marginleft-auto-mediaXL {
     margin-left: auto;
+  }
+  .margininlineend-auto-mediaXL {
+    margin-inline-end: auto;
+  }
+  .margininlinestart-auto-mediaXL {
+    margin-inline-start: auto;
   }
 }

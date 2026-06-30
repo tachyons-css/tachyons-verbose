@@ -42,8 +42,8 @@
   .backgroundsize-200percent  { background-size: 200%; }
   
 @media (--breakpoint-small) {
-  .backgroundsize-cover-s { background-size: cover!important; }
-  .backgroundsize-contain-s { background-size: contain!important; }
+  .backgroundsize-cover-mediaS { background-size: cover!important; }
+  .backgroundsize-contain-mediaS { background-size: contain!important; }
 
   .backgroundsize-1-mediaS     { background-size: 4px; }
   .backgroundsize-2-mediaS     { background-size: 8px; }

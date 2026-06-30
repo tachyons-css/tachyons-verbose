@@ -47,7 +47,7 @@ As you can see, hyphens are only used to separate the properties from their valu
 - `.textalign-center` maps to `{ text-align: center; }`
 - `.position-absolute` maps to  `{ position: absolute; }`
 
-Media queries are labeled as `mediaS`, `mediaM`, `mediaL` or `mediaXL` for small, medium and large screen sizes. In the future, we will support container queries as well, which is why we decided there was need to clarify these are for `@media` queries. So:
+Media queries are labeled as `mediaS`, `mediaM`, `mediaL` or `mediaXL` for small, medium and large screen sizes. In the future, we will support container queries as well, which is why we decided there was a need to clarify these are for `@media` queries. So:
 
 - `.textalign-center-mediaS` maps to `{ text-align: center; }` when the screen size is `30em` or more. You can set what the media query breakpoints are at in `src/_media-queries.css`.
 
@@ -63,8 +63,9 @@ As you can see, some of our class names use double dash `--` variables that you 
 
 This release of Tachyons Verbose is a verbose fork of the [Tachyons v5.0.0.beta](https://github.com/tachyons-css/tachyons/tree/v5-final-final). Aside from different naming conventions, we also made a few additions:
 
-- If specific values are referenced in size scale, you can refer to both as a part of the scale and as the literal value. E.g. 1`backgroundsize-3` and `.backgroundsize-16px` both map to `{ background-size: 16px; }`.
+- If specific values are referenced in size scale, you can refer to both as a part of the scale and as the literal value. E.g. `backgroundsize-3` and `.backgroundsize-16px` both map to `{ background-size: 16px; }`.
 - In parallel to the numerical size scales, we also use `small`, `medium` ad `large` for heights, widths, margins and paddings. In this scheme, `padding-medium` gives 1 rem of padding. To increase the size use `large`, `xlarge`, `xxlarge`, `xxxlarge`, etc. To decrease use `small`, `xsmall`, `xxsmall`, `xxxsmall`, etc.
+- Added `inline-start`, `inline-end`, `block-start` and `block-end` properties that automatically support LTR and RTL language layouts.
 - Tachyons v5.0.0.beta replaces all media queries with container queries. Tachyons Verbose hasn't changed over yet because a) container query support is still relatively new, and b) we haven't been able to use dynamic variables for container query breakpoints yet.
 
 ## What to know if you're an existing user of Tachyons Verbose (v4 from 2018)

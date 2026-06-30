@@ -165,7 +165,7 @@
   .fontsize-256px-mediaL    { font-size: var(--font-size-256px ); } 
 }
 
-@media (--breakpoint-large) {
+@media (--breakpoint-xlarge) {
   .f1-mediaXL,
   .fontsize-1-mediaXL   { font-size:  var(--font-size-1, .75rem); }
   .f2-mediaXL, 

@@ -7,12 +7,16 @@
 
 .textalign-left     { text-align: left; }
 .textalign-right    { text-align: right; }
+.textalign-start    { text-align: start; }
+.textalign-end    { text-align: end; }
 .textalign-center   { text-align: center; }
 .textalign-justify  { text-align: justify; }
 
 @media (--breakpoint-small) {
   .textalign-left-mediaS    { text-align: left; }
   .textalign-right-mediaS   { text-align: right; }
+  .textalign-start-mediaS   { text-align: start; }
+  .textalign-end-mediaS     { text-align: end; }
   .textalign-center-mediaS  { text-align: center; }
   .textalign-justify-mediaS { text-align: justify; }
 }
@@ -20,6 +24,8 @@
 @media (--breakpoint-medium) {
   .textalign-left-mediaM    { text-align: left; }
   .textalign-right-mediaM   { text-align: right; }
+  .textalign-start-mediaM   { text-align: start; }
+  .textalign-end-mediaM     { text-align: end; }
   .textalign-center-mediaM  { text-align: center; }
   .textalign-justify-mediaM { text-align: justify; }
 }
@@ -27,6 +33,8 @@
 @media (--breakpoint-large) {
   .textalign-left-mediaL    { text-align: left; }
   .textalign-right-mediaL   { text-align: right; }
+  .textalign-start-mediaL   { text-align: start; }
+  .textalign-end-mediaL     { text-align: end; }
   .textalign-center-mediaL  { text-align: center; }
   .textalign-justify-mediaL { text-align: justify; }
 }
@@ -34,6 +42,8 @@
 @media (--breakpoint-xlarge) {
   .textalign-left-mediaXL    { text-align: left; }
   .textalign-right-mediaXL   { text-align: right; }
+  .textalign-start-mediaXL   { text-align: start; }
+  .textalign-end-mediaXL     { text-align: end; }
   .textalign-center-mediaXL  { text-align: center; }
   .textalign-justify-mediaXL { text-align: justify; }
 }

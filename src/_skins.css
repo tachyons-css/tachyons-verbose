@@ -209,6 +209,8 @@
 
 /* Background colors */
 
+.backgroundcolor-none,
+.backgroundcolor-transparent { background-color: transparent; }
 .backgroundcolor-tint0 { background-color: var(--tint-0); }
 .backgroundcolor-tint1 { background-color: var(--tint-1); }
 .backgroundcolor-tint2 { background-color: var(--tint-2); }

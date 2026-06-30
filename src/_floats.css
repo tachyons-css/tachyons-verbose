@@ -15,28 +15,38 @@
 
 .float-left { float: left; }
 .float-right { float: right }
+.float-inlinestart { float: inline-start; }
+.float-inlineend { float: inline-end; }
 .float-none { float: none; }
 
 @media (--breakpoint-small) {
   .float-left-mediaS { float: left }
   .float-right-mediaS { float: right }
+  .float-inlinestart-mediaS { float: inline-start; }
+  .float-inlineend-mediaS { float: inline-end; }
   .float-none-mediaS { float: none; }
 }
 
 @media (--breakpoint-medium) {
   .float-left-mediaM { float: left }
   .float-right-mediaM { float: right }
+  .float-inlinestart-mediaM { float: inline-start; }
+  .float-inlineend-mediaM { float: inline-end; }
   .float-none-mediaM { float: none; }
 }
 
 @media (--breakpoint-large) {
   .float-left-mediaL { float: left }
   .float-right-mediaL { float: right }
+  .float-inlinestart-mediaL { float: inline-start; }
+  .float-inlineend-mediaL { float: inline-end; }
   .float-none-mediaL { float: none; }
 }
 
 @media (--breakpoint-xlarge) {
   .float-left-mediaXL { float: left }
   .float-right-mediaXL { float: right }
+  .float-inlinestart-mediaXL { float: inline-start; }
+  .float-inlineend-mediaXL { float: inline-end; }
   .float-none-mediaXL { float: none; }
 }
